@@ -13,7 +13,8 @@
     "rxjs": "^6.6.3"
   },
   "scripts": {
-    "test": "jest --runInBand 2021"
+    "test": "jest --runInBand --rootDir=2021/w07",
+    "test:all": "jest --runInBand"
   },
   "author": "",
   "license": "ISC"
