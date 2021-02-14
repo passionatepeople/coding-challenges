@@ -1,11 +1,16 @@
 {
-  "dependencies": {},
   "name": "coding-challenges",
   "description": "Passionate People coding challenges",
   "version": "1.0.0",
   "main": "index.js",
   "devDependencies": {
-    "jest": "^26.6.3"
+    "date-fns": "^2.17.0",
+    "immer": "^8.0.1",
+    "jest": "^26.6.3",
+    "lodash": "^4.17.20",
+    "moment": "^2.29.1",
+    "ramda": "^0.27.1",
+    "rxjs": "^6.6.3"
   },
   "scripts": {
     "test": "jest --runInBand 2021"
