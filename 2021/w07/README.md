@@ -14,3 +14,12 @@ rgb2Hex(0,0,0) // returns '#000000'
 rgb2Hex(-20,0,0) // returns '#000000'
 rgb2Hex(77, 22, 159) // returns '#4D169F'
 ```
+
+
+## Upload link
+
+[https://forms.gle/vJTY98S1FaP1sm4fA]
+
+
+## Results
+

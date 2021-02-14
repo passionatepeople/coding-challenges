@@ -6,7 +6,7 @@ Develop your solution in `2021/w<week number>/solution.js` file until all tests 
 Since you will send the contents of this file as your solution, all your code should be in this 1 file.
 
 **WARNING!!: Do not commit your solution!** as that will disclose your approach to others!
-The solution should be submitted as text in the link provided for each solution.
+The solution should be submitted via an upload link provided for each solution.
 
 ## Libraries
 
@@ -37,9 +37,16 @@ Ranking is based on performance. Fastest average execution time (accross multipl
 - 7th: 6
 - 8th: 4
 - 9th: 2
-- 1th: 1
+- 10th: 1
 
 ### Extra points
 
-- +5 points for the shortest solution (codegolf). Judged by the number of bytes your solution file has.
-- +5 points for the most elegant and readable code. Judged by a jury.
+- +5 points for the shortest solution (codegolf). Judged by the number of bytes your solution file has. If tied, both (or more) get awarded 5 points.
+- +5 points for the most elegant and readable code. Judged by a jury (TBD). Ties are possible.
+
+**Note:** Since you can submit multiple solutions, the shortes and most elegant solution will be ranked apart from fastest. E.g. you can submit 3 solutions - one aimed to be fastest, another one to be the shortest and the 3rd one to be most readable. It could very well be that a solution is both elegant and fast. So all correct solutions will be evaluated independently for each award category.
+
+
+## Results
+
+Will be posted after first challenge gets evaluated.
