@@ -44,7 +44,7 @@ Ranking is based on performance. Fastest average execution time (accross multipl
 - +5 points for the shortest solution (codegolf). Judged by the number of bytes your solution file has. If tied, both (or more) get awarded 5 points.
 - +5 points for the most elegant and readable code. Judged by a jury (TBD). Ties are possible.
 
-**Note:** Since you can submit multiple solutions, the shortes and most elegant solution will be ranked apart from fastest. E.g. you can submit 3 solutions - one aimed to be fastest, another one to be the shortest and the 3rd one to be most readable. It could very well be that a solution is both elegant and fast. So all correct solutions will be evaluated independently for each award category.
+**Note:** Since you can submit multiple solutions, the shortest and most elegant solution will be ranked apart from fastest. E.g. you can submit 3 solutions - one aimed to be fastest, another one to be the shortest and the 3rd one to be most readable. It could very well be that a solution is both elegant and fast. So all correct solutions will be evaluated independently for each award category.
 
 
 ## Results
