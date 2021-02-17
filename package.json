@@ -13,8 +13,7 @@
     "rxjs": "^6.6.3"
   },
   "scripts": {
-    "test": "jest --runInBand --rootDir=2021/w07",
-    "test:latest": "./test-this-week.sh",
+    "test": "node test-latest.js",
     "test:all": "jest --runInBand"
   },
   "author": "",
