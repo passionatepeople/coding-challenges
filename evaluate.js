@@ -1,4 +1,5 @@
 const fs = require('fs');
+const os = require('os');
 const chalk = require('chalk');
 const { performance } = require('perf_hooks');
 const { shuffle, flatten, sum, sortBy } = require('lodash');
@@ -29,8 +30,7 @@ const STATS = SOLUTIONS.reduce((acc, sol) => ({
   }
 }), {});
 
-
-console.log(`\n\n${chalk.yellow('EVALUATING CHALLENGE:')} ${chalk.green(CHALLENGE)}`);
+console.log(`\n${chalk.yellow('EVALUATING CHALLENGE:')} ${chalk.green(CHALLENGE)}`);
 console.log(`${chalk.yellow(`FOUND ${SOLUTIONS.length} SOLUTIONS:`)}  ${chalk.green(SOLUTIONS.join(', '))}`);
 console.log(`${chalk.yellow('EVALUATING EACH')} ${chalk.cyan(TIMES_TO_EVAL_EACH)} ${chalk.yellow('TIMES WITH')} ${chalk.cyan(SPEC.length)} ${chalk.yellow('TEST CASES...')}\n`);
 
@@ -117,5 +117,12 @@ if (FAILED.length) {
   console.log(`\n\nDISQUALIFIED FAILED SOLUTIONS: ${FAILED.join(', ')}\n\n`);
 }
 
-console.log('\n\nRAW RESULTS:');
+console.log(`\n${chalk.yellow('SYSTEM INFO:')}`);
+console.log(`NODE: ${process.version}`);
+console.log(`ARCH: ${os.arch()}`);
+console.log(`PLATFORM: ${os.platform()}`);
+console.log(`VERSION: ${os.version()}`);
+console.log(`CPUS: ${os.cpus().length}\n${os.cpus().map(cpu => ' - ' + cpu.model).join('\n')}`);
+
+console.log(`\n${chalk.yellow('RAW RESULTS:')}`);
 console.table(RESULTS);
