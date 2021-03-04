@@ -27,7 +27,7 @@ Only correct solutions count. Failing at least 1 test case immediately disqualif
 So you should make sure the solution works with the provided tests before submitting it.
 You can submit multiple versions of your solutions. At the end, only the fastest will be taken into account.
 
-Ranking is based on performance. Fastest average execution time (accross multiple tries) wins. F1 style points are awarded for each week.
+Ranking is based on performance. Fastest execution time (accross multiple tries) wins. F1 style points are awarded for each week.
 - 1st place: 25 points
 - 2nd place: 18 points
 - 3rd: 15

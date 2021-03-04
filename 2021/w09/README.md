@@ -1,4 +1,4 @@
-# Week 07 challenge
+# Week 09 challenge
 
 Write a function that takes 3 arguments - integer value for red, green and blue and transforms it to corresponding hex string in the form of
 ##RRGGBB (capital letters). The input values are truncated to the range of 0-255, e.g. negative values become 0 and values >= 255 are truncated to 255.
