@@ -11,7 +11,8 @@
     "lodash": "^4.17.20",
     "moment": "^2.29.1",
     "ramda": "^0.27.1",
-    "rxjs": "^6.6.3"
+    "rxjs": "^6.6.3",
+    "table": "^6.0.7"
   },
   "scripts": {
     "test": "node test-latest.js",

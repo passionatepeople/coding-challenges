@@ -2,6 +2,7 @@ const fs = require('fs');
 const chalk = require('chalk');
 const { performance } = require('perf_hooks');
 const { shuffle, flatten, sum, sortBy } = require('lodash');
+const { table } = require('table');
 
 // update for challenge you wish to evaluate and how many times
 const CHALLENGE = '2021/w09';
@@ -59,15 +60,46 @@ SOLUTIONS.forEach(solution => {
 const RESULTS = sortBy(Object.values(STATS).filter(res => !res.failed), 'best');
 const FAILED = Object.values(STATS).filter(res => res.failed).map(res => res.solution);
 
-console.table(RESULTS);
+const MIN_SIZE = Math.min(...RESULTS.map(r => r.size));
 
-// RESULTS.forEach(({ solution, average, runTimes, failed, total }, idx) => {
-//   console.log(`${((idx + 1) + '.').padEnd(3, ' ')} ${solution.padEnd(30, ' ')} AVG=${average}ms  TOTAL=${total}`);
-// });
+const PRETTY = [['Place', 'Name', 'Best', 'Average', 'Size (bytes)', 'Codegolf']];
+let place = 1;
+let currentBest = 0;
+let showPlace = true;
+for (let i = 0; i < RESULTS.length; i++) {
 
-// console.log(RESULTS);
+  const name = RESULTS[i].solution.replace(/.js$/gi, '');
+
+  // check if solution best time is within 5% of previous
+  if (i > 0) {
+    if (currentBest * 1.05 > RESULTS[i].best) {
+      showPlace = false;
+    } else {
+      currentBest = RESULTS[i].best;
+      place++;
+      showPlace = true;
+    }
+  } else {
+    currentBest = RESULTS[i].best;
+  }
+
+  const res = [
+    showPlace ? place : '',
+    name,
+    RESULTS[i].best.toFixed(3) + 'ms',
+    RESULTS[i].average.toFixed(3) + 'ms',
+    RESULTS[i].size,
+    RESULTS[i].size === MIN_SIZE ? '+5pts' : '',
+  ];
+
+  PRETTY.push(res);
+}
+
+console.log(table(PRETTY))
 
 if (FAILED.length) {
   console.log(`\n\nDISQUALIFIED FAILED SOLUTIONS: ${FAILED.join(', ')}\n\n`);
 }
 
+console.log('\n\nRAW RESULTS:');
+console.table(RESULTS);
