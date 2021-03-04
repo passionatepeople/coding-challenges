@@ -3,6 +3,7 @@ const chalk = require('chalk');
 const { performance } = require('perf_hooks');
 const { shuffle, flatten, sum, sortBy } = require('lodash');
 const { table } = require('table');
+const humanizeDuration = require('humanize-duration');
 
 // update for challenge you wish to evaluate and how many times
 const CHALLENGE = '2021/w09';
@@ -31,9 +32,17 @@ const STATS = SOLUTIONS.reduce((acc, sol) => ({
 
 console.log(`\n\n${chalk.yellow('EVALUATING CHALLENGE:')} ${chalk.green(CHALLENGE)}`);
 console.log(`${chalk.yellow(`FOUND ${SOLUTIONS.length} SOLUTIONS:`)}  ${chalk.green(SOLUTIONS.join(', '))}`);
-console.log(`${chalk.yellow('EVALUATING EACH')} ${chalk.cyan(TIMES_TO_EVAL_EACH)} ${chalk.yellow('TIMES WITH')} ${chalk.cyan(SPEC.length)} ${chalk.yellow('TEST CASES...')}\n\n`);
+console.log(`${chalk.yellow('EVALUATING EACH')} ${chalk.cyan(TIMES_TO_EVAL_EACH)} ${chalk.yellow('TIMES WITH')} ${chalk.cyan(SPEC.length)} ${chalk.yellow('TEST CASES...')}\n`);
 
-TEST_RUNS.forEach(solution => {
+const stdout = (progress) => {
+  process.stdout.clearLine();
+  process.stdout.cursorTo(0);
+  process.stdout.write(progress);
+}
+
+const totalStart = performance.now();
+
+TEST_RUNS.forEach((solution, idx) => {
   const fn = SOLUTION_FNS[solution];
 
   const start = performance.now();
@@ -45,7 +54,14 @@ TEST_RUNS.forEach(solution => {
   const end = performance.now();
 
   STATS[solution].runTimes.push(end - start);
+  stdout(`Running perf checks ${(100 * idx / TEST_RUNS.length).toFixed(1)}%...`);
 });
+
+process.stdout.clearLine();
+
+const totalEnd = performance.now();
+
+console.log(`\nDone in ${humanizeDuration(Math.floor(totalEnd - totalStart))}\n\n`);
 
 // assess stats
 SOLUTIONS.forEach(solution => {
