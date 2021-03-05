@@ -30,9 +30,10 @@ const STATS = SOLUTIONS.reduce((acc, sol) => ({
   }
 }), {});
 
-console.log(`\n${chalk.yellow('EVALUATING CHALLENGE:')} ${chalk.green(CHALLENGE)}`);
-console.log(`${chalk.yellow(`FOUND ${SOLUTIONS.length} SOLUTIONS:`)}  ${chalk.green(SOLUTIONS.join(', '))}`);
-console.log(`${chalk.yellow('EVALUATING EACH')} ${chalk.cyan(TIMES_TO_EVAL_EACH)} ${chalk.yellow('TIMES WITH')} ${chalk.cyan(SPEC.length)} ${chalk.yellow('TEST CASES...')}\n`);
+console.log(`\n${chalk.yellow('EVALUATION STARTED:').padEnd(35, ' ')} ${chalk.green(new Date())}`);
+console.log(`${chalk.yellow('EVALUATING CHALLENGE:').padEnd(35, ' ')} ${chalk.green(CHALLENGE)}`);
+console.log(`${chalk.yellow(`FOUND ${SOLUTIONS.length} SOLUTIONS:`).padEnd(35, ' ')} ${chalk.green(SOLUTIONS.join(', '))}`);
+console.log(`${chalk.yellow('EVALUATING EACH').padEnd(35, ' ')} ${chalk.cyan(TIMES_TO_EVAL_EACH)} ${chalk.yellow('TIMES WITH')} ${chalk.cyan(SPEC.length)} ${chalk.yellow('TEST CASES...')}\n`);
 
 const stdout = (progress) => {
   process.stdout.clearLine();
@@ -56,12 +57,11 @@ TEST_RUNS.forEach((solution, idx) => {
   STATS[solution].runTimes.push(end - start);
   stdout(`Running perf checks ${(100 * idx / TEST_RUNS.length).toFixed(1)}%...`);
 });
-
-process.stdout.clearLine();
+stdout('');
 
 const totalEnd = performance.now();
-
-console.log(`\nDone in ${humanizeDuration(Math.floor(totalEnd - totalStart))}\n\n`);
+console.log(`\n${chalk.yellow('EVALUATION ENDED:').padEnd(35, ' ')} ${chalk.green(new Date())}`);
+console.log(`${chalk.yellow('DURATION:').padEnd(35, ' ')} ${chalk.green(humanizeDuration(Math.floor(totalEnd - totalStart)))}\n\n`);
 
 // assess stats
 SOLUTIONS.forEach(solution => {

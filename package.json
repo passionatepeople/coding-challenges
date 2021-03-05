@@ -17,7 +17,8 @@
   },
   "scripts": {
     "test": "node test-latest.js",
-    "test:all": "jest --runInBand"
+    "test:all": "jest --runInBand",
+    "eval": "node evaluate.js"
   },
   "author": "",
   "license": "ISC"
