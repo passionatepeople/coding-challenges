@@ -16,7 +16,6 @@ const SOLUTIONS_DIR = `./${CHALLENGE}/solutions`;
 const SOLUTIONS = fs.readdirSync(SOLUTIONS_DIR).filter(file => file.endsWith('.js'));
 const SOLUTION_FNS = SOLUTIONS.reduce((acc, sol) => ({ ...acc, [sol]: require(`${SOLUTIONS_DIR}/${sol}`) }), {});
 const SPEC = require(`./${CHALLENGE}/test-cases/spec.json`)
-const TEST_RUNS = shuffle(flatten(Array.from({ length: TIMES_TO_EVAL_EACH }, () => SOLUTIONS)));
 const STATS = SOLUTIONS.reduce((acc, sol) => ({
   ...acc,
   [sol]: {
@@ -31,58 +30,72 @@ const STATS = SOLUTIONS.reduce((acc, sol) => ({
   }
 }), {});
 
-console.log(`\n${chalk.yellow('EVALUATION STARTED:').padEnd(35, ' ')} ${chalk.green(new Date())}`);
-console.log(`${chalk.yellow('EVALUATING CHALLENGE:').padEnd(35, ' ')} ${chalk.green(CHALLENGE)}`);
-console.log(`${chalk.yellow(`FOUND ${SOLUTIONS.length} SOLUTIONS:`).padEnd(35, ' ')} ${chalk.green(SOLUTIONS.join(', '))}`);
-console.log(`${chalk.yellow('EVALUATING EACH').padEnd(35, ' ')} ${chalk.cyan(TIMES_TO_EVAL_EACH)} ${chalk.yellow('TIMES WITH')} ${chalk.cyan(SPEC.length)} ${chalk.yellow('TEST CASES...')}\n`);
-
 const stdout = (progress) => {
   process.stdout.clearLine();
   process.stdout.cursorTo(0);
   process.stdout.write(progress);
 }
 
-const totalStart = performance.now();
+// check if any fail
+const FAILED = Object.values(STATS)
+  .filter(({ solution }) => {
+    const fn = SOLUTION_FNS[solution];
+    SPEC.forEach(({ inputs, result }) => {
+      if (fn(...inputs) !== result) {
+        STATS[solution].failed = true;
+      }
+    });
 
+    return STATS[solution].failed;
+  })
+  .map(res => res.solution);
+
+const VALID_SOLUTIONS = SOLUTIONS.filter(sol => !FAILED.includes(sol));
+const TEST_RUNS = shuffle(flatten(Array.from({ length: TIMES_TO_EVAL_EACH }, () => VALID_SOLUTIONS)));
+
+console.log(`\n${chalk.yellow('EVALUATION STARTED:').padEnd(35, ' ')} ${chalk.green(new Date())}`);
+console.log(`${chalk.yellow('EVALUATING CHALLENGE:').padEnd(35, ' ')} ${chalk.green(CHALLENGE)}`);
+console.log(`${chalk.yellow(`FOUND ${SOLUTIONS.length} SOLUTIONS:`).padEnd(35, ' ')} ${chalk.green(SOLUTIONS.join(', '))}`);
+console.log(`${chalk.yellow('EVALUATING EACH').padEnd(35, ' ')} ${chalk.cyan(TIMES_TO_EVAL_EACH)} ${chalk.yellow('TIMES WITH')} ${chalk.cyan(SPEC.length)} ${chalk.yellow('TEST CASES...')}\n`);
+
+const totalStart = performance.now();
 TEST_RUNS.forEach((solution, idx) => {
   const fn = SOLUTION_FNS[solution];
 
   const start = performance.now();
-  SPEC.forEach(({ inputs, result }) => {
-    if (fn(...inputs) !== result) {
-      STATS[solution].failed = true;
-    }
-  });
+  SPEC.forEach(({ inputs }) => fn(...inputs));
   const end = performance.now();
 
   STATS[solution].runTimes.push(end - start);
   stdout(`Running perf checks ${(100 * idx / TEST_RUNS.length).toFixed(1)}%...`);
 });
-stdout('');
+stdout(`Running perf checks 100%... done!`);
 
 const totalEnd = performance.now();
-console.log(`\n${chalk.yellow('EVALUATION ENDED:').padEnd(35, ' ')} ${chalk.green(new Date())}`);
-console.log(`${chalk.yellow('DURATION:').padEnd(35, ' ')} ${chalk.green(humanizeDuration(Math.floor(totalEnd - totalStart)))}\n\n`);
+
+console.log(`\n\n${chalk.yellow('EVALUATION ENDED:').padEnd(35, ' ')} ${chalk.green(new Date())}`);
+console.log(`${chalk.yellow('DURATION:').padEnd(35, ' ')} ${chalk.green(humanizeDuration(Math.floor(totalEnd - totalStart)))}`);
 
 // assess stats
 SOLUTIONS.forEach(solution => {
   const evaluated = STATS[solution].runTimes;
 
-  STATS[solution].best = Math.min(...evaluated);
-  STATS[solution].worst = Math.max(...evaluated);
+  STATS[solution].best = evaluated.length ? Math.min(...evaluated) : null;
+  STATS[solution].worst = evaluated.length ? Math.max(...evaluated) : null;
   STATS[solution].total = sum(evaluated);
-  STATS[solution].average = STATS[solution].total / evaluated.length;
+  STATS[solution].average = evaluated.length ? (STATS[solution].total / evaluated.length) : null;
 });
 
 // assemble stats and results
-const RAW_RESULTS = sortBy(Object.values(STATS).filter(res => !res.failed), 'best');
-const FAILED = Object.values(STATS).filter(res => res.failed).map(res => res.solution);
-const MIN_SIZE = Math.min(...RAW_RESULTS.map(r => r.size));
+const RAW_RESULTS = sortBy(Object.values(STATS), 'best');
+const MIN_SIZE = Math.min(...RAW_RESULTS.filter(r => !r.failed).map(r => r.size));
 const CODEGOLF = Object.values(STATS).filter(res => res.size === MIN_SIZE).map(res => res.solution);
 // keep only the best result from each contestant
 const KEPT = [];
 const DISCARDED = [];
 const RESULTS = RAW_RESULTS.filter(res => {
+  if (res.failed) return false;
+
   const name = res.solution.match(/([a-z]+)\d*\.js/i)[1];
   if (KEPT.includes(name)) {
     DISCARDED.push(res.solution);
@@ -106,7 +119,7 @@ const points = {
   10: 1,
 };
 
-const PRETTY = [['Place', 'Points', 'Name', 'Best', 'Average', 'Size (bytes)']];
+const PRETTY = [['Place', 'Points', 'Name', 'Best', 'Average', 'Size (bytes)'].map(title => chalk.whiteBright(title))];
 let place = 1;
 let currentBest = 0;
 let showPlace = true;
@@ -158,4 +171,4 @@ console.log(`VERSION: ${os.version()}`);
 console.log(`CPUS: ${os.cpus().length}\n${os.cpus().map(cpu => ' - ' + cpu.model).join('\n')}`);
 
 console.log(`\n${chalk.yellow('RAW RESULTS:')}`);
-console.table(RAW_RESULTS.map(res => omit(res, 'runTimes', 'failed')));
+console.table(RAW_RESULTS.map(res => ({ ...omit(res, 'runTimes'), runs: res.runTimes.length })));
