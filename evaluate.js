@@ -8,7 +8,7 @@ const humanizeDuration = require('humanize-duration');
 
 // update for challenge you wish to evaluate and how many times
 const CHALLENGE = '2021/w09';
-const TIMES_TO_EVAL_EACH = 1000;
+const TIMES_TO_EVAL_EACH = parseInt(process.argv[2], 10) || 1000;
 
 // don't change these
 const SOLUTIONS_DIR = `./${CHALLENGE}/solutions`;
@@ -73,12 +73,26 @@ SOLUTIONS.forEach(solution => {
   STATS[solution].average = STATS[solution].total / evaluated.length;
 });
 
-const RESULTS = sortBy(Object.values(STATS).filter(res => !res.failed), 'best');
+// assemble stats and results
+const RAW_RESULTS = sortBy(Object.values(STATS).filter(res => !res.failed), 'best');
 const FAILED = Object.values(STATS).filter(res => res.failed).map(res => res.solution);
+const MIN_SIZE = Math.min(...RAW_RESULTS.map(r => r.size));
+const CODEGOLF = Object.values(STATS).filter(res => res.size === MIN_SIZE).map(res => res.solution);
+// keep only the best result from each contestant
+const KEPT = [];
+const DISCARDED = [];
+const RESULTS = RAW_RESULTS.filter(res => {
+  const name = res.solution.match(/([a-z]+)\d*\.js/i)[1];
+  if (KEPT.includes(name)) {
+    DISCARDED.push(res.solution);
+    return false;
+  } else {
+    KEPT.push(name);
+    return true;
+  }
+});
 
-const MIN_SIZE = Math.min(...RESULTS.map(r => r.size));
-
-const PRETTY = [['Place', 'Name', 'Best', 'Average', 'Size (bytes)', 'Codegolf']];
+const PRETTY = [['Place', 'Name', 'Best', 'Average', 'Size (bytes)']];
 let place = 1;
 let currentBest = 0;
 let showPlace = true;
@@ -105,16 +119,22 @@ for (let i = 0; i < RESULTS.length; i++) {
     RESULTS[i].best.toFixed(3) + 'ms',
     RESULTS[i].average.toFixed(3) + 'ms',
     RESULTS[i].size,
-    RESULTS[i].size === MIN_SIZE ? '+5pts' : '',
   ];
 
   PRETTY.push(res);
 }
 
+console.log(`\n${chalk.yellow('RESULTS:')}`);
+console.log('Keeping only best run from each contestant');
+
+
 console.log(table(PRETTY))
+console.log(`\n${chalk.yellow('OMITTED FROM RANKINGS:').padEnd(35, ' ')} ${chalk.green(DISCARDED.join(', '))}`);
+
+console.log(`\n${chalk.yellow('CODEGOLF AWARD:').padEnd(35, ' ')} ${chalk.green(CODEGOLF.join(', '))} with ${MIN_SIZE} bytes`);
 
 if (FAILED.length) {
-  console.log(`\n\nDISQUALIFIED FAILED SOLUTIONS: ${FAILED.join(', ')}\n\n`);
+  console.log(`\n${chalk.yellow('DISQUALIFIED FAILED SOLUTIONS:').padEnd(35, ' ')} ${chalk.green(FAILED.join(', '))}`);
 }
 
 console.log(`\n${chalk.yellow('SYSTEM INFO:')}`);
@@ -125,4 +145,4 @@ console.log(`VERSION: ${os.version()}`);
 console.log(`CPUS: ${os.cpus().length}\n${os.cpus().map(cpu => ' - ' + cpu.model).join('\n')}`);
 
 console.log(`\n${chalk.yellow('RAW RESULTS:')}`);
-console.table(RESULTS);
+console.table(RAW_RESULTS);
