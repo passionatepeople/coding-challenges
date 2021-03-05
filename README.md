@@ -54,10 +54,12 @@ If using require, it should be to include one of the libraries (listed above). U
 
 Prohibited approaches include
 - requiring or meddling with test spec cases
+- meddling how tests are run and evaluated
+- meddling with how performance is evaluated
 - meddling with or overwriting node internals (module, require, etc.)
 - meddling with other solutions
 - running npm commands as child process etc.
-- using fs module to read other files/directories
+- using fs module to read/write other files/directories
 
 We reserve right to update this list or disqualify a solution if we see that it is taking an unfair advantage and/or is unfair to other solutions.
 This whole challenge concept is still a MVP and we iterate and improve as we go :) Thank you for your understanding ;)
