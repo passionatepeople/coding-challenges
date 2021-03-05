@@ -2,12 +2,13 @@ const fs = require('fs');
 const os = require('os');
 const chalk = require('chalk');
 const { performance } = require('perf_hooks');
-const { shuffle, flatten, sum, sortBy } = require('lodash');
+const { shuffle, flatten, sum, sortBy, omit } = require('lodash');
 const { table } = require('table');
 const humanizeDuration = require('humanize-duration');
 
 // update for challenge you wish to evaluate and how many times
 const CHALLENGE = '2021/w09';
+const PERCENT_MARGIN_FOR_TIE = 5;
 const TIMES_TO_EVAL_EACH = parseInt(process.argv[2], 10) || 1000;
 
 // don't change these
@@ -92,7 +93,20 @@ const RESULTS = RAW_RESULTS.filter(res => {
   }
 });
 
-const PRETTY = [['Place', 'Name', 'Best', 'Average', 'Size (bytes)']];
+const points = {
+  1: 25,
+  2: 18,
+  3: 15,
+  4: 12,
+  5: 10,
+  6: 8,
+  7: 6,
+  8: 4,
+  9: 2,
+  10: 1,
+};
+
+const PRETTY = [['Place', 'Points', 'Name', 'Best', 'Average', 'Size (bytes)']];
 let place = 1;
 let currentBest = 0;
 let showPlace = true;
@@ -102,7 +116,7 @@ for (let i = 0; i < RESULTS.length; i++) {
 
   // check if solution best time is within 5% of previous
   if (i > 0) {
-    if (currentBest * 1.05 > RESULTS[i].best) {
+    if (currentBest * (1 + PERCENT_MARGIN_FOR_TIE / 100) > RESULTS[i].best) {
       showPlace = false;
     } else {
       currentBest = RESULTS[i].best;
@@ -114,8 +128,9 @@ for (let i = 0; i < RESULTS.length; i++) {
   }
 
   const res = [
-    showPlace ? place : '',
-    name,
+    showPlace ? chalk.cyan(place) : '',
+    chalk.green(points[place]) || '',
+    chalk.yellow(name),
     RESULTS[i].best.toFixed(3) + 'ms',
     RESULTS[i].average.toFixed(3) + 'ms',
     RESULTS[i].size,
@@ -124,13 +139,11 @@ for (let i = 0; i < RESULTS.length; i++) {
   PRETTY.push(res);
 }
 
-console.log(`\n${chalk.yellow('RESULTS:')}`);
-console.log('Keeping only best run from each contestant');
-
-
+console.log(`\n${chalk.yellow('RANKINGS:')}`);
 console.log(table(PRETTY))
+console.log('Keeping only best run from each contestant');
+console.log(`Using ${PERCENT_MARGIN_FOR_TIE}% margin for determening ties`);
 console.log(`\n${chalk.yellow('OMITTED FROM RANKINGS:').padEnd(35, ' ')} ${chalk.green(DISCARDED.join(', '))}`);
-
 console.log(`\n${chalk.yellow('CODEGOLF AWARD:').padEnd(35, ' ')} ${chalk.green(CODEGOLF.join(', '))} with ${MIN_SIZE} bytes`);
 
 if (FAILED.length) {
@@ -145,4 +158,4 @@ console.log(`VERSION: ${os.version()}`);
 console.log(`CPUS: ${os.cpus().length}\n${os.cpus().map(cpu => ' - ' + cpu.model).join('\n')}`);
 
 console.log(`\n${chalk.yellow('RAW RESULTS:')}`);
-console.table(RAW_RESULTS);
+console.table(RAW_RESULTS.map(res => omit(res, 'runTimes', 'failed')));
