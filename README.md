@@ -47,6 +47,21 @@ Ranking is based on performance. Fastest execution time (accross multiple tries)
 **Note:** Since you can submit multiple solutions, the shortest and most elegant solution will be ranked apart from fastest. E.g. you can submit 3 solutions - one aimed to be fastest, another one to be the shortest and the 3rd one to be most readable. It could very well be that a solution is both elegant and fast. So all correct solutions will be evaluated independently for each award category.
 
 
+### Proxibited solutions
+
+In principle solution should rely only on JavaScript features to come up with correct solution inside the function that is being exported from the solutions file.
+If using require, it should be to include one of the libraries (listed above). Using built in Node API's is allowed as long as it doesn't meddle with execution of tests or evaluation, or takes unfair advantage in any other way.
+
+Prohibited approaches include
+- requiring or meddling with test spec cases
+- meddling with or overwriting node internals (module, require, etc.)
+- meddling with other solutions
+- running npm commands as child process etc.
+- using fs module to read other files/directories
+
+We reserve right to update this list or disqualify a solution if we see that it is taking an unfair advantage and/or is unfair to other solutions.
+This whole challenge concept is still a MVP and we iterate and improve as we go :) Thank you for your understanding ;)
+
 ## Results
 
 Will be posted after first challenge gets evaluated.
