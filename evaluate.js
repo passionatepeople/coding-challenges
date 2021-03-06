@@ -2,7 +2,7 @@ const fs = require('fs');
 const os = require('os');
 const chalk = require('chalk');
 const { performance } = require('perf_hooks');
-const { shuffle, flatten, sum, sortBy, omit } = require('lodash');
+const { shuffle, flatten, sum, sortBy, omit, map } = require('lodash');
 const { table } = require('table');
 const humanizeDuration = require('humanize-duration');
 
@@ -26,6 +26,7 @@ const STATS = SOLUTIONS.reduce((acc, sol) => ({
     average: null,
     best: null,
     worst: null,
+    stdev: null,
     size: fs.statSync(`${SOLUTIONS_DIR}/${sol}`).size,
   }
 }), {});
@@ -35,6 +36,11 @@ const stdout = (progress) => {
   process.stdout.cursorTo(0);
   process.stdout.write(progress);
 }
+
+function stdev (array) {
+  const avg = sum(array) / array.length;
+  return Math.sqrt(sum(map(array, (i) => Math.pow((i - avg), 2))) / array.length);
+};
 
 // check if any fail
 const FAILED = Object.values(STATS)
@@ -84,6 +90,7 @@ SOLUTIONS.forEach(solution => {
   STATS[solution].worst = evaluated.length ? Math.max(...evaluated) : null;
   STATS[solution].total = sum(evaluated);
   STATS[solution].average = evaluated.length ? (STATS[solution].total / evaluated.length) : null;
+  STATS[solution].stdev = evaluated.length ? stdev(evaluated) : null;
 });
 
 // assemble stats and results
@@ -119,8 +126,9 @@ const points = {
   10: 1,
 };
 
-const PRETTY = [['Place', 'Points', 'Name', 'Best', 'Average', 'Size (bytes)'].map(title => chalk.whiteBright(title))];
+const PRETTY = [['Place', 'Points', 'Name', 'Best', 'Average', 'St dev', 'Size (bytes)'].map(title => chalk.whiteBright(title))];
 let place = 1;
+let placeIncr = 1;
 let currentBest = 0;
 let showPlace = true;
 for (let i = 0; i < RESULTS.length; i++) {
@@ -131,10 +139,12 @@ for (let i = 0; i < RESULTS.length; i++) {
   if (i > 0) {
     if (currentBest * (1 + PERCENT_MARGIN_FOR_TIE / 100) > RESULTS[i].best) {
       showPlace = false;
+      placeIncr++;
     } else {
       currentBest = RESULTS[i].best;
-      place++;
+      place += placeIncr;
       showPlace = true;
+      placeIncr = 1;
     }
   } else {
     currentBest = RESULTS[i].best;
@@ -146,6 +156,7 @@ for (let i = 0; i < RESULTS.length; i++) {
     chalk.yellow(name),
     RESULTS[i].best.toFixed(3) + 'ms',
     RESULTS[i].average.toFixed(3) + 'ms',
+    RESULTS[i].stdev.toFixed(3) + 'ms',
     RESULTS[i].size,
   ];
 
@@ -168,7 +179,7 @@ console.log(`NODE: ${process.version}`);
 console.log(`ARCH: ${os.arch()}`);
 console.log(`PLATFORM: ${os.platform()}`);
 console.log(`VERSION: ${os.version()}`);
-console.log(`CPUS: ${os.cpus().length}\n${os.cpus().map(cpu => ' - ' + cpu.model).join('\n')}`);
+console.log(`CPUS: ${os.cpus().length} x ${os.cpus().map(cpu => cpu.model)[0]}`);
 
 console.log(`\n${chalk.yellow('RAW RESULTS:')}`);
 console.table(RAW_RESULTS.map(res => ({ ...omit(res, 'runTimes'), runs: res.runTimes.length })));
