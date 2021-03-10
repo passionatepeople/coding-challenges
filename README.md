@@ -64,6 +64,24 @@ Prohibited approaches include
 We reserve right to update this list or disqualify a solution if we see that it is taking an unfair advantage and/or is unfair to other solutions.
 This whole challenge concept is still a MVP and we iterate and improve as we go :) Thank you for your understanding ;)
 
-## Results
+## Evaluation
 
-Will be posted after first challenge gets evaluated.
+Update `evaluate.js` for the right challenge and then run `npm run eval [numRuns]` optionally passing how many runs should each solution be evaluated for (defaults to 1000).
+
+
+# Results
+## 2021
+
+| Place | Name       | Week 09 | Week 10 | ... | Total points |
+|-------|------------|---------|---------|-----|--------------|
+| 1.    | Peter-Paul | 30      |         |     | 30           |
+| 2.    | Lars       | 25      |         |     | 25           |
+| 3.    | Edgar      | 15      |         |     | 15           |
+| 4.    | Tim        | 12      |         |     | 12           |
+| 5.    | Jan        | 10      |         |     | 10           |
+|       | Irene      | 10      |         |     | 10           |
+| 7.    | Marco      | 6       |         |     | 6            |
+| 8.    | Aman       | 4       |         |     | 4            |
+|       | Timo       | 4       |         |     | 4            |
+| 10.   | Dexter     | 1       |         |     | 1            |
+

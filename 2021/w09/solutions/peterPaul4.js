@@ -1,0 +1,1 @@
+module.exports=(r,g,b,h=n=>(n<16?0:'')+(n<0?0:n>>8?255:n).toString(16).toUpperCase())=>'#'+h(r)+h(g)+h(b)

@@ -6,10 +6,11 @@ const { shuffle, flatten, sum, sortBy, omit, map } = require('lodash');
 const { table } = require('table');
 const humanizeDuration = require('humanize-duration');
 
-// update for challenge you wish to evaluate and how many times
+// update for challenge you wish to evaluate, what is the tie margin and amount of default runs
 const CHALLENGE = '2021/w09';
 const PERCENT_MARGIN_FOR_TIE = 5;
 const TIMES_TO_EVAL_EACH = parseInt(process.argv[2], 10) || 1000;
+const LOG_PAD = 35;
 
 // don't change these
 const SOLUTIONS_DIR = `./${CHALLENGE}/solutions`;
@@ -37,9 +38,28 @@ const stdout = (progress) => {
   process.stdout.write(progress);
 }
 
-function stdev (array) {
+const stdev = (array) => {
   const avg = sum(array) / array.length;
   return Math.sqrt(sum(map(array, (i) => Math.pow((i - avg), 2))) / array.length);
+};
+
+const wrapAndPad = (names) => {
+  const maxPerLine = 120;
+  let inLine = 0;
+
+  return names.reduce((acc, name, id) => {
+    const joiner = id > 0 ? ', ' : '';
+    const toAdd = `${joiner}${name}`;
+
+    if (inLine + toAdd.length > maxPerLine) {
+      inLine = name.length;
+      return `${acc},\n${' '.repeat(LOG_PAD - 9)}${name}`;
+
+    } else {
+      inLine += toAdd.length;
+      return `${acc}${toAdd}`;
+    }
+  }, '');
 };
 
 // check if any fail
@@ -59,10 +79,10 @@ const FAILED = Object.values(STATS)
 const VALID_SOLUTIONS = SOLUTIONS.filter(sol => !FAILED.includes(sol));
 const TEST_RUNS = shuffle(flatten(Array.from({ length: TIMES_TO_EVAL_EACH }, () => VALID_SOLUTIONS)));
 
-console.log(`\n${chalk.yellow('EVALUATION STARTED:').padEnd(35, ' ')} ${chalk.green(new Date())}`);
-console.log(`${chalk.yellow('EVALUATING CHALLENGE:').padEnd(35, ' ')} ${chalk.green(CHALLENGE)}`);
-console.log(`${chalk.yellow(`FOUND ${SOLUTIONS.length} SOLUTIONS:`).padEnd(35, ' ')} ${chalk.green(SOLUTIONS.join(', '))}`);
-console.log(`${chalk.yellow('EVALUATING EACH').padEnd(35, ' ')} ${chalk.cyan(TIMES_TO_EVAL_EACH)} ${chalk.yellow('TIMES WITH')} ${chalk.cyan(SPEC.length)} ${chalk.yellow('TEST CASES...')}\n`);
+console.log(`\n${chalk.yellow('EVALUATION STARTED:').padEnd(LOG_PAD, ' ')} ${chalk.green(new Date())}`);
+console.log(`${chalk.yellow('EVALUATING CHALLENGE:').padEnd(LOG_PAD, ' ')} ${chalk.green(CHALLENGE)}`);
+console.log(`${chalk.yellow(`FOUND ${SOLUTIONS.length} SOLUTIONS:`).padEnd(LOG_PAD, ' ')} ${chalk.green(wrapAndPad(SOLUTIONS))}`);
+console.log(`${chalk.yellow('EVALUATING EACH').padEnd(LOG_PAD, ' ')} ${chalk.cyan(TIMES_TO_EVAL_EACH)} ${chalk.yellow('TIMES WITH')} ${chalk.cyan(SPEC.length)} ${chalk.yellow('TEST CASES...')}\n`);
 
 const totalStart = performance.now();
 TEST_RUNS.forEach((solution, idx) => {
@@ -79,8 +99,8 @@ stdout(`Running perf checks 100%... done!`);
 
 const totalEnd = performance.now();
 
-console.log(`\n\n${chalk.yellow('EVALUATION ENDED:').padEnd(35, ' ')} ${chalk.green(new Date())}`);
-console.log(`${chalk.yellow('DURATION:').padEnd(35, ' ')} ${chalk.green(humanizeDuration(Math.floor(totalEnd - totalStart)))}`);
+console.log(`\n\n${chalk.yellow('EVALUATION ENDED:').padEnd(LOG_PAD, ' ')} ${chalk.green(new Date())}`);
+console.log(`${chalk.yellow('DURATION:').padEnd(LOG_PAD, ' ')} ${chalk.green(humanizeDuration(Math.floor(totalEnd - totalStart)))}`);
 
 // assess stats
 SOLUTIONS.forEach(solution => {
@@ -152,7 +172,7 @@ for (let i = 0; i < RESULTS.length; i++) {
 
   const res = [
     showPlace ? chalk.cyan(place) : '',
-    chalk.green(points[place]) || '',
+    chalk.green(points[place] || ''),
     chalk.yellow(name),
     RESULTS[i].best.toFixed(3) + 'ms',
     RESULTS[i].average.toFixed(3) + 'ms',
@@ -167,11 +187,11 @@ console.log(`\n${chalk.yellow('RANKINGS:')}`);
 console.log(table(PRETTY))
 console.log('Keeping only best run from each contestant');
 console.log(`Using ${PERCENT_MARGIN_FOR_TIE}% margin for determening ties`);
-console.log(`\n${chalk.yellow('OMITTED FROM RANKINGS:').padEnd(35, ' ')} ${chalk.green(DISCARDED.join(', '))}`);
-console.log(`\n${chalk.yellow('CODEGOLF AWARD:').padEnd(35, ' ')} ${chalk.green(CODEGOLF.join(', '))} with ${MIN_SIZE} bytes`);
+console.log(`\n${chalk.yellow('OMITTED FROM RANKINGS:').padEnd(LOG_PAD, ' ')} ${chalk.green(wrapAndPad(DISCARDED))}`);
+console.log(`\n${chalk.yellow('CODEGOLF AWARD:').padEnd(LOG_PAD, ' ')} ${chalk.green(CODEGOLF.join(', '))} with ${MIN_SIZE} bytes`);
 
 if (FAILED.length) {
-  console.log(`\n${chalk.yellow('DISQUALIFIED FAILED SOLUTIONS:').padEnd(35, ' ')} ${chalk.green(FAILED.join(', '))}`);
+  console.log(`\n${chalk.yellow('FAILED SOLUTIONS:').padEnd(LOG_PAD, ' ')} ${chalk.green(wrapAndPad(FAILED))}`);
 }
 
 console.log(`\n${chalk.yellow('SYSTEM INFO:')}`);
@@ -179,7 +199,9 @@ console.log(`NODE: ${process.version}`);
 console.log(`ARCH: ${os.arch()}`);
 console.log(`PLATFORM: ${os.platform()}`);
 console.log(`VERSION: ${os.version()}`);
+console.log(`MEMORY: ${(os.totalmem() / 1024 / 1024 / 1024).toFixed(2)}GB`);
 console.log(`CPUS: ${os.cpus().length} x ${os.cpus().map(cpu => cpu.model)[0]}`);
+console.log(`CPU speed: ${os.cpus().map(cpu => cpu.speed)[0]}MHz`);
 
 console.log(`\n${chalk.yellow('RAW RESULTS:')}`);
 console.table(RAW_RESULTS.map(res => ({ ...omit(res, 'runTimes'), runs: res.runTimes.length })));

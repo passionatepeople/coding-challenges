@@ -1,0 +1,1 @@
+var c={},m,a,b,r,d,p;m=(fn)=>(n)=>c[n]||(c[n]=fn(n),c[n]);a=(x,y)=>x>y?y:x;b=(x,y)=>x<y?y:x;r=(x)=>x>255?255:x<0?0:x;d=m(n=>{p=r(n).toString('16').toUpperCase();return p.length<2?'0'+p:p;});module.exports=(r,g,b)=>'#'+d(r)+d(g)+d(b);

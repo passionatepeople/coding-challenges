@@ -1,0 +1,1 @@
+module.exports=(r,g,b)=>'#'+("000000"+new Uint8ClampedArray([r,g,b]).reduce((r,v)=>(r<<8)|v,0).toString(16).toUpperCase()).slice(-6)

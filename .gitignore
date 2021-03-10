@@ -7,7 +7,8 @@ yarn-error.log*
 lerna-debug.log*
 
 test-gen.js
-evaluation
+evaluations.log
+!results.log
 
 # Diagnostic reports (https://nodejs.org/api/report.html)
 report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json

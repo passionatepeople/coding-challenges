@@ -1,50 +1,3 @@
-# Week 09 challenge
-
-Write a function that takes 3 arguments - integer value for red, green and blue and transforms it to corresponding hex string in the form of
-##RRGGBB (capital letters). The input values are truncated to the range of 0-255, e.g. negative values become 0 and values >= 255 are truncated to 255.
-
-Note: The answer should always be 7 characters long, the shorthand form #FFF is not required.
-
-Examples:
-
-```
-rgb2Hex(255, 255, 255) // returns '#FFFFFF'
-rgb2Hex(255, 255, 300) // returns '#FFFFFF'
-rgb2Hex(0,0,0) // returns '#000000'
-rgb2Hex(-20,0,0) // returns '#000000'
-rgb2Hex(77, 22, 159) // returns '#4D169F'
-```
-
-
-## Upload link
-
-[Submissions are closed]
-
-
-## Results
-
-| Place | Name       | Performance | Codegolf | Jury award | Total points |
-|-------|------------|-------------|----------|------------|--------------|
-| 1.    | Peter-Paul | 25          | 5        |            | 30           |
-| 2.    | Lars       | 25          |          |            | 25           |
-| 3.    | Edgar      | 15          |          |            | 15           |
-| 4.    | Tim        | 12          |          |            | 12           |
-| 5.    | Jan        | 10          |          |            | 10           |
-|       | Irene      | 10          |          |            | 10           |
-| 7.    | Marco      | 6           |          |            | 6            |
-| 8.    | Aman       | 4           |          |            | 4            |
-|       | Timo       | 4           |          |            | 4            |
-| 10.   | Dexter     | 1           |          |            | 1            |
-|       |            |             |          |            |              |
-
-
-
-### Screenshot
-
-![2021 Week 09 results](./results.png)
-
-### Full output log
-```
 EVALUATION STARTED:       Wed Mar 10 2021 11:04:54 GMT+0000 (Coordinated Universal Time)
 EVALUATING CHALLENGE:     2021/w09
 FOUND 27 SOLUTIONS:       aman.js, dexter1.js, dexter2.js, edgar1.js, edgar2.js, irene1.js, irene2.js, jmulders1.js, jmulders2.js, jmulders3.js,
@@ -135,4 +88,3 @@ RAW RESULTS:
 │   25    │ 'peterPaul5.js' │ false  │  559945.381568114  │ 12.443230701513645 │ 10.09177100006491  │ 34.47744600009173  │ 1.4697451604365284  │ 624  │ 45000 │
 │   26    │   'sander.js'   │  true  │         0          │        null        │        null        │        null        │        null         │ 316  │   0   │
 └─────────┴─────────────────┴────────┴────────────────────┴────────────────────┴────────────────────┴────────────────────┴─────────────────────┴──────┴───────┘
-```

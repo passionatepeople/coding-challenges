@@ -1,0 +1,1 @@
+const h=new Map,c=t=>{if(h.has(t))return h.get(t);const e=t<0?0:255<t?255:t;var n=e.toString(16);const r=1==n.length?"0"+n:n;n=r.toUpperCase();return h.set(t,n),n};module.exports=(t,e,n)=>"#"+c(t)+c(e)+c(n);
