@@ -32,12 +32,24 @@ rgb2Hex(77, 22, 159) // returns '#4D169F'
 | 5.    | Jan        | 10          |          |            | 10           |
 |       | Irene      | 10          |          |            | 10           |
 | 7.    | Marco      | 6           |          |            | 6            |
-| 8.    | Aman       | 4           |          |            | 4            |
+| 8.    | Joppe      |             |          | 5          | 5            |
+| 9.    | Aman       | 4           |          |            | 4            |
 |       | Timo       | 4           |          |            | 4            |
-| 10.   | Dexter     | 1           |          |            | 1            |
-|       |            |             |          |            |              |
+| 11.   | Dexter     | 1           |          |            | 1            |
 
 
+### Jury vote
+
+#### Harijs
+1. joppe (readable & clear code in functional style)
+2. lars4 (first figured out to prefill a 256 size array)
+3. edgar1 (he commented that he wrote it by hand - no minimizer)
+
+### Israel
+
+1. peterPaul5 (for his thinking outside-the-box mindset of going the WASM route)
+2. edgar1 (for writing minimized code by hand, which makes me want to sent him a captcha test to see if he’s not a robot)
+3. joppe (for his functional programming approach + readability)
 
 ### Screenshot
 

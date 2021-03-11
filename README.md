@@ -44,8 +44,13 @@ Ranking is based on performance. Fastest execution time (accross multiple tries)
 - +5 points for the shortest solution (codegolf). Judged by the number of bytes your solution file has. If tied, both (or more) get awarded 5 points.
 - +5 points for the most elegant and readable code. Judged by a jury (TBD). Ties are possible.
 
-**Note:** Since you can submit multiple solutions, the shortest and most elegant solution will be ranked apart from fastest. E.g. you can submit 3 solutions - one aimed to be fastest, another one to be the shortest and the 3rd one to be most readable. It could very well be that a solution is both elegant and fast. So all correct solutions will be evaluated independently for each award category.
+**Note:** Since you can submit multiple solutions, the shortest and most elegant solution will be ranked apart from fastest. E.g. you can submit 3 solutions - one aimed to be fastest, another one to be the shortest and the 3rd one to be most readable/elegant/novel or otherwise noteworthy for the judges. It could very well be that a solution is both elegant and fast. So all correct solutions will be evaluated independently for each award category.
 
+#### Jury process
+
+Jury consists of 3 judges: David, Israel and Harijs (or whoever is available that week).
+Each picks 3 favourite solutions and ranks them. (most favourite gets 3pts, 2nd - 2, 3rd - 1).
+Then sum the points together - the top one gets 5pts from jury. (ties are possible; then multiple get 5pts).
 
 ### Proxibited solutions
 
@@ -81,7 +86,8 @@ Update `evaluate.js` for the right challenge and then run `npm run eval [numRuns
 | 5.    | Jan        | 10      |         |     | 10           |
 |       | Irene      | 10      |         |     | 10           |
 | 7.    | Marco      | 6       |         |     | 6            |
-| 8.    | Aman       | 4       |         |     | 4            |
+| 8.    | Joppe      | 5       |         |     | 5            |
+| 9.    | Aman       | 4       |         |     | 4            |
 |       | Timo       | 4       |         |     | 4            |
-| 10.   | Dexter     | 1       |         |     | 1            |
+| 11.   | Dexter     | 1       |         |     | 1            |
 
