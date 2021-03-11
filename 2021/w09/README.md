@@ -45,8 +45,7 @@ rgb2Hex(77, 22, 159) // returns '#4D169F'
 2. lars4 (first figured out to prefill a 256 size array)
 3. edgar1 (he commented that he wrote it by hand - no minimizer)
 
-### Israel
-
+#### Israel
 1. peterPaul5 (for his thinking outside-the-box mindset of going the WASM route)
 2. edgar1 (for writing minimized code by hand, which makes me want to sent him a captcha test to see if he’s not a robot)
 3. joppe (for his functional programming approach + readability)
