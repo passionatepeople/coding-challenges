@@ -1,0 +1,1 @@
+const _=require("lodash");module.exports=((e,o=_.countBy(e.toLowerCase().split("")))=>_.orderBy(Object.keys(o),[e=>o[e],e=>e],["desc"]));

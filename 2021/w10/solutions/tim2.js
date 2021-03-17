@@ -1,0 +1,1 @@
+module.exports=(e,t=e.toLowerCase(),g=new Map)=>{for(e=t.length-1;-1<e;e--)g.has(t[e])?g.set(t[e],g.get(t[e])+1):g.set(t[e],1);return[...g.keys()].sort((e,t,o,r=e.charCodeAt(),s=t.charCodeAt())=>g.get(e)>g.get(t)?-1:g.get(e)<g.get(t)||s<r?1:r<s?-1:0)};

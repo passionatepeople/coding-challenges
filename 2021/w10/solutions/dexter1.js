@@ -1,0 +1,1 @@
+let x;module.exports=i=>i.toLowerCase().split('').reduce((a,v)=>{x=v.charCodeAt();a[x]=(a[x]||0)+1;return a},[]).map((v, i)=>([String.fromCharCode(i),v])).filter(v => v).sort(([,a],[,b])=>a<b?1:a>b?-1:0).map(([c])=>c)

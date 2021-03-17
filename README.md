@@ -77,17 +77,18 @@ Update `evaluate.js` for the right challenge and then run `npm run eval [numRuns
 # Results
 ## 2021
 
-| Place | Name       | Week 09 | Week 10 | ... | Total points |
-|-------|------------|---------|---------|-----|--------------|
-| 1.    | Peter-Paul | 30      |         |     | 30           |
-| 2.    | Lars       | 25      |         |     | 25           |
-| 3.    | Edgar      | 15      |         |     | 15           |
-| 4.    | Tim        | 12      |         |     | 12           |
-| 5.    | Jan        | 10      |         |     | 10           |
-|       | Irene      | 10      |         |     | 10           |
-| 7.    | Marco      | 6       |         |     | 6            |
-| 8.    | Joppe      | 5       |         |     | 5            |
-| 9.    | Aman       | 4       |         |     | 4            |
-|       | Timo       | 4       |         |     | 4            |
-| 11.   | Dexter     | 1       |         |     | 1            |
-
+| Place | Name       | Week 09 | Week 10 | ...     | Total points |
+|-------|------------|---------|---------|---------|--------------|
+| 1.    | Peter-Paul | 30      | 25      |         | 55           |
+| 2.    | Lars       | 25      | 15      |         | 40           |
+| 3.    | Aman       | 4       | 18      |         | 22           |
+| 4.    | Tim        | 12      | 9       |         | 21           |
+| 5.    | Irene      | 10      | 10      |         | 20           |
+| 6.    | Jan        | 10      | 6       |         | 16           |
+| 7.    | Edgar      | 15      |         |         | 15           |
+| 8.    | Dexter     | 1       | 12      |         | 13           |
+| 9.    | Mettin     |         | 8       |         | 8            |
+| 10.   | Joppe      | 5       | 2       |         | 7            |
+| 11.   | Marco      | 6       |         |         | 6            |
+| 12.   | Timo       | 4       |         |         | 4            |
+| 13.   | Daniel     |         | 1       |         | 1            |

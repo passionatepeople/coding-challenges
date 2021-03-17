@@ -1,0 +1,1 @@
+const A=(t,e)=>t.charCodeAt(0)-e.charCodeAt(0),B=(t,e)=>t.c===e.c?A(t.t,e.t):e.c-t.c;module.exports=t=>[...t.toLowerCase()].reduce((t,e)=>{const r=t.find(({t})=>t===e);return r?r.c++:t.push({c:1,t:e}),t},[]).sort(B).map(({t})=>t)

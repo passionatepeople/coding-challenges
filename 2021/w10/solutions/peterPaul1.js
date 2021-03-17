@@ -1,0 +1,1 @@
+module.exports=s=>Object.entries(s.toLowerCase().split('').reduce((a,c)=>(a[c]=(a[c]|0)+1,a),{})).sort(([a,b],[c,d])=>d-b||-(a<c)).map(c=>c[0])
