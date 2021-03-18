@@ -84,9 +84,9 @@ Update `evaluate.js` for the right challenge and then run `npm run eval [numRuns
 | 3.    | Aman       | 4       | 18      |         | 22           |
 | 4.    | Tim        | 12      | 9       |         | 21           |
 | 5.    | Irene      | 10      | 10      |         | 20           |
-| 6.    | Jan        | 10      | 6       |         | 16           |
-| 7.    | Edgar      | 15      |         |         | 15           |
-| 8.    | Dexter     | 1       | 12      |         | 13           |
+| 6.    | Dexter     | 1       | 17      |         | 18           |
+| 7.    | Jan        | 10      | 6       |         | 16           |
+| 8.    | Edgar      | 15      |         |         | 15           |
 | 9.    | Mettin     |         | 8       |         | 8            |
 | 10.   | Joppe      | 5       | 2       |         | 7            |
 | 11.   | Marco      | 6       |         |         | 6            |

@@ -34,8 +34,8 @@ rankLetters(`$jQuery('#app').boot().forEach((something) => console.log('@app ' +
 |-------|------------|-------------|----------|------------|--------------|
 | 1.    | Peter-Paul | 25          |          |            | 25           |
 | 2.    | Aman       | 18          |          |            | 18           |
-| 3.    | Lars       | 15          |          |            | 15           |
-| 4.    | Dexter     | 12          |          |            | 12           |
+| 3.    | Dexter     | 12          |          | 5          | 17           |
+| 4.    | Lars       | 15          |          |            | 15           |
 | 5.    | Irene      | 10          |          |            | 10           |
 | 6.    | Tim        | 4           | 5        |            | 9            |
 | 7.    | Mettin     | 8           |          |            | 8            |
@@ -46,7 +46,19 @@ rankLetters(`$jQuery('#app').boot().forEach((something) => console.log('@app ' +
 
 ### Jury vote
 
-Will be announced during weekly call
+#### Harijs
+1. dexter2 - nice, clear, chained flow of execution
+2. daniel - functional style with clear flow of transformation
+3. peterPaul2 - well comented, clear and fast
+
+#### Israel
+1. dexter2 - For a very elegant, readable approach on a single chained statement.
+2. tim3- For his quick thinking being the first one to use lodash aiming for the codegolf award
+3. peterPaul2 - For a nicely commented and readable solution
+
+#### David
+- (1/2) PP & Lars equally because they use a Map which makes it very elegant.
+- (3) Jan because I like this regex solution, its a nice out of the box one
 
 ### Screenshot
 
