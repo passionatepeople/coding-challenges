@@ -18,6 +18,7 @@
   "scripts": {
     "test": "node test-latest.js",
     "test:all": "jest --runInBand",
+    "test:watch": "node test-latest.js --watch",
     "eval": "node evaluate.js"
   },
   "author": "",
