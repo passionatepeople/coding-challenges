@@ -4,6 +4,7 @@ const chalk = require('chalk');
 const { performance } = require('perf_hooks');
 const { shuffle, flatten, sum, sortBy, omit, map } = require('lodash');
 const isEqual = require('fast-deep-equal');
+const clone = require('rfdc')();
 const { table } = require('table');
 const humanizeDuration = require('humanize-duration');
 
@@ -67,13 +68,10 @@ const wrapAndPad = (names) => {
 const FAILED = Object.values(STATS)
   .filter(({ solution }) => {
     const fn = SOLUTION_FNS[solution];
-    SPEC.forEach(({ inputs, result }) => {
-      if (!isEqual(fn(...inputs), result)) {
-        STATS[solution].failed = true;
-      }
+    return STATS[solution].failed = SPEC.some(({ inputs, result }) => {
+      const clonedInputs = clone(inputs)
+      return !isEqual(fn(...clonedInputs), result) || !isEqual(clonedInputs, inputs)
     });
-
-    return STATS[solution].failed;
   })
   .map(res => res.solution);
 
