@@ -13,6 +13,7 @@ const CHALLENGE = '2021/w11';
 const PERCENT_MARGIN_FOR_TIE = 5;
 const TIMES_TO_EVAL_EACH = parseInt(process.argv[2], 10) || 1000;
 const LOG_PAD = 35;
+const MAX_SIZE = 2048;
 
 // don't change these
 const SOLUTIONS_DIR = `./${CHALLENGE}/solutions`;
@@ -66,9 +67,9 @@ const wrapAndPad = (names) => {
 
 // check if any fail
 const FAILED = Object.values(STATS)
-  .filter(({ solution }) => {
+  .filter(({ solution, size }) => {
     const fn = SOLUTION_FNS[solution];
-    return STATS[solution].failed = SPEC.some(({ inputs, result }) => {
+    return STATS[solution].failed = size > MAX_SIZE || shuffle(SPEC).some(({ inputs, result }) => {
       const clonedInputs = clone(inputs)
       return !isEqual(fn(...clonedInputs), result) || !isEqual(clonedInputs, inputs)
     });
@@ -183,7 +184,7 @@ for (let i = 0; i < RESULTS.length; i++) {
 }
 
 console.log(`\n${chalk.yellow('RANKINGS:')}`);
-console.log(table(PRETTY))
+console.log(table(PRETTY));
 console.log('Keeping only best run from each contestant');
 console.log(`Using ${PERCENT_MARGIN_FOR_TIE}% margin for determening ties`);
 console.log(`\n${chalk.yellow('OMITTED FROM RANKINGS:').padEnd(LOG_PAD, ' ')} ${chalk.green(wrapAndPad(DISCARDED))}`);

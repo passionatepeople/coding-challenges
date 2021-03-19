@@ -69,6 +69,11 @@ Prohibited approaches include
 We reserve right to update this list or disqualify a solution if we see that it is taking an unfair advantage and/or is unfair to other solutions.
 This whole challenge concept is still a MVP and we iterate and improve as we go :) Thank you for your understanding ;)
 
+#### Practical size limits
+
+Since challenges are intended to be relatively small, solvable in short time and withhout excessive coding, there's a practical limit of max 2048 bytes per solution.
+This also prevents taking advantage and precoding responses to the test spec.
+
 ## Evaluation
 
 Update `evaluate.js` for the right challenge and then run `npm run eval [numRuns]` optionally passing how many runs should each solution be evaluated for (defaults to 1000).
