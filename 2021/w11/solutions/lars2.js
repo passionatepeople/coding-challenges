@@ -1,0 +1,1 @@
+module.exports=e=>(r=[],i=(e,a=0)=>{[x,y,z]=Object.values(e),e.length?e.map(e=>i(e)):(r.push({name:x,value:y,indent:a}),z&&z.map(e=>i(e,a+50)))},i(e),r)

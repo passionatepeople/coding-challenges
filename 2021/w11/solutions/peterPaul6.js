@@ -1,0 +1,1 @@
+module.exports=(M,a=(g,i,c)=>g&&g.map(_=>(c=Object.values(_),W.push({name:c[0],value:c[1],indent:i}),a(c[2],i+50)))&&W,W=[])=>a(M,0)

@@ -1,0 +1,1 @@
+let p=(a,s=[],i=0,n=(a,t,e)=>t.push({name:a.name??a.title,value:a.value??a.data,indent:e})&&p(a.children||a.subdata||[],t,e+50))=>(a.map(t=>n(t,s,i)),s);module.exports=p

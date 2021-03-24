@@ -1,0 +1,1 @@
+module.exports=(D,E=[],x=(t,e,r)=>t&&t.map(_=>(r=Object.values(_),E.push({name:r[0],value:r[1],indent:e}),x(r[2],e+50))))=>(x(D,0),E)

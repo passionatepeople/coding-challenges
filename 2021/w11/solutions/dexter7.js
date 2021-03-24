@@ -1,0 +1,1 @@
+module.exports=f=(d=[],i=0)=>d.flatMap(e=>([{name:e.name||e.title,value:e.value||e.data,indent:i},...f(e.subdata||e.children,i+50)]))

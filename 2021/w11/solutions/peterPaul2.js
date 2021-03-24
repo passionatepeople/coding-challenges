@@ -1,0 +1,1 @@
+module.exports=(P,E=[],p=(l,e)=>l&&l.map(_=>(E.push({name:_.name??_.title,value:_.value??_.data,indent:e}),p(_.children||_.subdata,e+50))))=>(p(P,0),E)
