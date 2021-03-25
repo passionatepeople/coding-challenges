@@ -86,11 +86,11 @@ Update `evaluate.js` for the right challenge and then run `npm run eval [numRuns
 
 | Place | Name       | Week 09 | Week 10 | Week 11 | ...       | Total points |
 |-------|------------|---------|---------|---------|-----------|--------------|
-| 1.    | Peter-Paul | 30      | 25      | 30      |           | 85           |
+| 1.    | Peter-Paul | 30      | 25      | 35      |           | 90           |
 | 2.    | Lars       | 25      | 15      | 18      |           | 58           |
-| 3.    | Aman       | 4       | 18      | 15      |           | 37           |
-| 4.    | Irene      | 10      | 10      | 15      |           | 35           |
-| 5.    | Dexter     | 1       | 17      | 10      |           | 28           |
+| 3.    | Irene      | 10      | 10      | 20      |           | 40           |
+| 4.    | Aman       | 4       | 18      | 15      |           | 37           |
+| 5.    | Dexter     | 1       | 17      | 15      |           | 33           |
 | 6.    | Tim        | 12      | 9       | 6       |           | 27           |
 | 7.    | Jan        | 10      | 6       | 4       |           | 20           |
 | 8.    | Joppe      | 5       | 2       | 10      |           | 17           |

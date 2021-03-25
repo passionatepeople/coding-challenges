@@ -102,16 +102,27 @@ JSON.stringify(result) === JSON.stringify(parseData(dataFromApi)) // true;
 
 | Place | Name       | Performance | Codegolf | Jury award | Total points |
 |-------|------------|-------------|----------|------------|--------------|
-| 1.    | Peter-Paul | 25          | 5        |            | 30           |
-| 2.    | Lars       | 18          |          |            | 18           |
-| 3.    | Irene      | 15          |          |            | 15           |
-|       | Aman       | 15          |          |            | 15           |
-| 5.    | Dexter     | 10          |          |            | 10           |
-|       | Joppe      | 10          |          |            | 10           |
+| 1.    | Peter-Paul | 25          | 5        | 5          | 35           |
+| 2.    | Irene      | 15          |          | 5          | 20           |
+| 3.    | Lars       | 18          |          |            | 18           |
+| 4.    | Aman       | 15          |          |            | 15           |
+|       | Dexter     | 10          |          | 5          | 15           |
+| 6.    | Joppe      | 10          |          |            | 10           |
 | 7.    | Tim        | 6           |          |            | 6            |
 | 8.    | Jan        | 4           |          |            | 4            |
 | 9.    | Mihai      | 2           |          |            | 2            |
 
+
+### Jury vote
+
+#### Harijs
+1. irene2 - clear and performant
+2. peterPaul3 - well structured and clear naming
+3. joppe2 - clear and readable
+#### Israel
+1. dexter1 for his use of generators, not seen commonly enough
+2. jmulders for his quite readable one-liner chained statement (looks like something that would be in my codebases haha)
+3. peterPaul1 for his creative and passionate usage of variables when obfuscating (check the submission)
 
 ### Screenshot
 
