@@ -1,0 +1,1 @@
+R=require("ramda"),module.exports=(e=>(d=e-+R.reverse(""+e),s=R.sum(""+Math.abs(d)),d<0?-s:s));

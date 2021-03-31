@@ -1,0 +1,1 @@
+module.exports=(T,e=(a,p=0,t)=>(t=a<0?-1:1,a=t*a,a?e(~~(a/10),p+a%10):p)*t,r=(a,p=0)=>a?r(~~(a/10),p*10+a%10):p)=>e(T-r(T))

@@ -1,0 +1,1 @@
+const reverse=e=>{let r=0;for(;e>0;)r=10*r+e%10,e=e/10|0;return r},sum=e=>{let r=0;for(;e;)r+=e%10,e=~~(e/10);return r},manipulateNumber=e=>{const r=e-reverse(e),t=sum(Math.abs(r));return r<0?-t:t};module.exports=manipulateNumber;

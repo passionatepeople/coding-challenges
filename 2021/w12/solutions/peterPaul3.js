@@ -1,0 +1,1 @@
+module.exports=i=>(i=i-[...''+i].reverse().join``,(i<0?-1:1)*(i+'').split``.reduce((i,j)=>+j+(i|0)))

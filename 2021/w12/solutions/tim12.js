@@ -1,0 +1,1 @@
+R=require("ramda"),module.exports=(e=>(e-=R.reverse(""+e),s=R.sum(""+(e<0?-e:e)),e<0?-s:s))
