@@ -45,10 +45,10 @@ manipulateNumber(45200); // returns 27
 
 | Place | Name        | Performance | Codegolf | Jury award | Total points |
 |-------|-------------|-------------|----------|------------|--------------|
-| 1.    | Joppe       | 25          |          |            | 25           |
+| 1.    | Lars        | 25          |          | 5          | 30           |
+| 2.    | Joppe       | 25          |          |            | 25           |
 |       | Sander A.   | 25          |          |            | 25           |
 |       | Peter-Paul  | 25          |          |            | 25           |
-|       | Lars        | 25          |          |            | 25           |
 |       | Jan Bart    | 25          |          |            | 25           |
 |       | Irene       | 25          |          |            | 25           |
 | 7.    | Tim         | 4           | 5        |            | 9            |
@@ -63,7 +63,19 @@ manipulateNumber(45200); // returns 27
 
 ### Jury vote
 
-Will be announced during weekly call
+#### Harijs
+1. Lars - lars1 well structured and named; and was immediately first to come up with pure math solution; lars2 - using eval for codegolf :)
+2. Dexter1 - clear naming; nice chained flow
+3. Mettin2 - being ashamed for stealing from stackoverflow :D
+
+#### Israel
+1. lars2 - for being the first time we see eval being used in a solution
+2. mettin2 - for being honest about his sources in a comment
+3. peterPaul2 - because I’m a teapot (he’ll understand)
+#### David
+1. Sander1/Peterpaul1 - Using the faster bitwise operator instead of using floor
+2. Lars3 - Clever way of reusing the same function
+3. Aman - Most structured/readable code
 
 ### Screenshot
 

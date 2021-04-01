@@ -88,7 +88,7 @@ Update `evaluate.js` for the right challenge and then run `npm run eval [numRuns
 | Place | Name       | Week 09 | Week 10 | Week 11 | Week 12   | ...       | Total points |
 |-------|------------|---------|---------|---------|-----------|-----------|--------------|
 | 1.    | Peter-Paul | 30      | 25      | 35      | 25        |           | 115          |
-| 2.    | Lars       | 25      | 15      | 18      | 25        |           | 83           |
+| 2.    | Lars       | 25      | 15      | 18      | 30        |           | 88           |
 | 3.    | Irene      | 10      | 10      | 20      | 25        |           | 65           |
 | 4.    | Jan        | 10      | 6       | 4       | 25        |           | 45           |
 | 5.    | Aman       | 4       | 18      | 15      | 6         |           | 43           |
