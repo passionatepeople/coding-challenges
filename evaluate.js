@@ -146,7 +146,7 @@ const points = {
   10: 1,
 };
 
-const PRETTY = [['Place', 'Points', 'Name', 'Best', 'Average', 'St dev', 'Size (bytes)'].map(title => chalk.whiteBright(title))];
+const PRETTY = [['Place', 'Points', 'Name', 'Best', 'Average', 'σ (st dev)', 'Size (bytes)'].map(title => chalk.whiteBright(title))];
 let place = 1;
 let placeIncr = 1;
 let currentBest = 0;
@@ -174,9 +174,9 @@ for (let i = 0; i < RESULTS.length; i++) {
     showPlace ? chalk.cyan(place) : '',
     chalk.green(points[place] || ''),
     chalk.yellow(name),
-    RESULTS[i].best.toFixed(3) + 'ms',
+    RESULTS[i].best.toFixed(3) + 'ms' + ` (${(Math.abs(RESULTS[i].average / RESULTS[i].best) - RESULTS[i].stdev).toFixed(1)}σ)`,
     RESULTS[i].average.toFixed(3) + 'ms',
-    RESULTS[i].stdev.toFixed(3) + 'ms',
+    RESULTS[i].stdev.toFixed(3) + 'ms' + ` (${(100 * RESULTS[i].stdev / RESULTS[i].average).toFixed(1)}%)`,
     RESULTS[i].size,
   ];
 
