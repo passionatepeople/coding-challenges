@@ -174,7 +174,7 @@ for (let i = 0; i < RESULTS.length; i++) {
     showPlace ? chalk.cyan(place) : '',
     chalk.green(points[place] || ''),
     chalk.yellow(name),
-    RESULTS[i].best.toFixed(3) + 'ms' + ` (${(Math.abs(RESULTS[i].average / RESULTS[i].best) - RESULTS[i].stdev).toFixed(1)}σ)`,
+    RESULTS[i].best.toFixed(3) + 'ms' + ` (${(Math.abs(RESULTS[i].average - RESULTS[i].best) / RESULTS[i].stdev).toFixed(1)}σ)`,
     RESULTS[i].average.toFixed(3) + 'ms',
     RESULTS[i].stdev.toFixed(3) + 'ms' + ` (${(100 * RESULTS[i].stdev / RESULTS[i].average).toFixed(1)}%)`,
     RESULTS[i].size,
