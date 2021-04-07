@@ -2,11 +2,11 @@
 
 ## ButY evaluator
 
-For this week's challenge you will implement an **evaluator** for **math expressions** in the imaginary programming language **ButY**.
+For this week's challenge you will implement an **evaluator** for **arithmetic expressions** in the imaginary programming language **ButY**.
 
 ### Example
 
-Here's an example of a simple math expression in ButY:
+Here's an example of a simple expression in ButY:
 
 ```text
 5 × ⸨ ⸨ 18 ÷ 2 ⸩ − 7 ⸩
@@ -49,7 +49,7 @@ In this example the expected return value is `10`.
 
 #### Examples in code
 
-```
+```js
 evaluate({ type: 'Literal', value: 42 });
 // returns 42
 
@@ -64,7 +64,7 @@ evaluate({
 
 ### AST interface
 
-```
+```ts
 type Expression = Literal | BinaryExpression
 
 type Literal = {
@@ -74,7 +74,7 @@ type Literal = {
 
 type BinaryExpression = {
   type: 'BinaryExpression',
-  operator: 'add', 'subtract', 'multiply', 'divide',
+  operator: 'add' | 'subtract' | 'multiply' | 'divide',
   left: Expression,
   right: Expression
 }
