@@ -1,0 +1,1 @@
+module.exports=o=>[o>>>24,o>>16&255,o>>8&255,o&255].join`.`

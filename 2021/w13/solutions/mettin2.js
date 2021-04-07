@@ -1,0 +1,1 @@
+module.exports=a=>[3,2,1,0].map(x=>a>>8*x&255).join`.`

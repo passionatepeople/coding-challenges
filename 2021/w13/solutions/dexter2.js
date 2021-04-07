@@ -1,0 +1,1 @@
+module.exports=i=>[24,16,8,0].map(j=>i>>j&255).join`.`
