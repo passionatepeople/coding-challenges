@@ -122,8 +122,6 @@ Update `evaluate.js` for the right challenge and then run `npm run eval [numRuns
 |       | Jan Bart    | 18          |          | 18           |
 |       | Daniel      | 18          |          | 18           |
 |       | Aman        | 18          |          | 18           |
-| 12.   | Sander L.   |             |          |              |
-| 13.   | Bram        |             |          |              |
 
 
 ### March
