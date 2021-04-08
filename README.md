@@ -94,8 +94,8 @@ Update `evaluate.js` for the right challenge and then run `npm run eval [numRuns
 | 4.    | Jan Bart   | 10      | 6       | 4       | 25        | 18        |          | 63           |
 | 5.    | Aman       | 4       | 18      | 15      | 6         | 18        |          | 61           |
 | 6.    | Joppe      | 5       | 2       | 10      | 25        | 18        |          | 60           |
-| 7.    | Dexter     | 1       | 17      | 15      |           | 23        |          | 56           |
-| 8.    | Tim        | 12      | 9       | 6       | 9         | 18        |          | 54           |
+| 7.    | Tim        | 12      | 9       | 6       | 9         | 23        |          | 59           |
+| 8.    | Dexter     | 1       | 17      | 15      |           | 23        |          | 56           |
 | 9.    | Sander A.  |         |         |         | 25        | 18        |          | 43           |
 | 10.   | Mettin     |         | 8       |         | 1         | 23        |          | 32           |
 | 11.   | Daniel     |         | 1       |         |           | 18        |          | 19           |
@@ -115,9 +115,9 @@ Update `evaluate.js` for the right challenge and then run `npm run eval [numRuns
 | 2.    | Mettin      | 23          |          | 23           |
 |       | Dexter      | 23          |          | 23           |
 |       | Irene       | 23          |          | 23           |
-| 3.    | Sander A.   | 18          |          | 18           |
+|       | Tim         | 23          |          | 23           |
+| 6.    | Sander A.   | 18          |          | 18           |
 |       | Joppe       | 18          |          | 18           |
-|       | Tim         | 18          |          | 18           |
 |       | Lars        | 18          |          | 18           |
 |       | Jan Bart    | 18          |          | 18           |
 |       | Daniel      | 18          |          | 18           |

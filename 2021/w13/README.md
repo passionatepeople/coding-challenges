@@ -35,9 +35,9 @@ int2IP(1000000) // returns '0.15.66.64'
 | 2.    | Mettin      | 18          | 5        |            | 23           |
 |       | Dexter      | 18          | 5        |            | 23           |
 |       | Irene       | 18          | 5        |            | 23           |
-| 3.    | Sander A.   | 18          |          |            | 18           |
+|       | Tim         | 18          |          | 5          | 23           |
+| 6.    | Sander A.   | 18          |          |            | 18           |
 |       | Joppe       | 18          |          |            | 18           |
-|       | Tim         | 18          |          |            | 18           |
 |       | Lars        | 18          |          |            | 18           |
 |       | Jan Bart    | 18          |          |            | 18           |
 |       | Daniel      | 18          |          |            | 18           |
@@ -48,7 +48,20 @@ int2IP(1000000) // returns '0.15.66.64'
 
 ### Jury vote
 
-Will be announced during weekly call.
+#### Harijs
+1. tim2 - if that doesn’t get jury vote, then what does? very creative! :D
+2. dexter3 - trying Unit8Array
+3. peterPaul3 - pregenerating possible octet values
+
+#### Israel
+1. tim2 - I'm a sucker for a good promotional material, so kudos for the creativity
+2. dexter1 - Nice usage of bitwise, template string and hex notation, elegant yet short
+3. aman - Nice combination of bitwise operations + template string in a one liner (codegolf contender at some point)
+
+#### David
+1. dexter3 - The Unit8Array is a cool sulution
+2. tim2 - creative
+3. peterPaul3 - pregenerating possible octet values
 
 ### Screenshot
 
