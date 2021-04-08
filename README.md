@@ -65,7 +65,7 @@ Prohibited approaches include
 - meddling with other solutions
 - running npm commands as child process etc.
 - using fs module to read/write other files/directories
-- mapping inputs directly to results, so that consequent evaluation cases would simply return ready result from map (doesn't apply to simple pregeneration of all possible inputs)
+- mapping inputs directly to results, so that consequent evaluation cases would simply return ready result from map (doesn't apply to simple pregeneration of all possible inputs if the input space is less than 10000)
 - doing system calls or web requests to extenal services/servers (unless it's part of challenge)
 - mutating function inputs
 
