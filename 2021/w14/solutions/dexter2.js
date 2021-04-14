@@ -1,0 +1,1 @@
+module.exports=(a,E=e=>({B:(b)=>({a:(l,r)=>l+r,s:(l,r)=>l-r,m:(l,r)=>l*r,d:(l,r)=>l/r}[b.operator[0]](E(b.left),E(b.right))),L:l=>l.value}[e.type[0]](e)))=>E(a)

@@ -1,0 +1,1 @@
+module.exports=e=(a,m=(o,l,r)=>({multiply:l*r,divide:l/r,add:l+r,subtract:l-r})[o])=>a.value??m(a.operator,e(a.left),e(a.right))

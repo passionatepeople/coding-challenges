@@ -1,0 +1,1 @@
+module.exports=(i,e=i=>i.type[0]==='L'?i.value:g(i),g=(i,k=e(i.left),m=e(i.right),p=i.operator[0])=>p==='a'?k+m:p==='s'?k-m:p==='m'?k*m:k/m)=>e(i)

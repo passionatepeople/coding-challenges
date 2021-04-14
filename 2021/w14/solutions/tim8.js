@@ -1,0 +1,1 @@
+e=r=>r.value||require('ramda')[r.operator](e(r.left),e(r.right));module.exports=e

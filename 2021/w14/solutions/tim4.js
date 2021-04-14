@@ -1,0 +1,1 @@
+const R=require("ramda"),e=r=>r.value||R[r.operator](e(r.left),e(r.right));module.exports=e;

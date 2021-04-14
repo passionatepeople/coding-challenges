@@ -1,0 +1,1 @@
+R=require("ramda"),module.exports=n=>(b=e=>e.value||R[e.operator](b(e.left),b(e.right)))(n)

@@ -1,0 +1,1 @@
+t={d:"/",m:"*",s:"-",a:"+"},w=((a,[,l,s,d]=Object.values(a))=>l>0?l:"("+w(s)+t[l[0]]+w(d)+")"),module.exports=(a=>eval(w(a)))

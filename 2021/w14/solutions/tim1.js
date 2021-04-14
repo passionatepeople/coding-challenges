@@ -1,0 +1,1 @@
+tab={d:"/",m:"*",s:"-",a:"+"},x=((a,[e,t,b,l]=Object.values(a),s="")=>"L"==e[0]?t:s+"("+x(b)+tab[t[0]]+x(l)+")"),module.exports=(a=>eval(x(a)));
