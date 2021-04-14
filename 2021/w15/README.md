@@ -7,6 +7,8 @@ You and your colleague decide that it cannot stay that way for longer, and every
 Your colleague will do the scraping the codebase and collecting all instances of variable & function names.
 Your task is to write a function `fixCase` which, given a variable name, in one of the many cases, always returns it renamed to a proper camel case.
 
+**Note:** the hypothetical language of the codebase in this case accepts `-` and `'` as valid characters for variable names. So you will have to handle that :)
+
 Examples:
 ```
 fixCase('one') // returns 'one'
