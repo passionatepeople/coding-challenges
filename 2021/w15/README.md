@@ -7,6 +7,11 @@ You and your colleague decide that it cannot stay that way for longer, and every
 Your colleague will do the scraping the codebase and collecting all instances of variable & function names.
 Your task is to write a function `fixCase` which, given a variable name, in one of the many cases, always returns it renamed to a proper camel case.
 
+**Note:**
+
+Thanks to Lars for pointing out that there is a method in lodash [https://lodash.com/docs/4.17.15#camelCase] that does this one one go :)
+For the sake of keeping competition exciting, using this method is prohibited in this challenge.
+
 Examples:
 ```
 fixCase('one') // returns 'one'
