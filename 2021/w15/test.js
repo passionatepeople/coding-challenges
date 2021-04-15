@@ -22,6 +22,7 @@ describe.each(solutions)("%s", (filename) => {
     ["ONE_two_THREE", "oneTwoThree"],
     ["ONE_Two--THREE", "oneTwoThree"],
     ["ONE_Two--THREE", "oneTwoThree"],
+    ["ONE_Two--THR'EE", "oneTwoThr'ee"],
   ])("%j = %j", (input, result) => {
     expect(evaluate(input)).toBe(result);
   });

@@ -27,6 +27,7 @@ fixCase('one__two--three') // returns 'oneTwoThree'
 fixCase('ONE_two_THREE') // returns 'oneTwoThree'
 fixCase('ONE_Two--THREE') // returns 'oneTwoThree'
 fixCase('ONE_Two--THREE') // returns 'oneTwoThree'
+fixCase('ONE_Two--THR\'EE') // returns 'oneTwoThr\'ee'
 ```
 
 
