@@ -8,20 +8,6 @@ Since you will send the contents of this file as your solution, all your code sh
 **WARNING!!: Do not commit your solution!** as that will disclose your approach to others!
 The solution should be submitted via an upload link provided for each solution.
 
-## Libraries
-
-These are the util libs available to be required and used in your solution, shall you need them.
-
-- date-fns
-- immer
-- lodash
-- moment
-- ramda
-- rxjs
-
-Expansion of this util lib list is possible, but should be discussed and then will be added in future challenges.
-
-
 ## Ranking
 Only correct solutions count. Failing at least 1 test case immediately disqualifies the solution.
 So you should make sure the solution works with the provided tests before submitting it.
@@ -55,7 +41,7 @@ Then sum the points together - the top one gets 5pts from jury. (ties are possib
 ### Proxibited solutions
 
 In principle solution should rely only on JavaScript features to come up with correct solution inside the function that is being exported from the solutions file.
-If using require, it should be to include one of the libraries (listed above). Using built in Node API's is allowed as long as it doesn't meddle with execution of tests or evaluation, or takes unfair advantage in any other way.
+Using built in Node API's is allowed as long as it doesn't meddle with execution of tests or evaluation, or takes unfair advantage in any other way.
 
 Prohibited approaches include
 - requiring or meddling with test spec cases
