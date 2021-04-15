@@ -103,14 +103,28 @@ Peter-Paul
 |       | Aman        | 25          |          |            | 25           |
 | 4.    | Lars        | 12          | 5        |            | 17           |
 |       | Tim         | 12          | 5        |            | 17           |
-| 6.    | Jan Bart    | 8           |          |            | 8            |
-| 7.    | Bram        | 6           |          |            | 6            |
-| 8.    | Mettin      | 4           |          |            | 4            |
+| 6.    | Mettin      | 4           |          | 5          | 9            |
+| 7.    | Jan Bart    | 8           |          |            | 8            |
+| 8.    | Bram        | 6           |          |            | 6            |
 | 9.    | Dexter      | 2           |          |            | 2            |
 
 ### Jury vote
 
-[will be announced during the weekly call]
+#### Harijs
+1. irene5 - fast and still very clear, well structured and readable.
+2. dexter1 - I like how his code structure closely mirrors the butY language grammar.
+3. lars1 - I like the style of creating operators map and function as value for each operation.
+
+#### David
+
+1. Jmulder1: For me this is the cleanest solutions. Nice way of combining some "fake enums :stuck_out_tongue: " with the switch statement. The list of operators and expression type would make it easy for others to expand
+2. Mettin1: Also very clear, but it would be nice to throw an error when an operator doesnt match since we are checking strings here.
+3. Lars2/Tim5: Using ramda for exact matches
+
+#### Peter-Paul
+1. mettin1: Very clean and correct. Would be easy to debug when - inevitably - new node types are added.
+2. lars2: First one to find out the operator names exactly match ramda functions. 🤯
+3. jmulders5: Shortest "pure" golf.
 
 ### Screenshot
 
