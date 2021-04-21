@@ -1,4 +1,7 @@
-# Passionate People coding challenges
+# Passionate People Coding Challenges
+
+![Passionate People Coding Challenges](./pp-cc-logo.png)
+
 ## Instructions
 
 run `yarn test` to run the latest challenge tests.
