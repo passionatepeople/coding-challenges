@@ -1,0 +1,1 @@
+module.exports=i=>i.replace(/(?<=^|[A-Z]'?)./g,r=>r.toLowerCase()).replace(/[-_]+./g,r=>r.slice(-1).toUpperCase())

@@ -1,0 +1,1 @@
+module.exports=(i,j='toLowerCase')=>i.split(/([A-Z][a-z]+)|[-_]+/g).reduce((a,c)=>c?a?a+c[0].toUpperCase()+c.slice(1)[j]():c[j]():a,'')
