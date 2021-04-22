@@ -43,9 +43,9 @@ fixCase('ONE_Two--THR\'EE') // returns 'oneTwoThr\'ee'
 |-------|-------------|-------------|----------|------------|--------------|
 | 1.    | Peter-Paul  | 25          | 5        |            | 30           |
 | 2.    | Aman        | 25          |          |            | 25           |
-| 3.    | Joppe       | 15          |          |            | 15           |
-| 4.    | Irene       | 12          |          |            | 12           |
-|       | Lars        | 12          |          |            | 12           |
+| 3.    | Irene       | 12          |          | 5          | 17           |
+|       | Lars        | 12          |          | 5          | 17           |
+| 5.    | Joppe       | 15          |          |            | 15           |
 | 6.    | Mettin      | 8           |          |            | 8            |
 | 7.    | Jan Bart    | 6           |          |            | 6            |
 | 8.    | Tim         | 4           |          |            | 4            |
@@ -54,7 +54,20 @@ fixCase('ONE_Two--THR\'EE') // returns 'oneTwoThr\'ee'
 
 ### Jury vote
 
-[will be announced during the weekly call]
+#### Harijs
+1. lars3 - well commented and easy to follow logic
+2. joppe3 - working with char codes under the hood and giving variable names to A,Z - etc.
+3. mettin2 - split by regex + reduce
+
+#### Israel
+1. jmulders.js - because of his usage of all arguments of Array.reduce
+2. irene2.js for her usage of Map as a cache
+3. lars3.js for his nicely commented code, the thought process is really on display there
+
+#### David
+1. irene2 - clever usage of Map ( wonder if this solution wins speed wise with longer strings :wink: )
+2. peterpaul1 - cleanest solution
+3. lars3 - well documented and nice to follow thought process
 
 ### Screenshot
 

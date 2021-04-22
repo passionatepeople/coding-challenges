@@ -78,8 +78,8 @@ Update `evaluate.js` for the right challenge and then run `npm run eval [numRuns
 | Place | Name       | Week 09 | Week 10 | Week 11 | Week 12   | Week 13   | Week 14  | Week 15  | Total points |
 |-------|------------|---------|---------|---------|-----------|-----------|----------|----------|--------------|
 | 1.    | Peter-Paul | 30      | 25      | 35      | 25        | 30        |          | 30       | 175          |
-| 2.    | Lars       | 25      | 15      | 18      | 30        | 18        | 17       | 12       | 135          |
-| 3.    | Irene      | 10      | 10      | 20      | 25        | 23        | 25       | 12       | 125          |
+| 2.    | Lars       | 25      | 15      | 18      | 30        | 18        | 17       | 17       | 140          |
+| 3.    | Irene      | 10      | 10      | 20      | 25        | 23        | 25       | 17       | 130          |
 | 4.    | Aman       | 4       | 18      | 15      | 6         | 18        | 25       | 25       | 111          |
 | 5.    | Joppe      | 5       | 2       | 10      | 25        | 18        | 25       | 15       | 100          |
 | 6.    | Tim        | 12      | 9       | 6       | 9         | 23        | 17       | 4        | 80           |
@@ -102,10 +102,10 @@ Update `evaluate.js` for the right challenge and then run `npm run eval [numRuns
 | Place | Name        | Week 13     | Week 14  | Week 15  | Total points |
 |-------|-------------|-------------|----------|----------|--------------|
 | 1.    | Aman        | 18          | 25       | 25       | 68           |
-| 2.    | Irene       | 23          | 25       | 12       | 60           |
-|       | Peter-Paul  | 30          |          | 30       | 60           |
+| 2.    | Irene       | 23          | 25       | 17       | 65           |
+| 3.    | Peter-Paul  | 30          |          | 30       | 60           |
 | 4.    | Joppe       | 18          | 25       | 15       | 58           |
-| 5.    | Lars        | 18          | 17       | 12       | 47           |
+| 5.    | Lars        | 18          | 17       | 17       | 52           |
 | 6.    | Tim         | 23          | 17       | 4        | 44           |
 | 7.    | Mettin      | 23          | 9        | 8        | 40           |
 | 8.    | Jan Bart    | 18          | 8        | 6        | 32           |
