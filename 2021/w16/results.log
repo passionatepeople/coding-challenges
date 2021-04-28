@@ -1,53 +1,3 @@
-# Week 16 challenge
-
-You have an array of numbers. Your task is to find a subarray that yields maximum sum of consequent items.
-
-If you have an array of `[-7, 2, -1, 5, -6, 2]`, then the maximum sum would be formed taking `2`, `-1` and `5`, thus `6`;
-Most easy case is when all numbers are positive, then the maximum sum is simply the sum of all the numbers in array.
-
-In case of an empty array `[]`, the sum is `0`.
-Therefore, array consisting of only negative numbers yields maximum sum `0`, because empty array is also a valid subarray.
-
-
-Examples:
-```
-getMaxConsequentItemSum([-7, 2, -1, 5, -6, 2]) // returns 6
-getMaxConsequentItemSum([5, 2, -7, 2, -1, 5, -4, 2, 13, 4]) // returns 21
-getMaxConsequentItemSum([1, 2, 3, 4]) // returns 10
-getMaxConsequentItemSum([]) // returns 0
-getMaxConsequentItemSum([-1, -2, -3]) // returns 0
-```
-
-
-## Upload link
-
-[Submissions are closed]
-
-
-## Results
-
-
-| Place | Name        | Performance | Codegolf | Jury award | Total points |
-|-------|-------------|-------------|----------|------------|--------------|
-| 1.    | Irene       | 25          | 5        |            | 30           |
-|       | Peter-Paul  | 25          | 5        |            | 30           |
-| 3.    | Aman        | 25          |          |            | 25           |
-| 4.    | Lars        | 12          |          |            | 12           |
-|       | Dexter      | 12          |          |            | 12           |
-| 6.    | Joppe       | 8           |          |            | 8            |
-| 7.    | Jan Bart    | 6           |          |            | 6            |
-| 8.    | Mettin      | 4           |          |            | 4            |
-
-### Jury vote
-
-[will be announced during the weekly call]
-
-### Screenshot
-
-![2021 Week 16 results](./results.png)
-
-### Full output log
-```
 EVALUATION STARTED:       Wed Apr 28 2021 10:08:27 GMT+0000 (Coordinated Universal Time)
 EVALUATING CHALLENGE:     2021/w16
 FOUND 18 SOLUTIONS:       aman.js, dexter1.js, dexter2.js, dexter3.js, dexter4.js, dexter5.js, dexter6.js, irene1.js, irene2.js, irene3.js,
@@ -119,4 +69,3 @@ RAW RESULTS:
 │   16    │   'irene4.js'   │ false  │ 594641.5782480377  │ 8.494879689257681  │ 7.765467000077479  │ 21.56468200031668  │  0.3741016751960811  │  60  │ 70000 │
 │   17    │   'mettin.js'   │ false  │ 2761430.1128119635 │ 39.44900161159948  │ 36.41720400005579  │ 75.39469500002451  │  1.267155712493355   │ 418  │ 70000 │
 └─────────┴─────────────────┴────────┴────────────────────┴────────────────────┴────────────────────┴────────────────────┴──────────────────────┴──────┴───────┘
-```
