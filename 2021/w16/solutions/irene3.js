@@ -1,0 +1,1 @@
+module.exports=i=>i.map(k=>(c=k>-c?c+k:0,m=c>m?c:m),c=m=0)&&m

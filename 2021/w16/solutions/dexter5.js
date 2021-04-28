@@ -1,0 +1,1 @@
+module.exports=(a,m=0,l=0,i)=>(a.map(v=>m=(l=(i=v+l)>v?i:v)>m?l:m),m)

@@ -1,0 +1,1 @@
+module.exports=(a,m=0)=>(a.reduce((s,v,l)=>(l=s+v>v?s+v:v,m=l>m?l:m,l),0),m)

@@ -1,0 +1,1 @@
+module.exports=(a,m=0)=>(a.reduce((s,v,l)=>(l=Math.max(s+v,v),m=Math.max(l,m),l),0),m)

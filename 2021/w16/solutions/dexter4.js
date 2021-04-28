@@ -1,0 +1,1 @@
+module.exports=(a,m=0,l=0,i)=>{for(v of a)m=(l=(i=v+l)>v?i:v)>m?l:m;return m}
