@@ -78,7 +78,7 @@ Update `evaluate.js` for the right challenge and then run `npm run eval [numRuns
 | Place | Name       | Week 09 | Week 10 | Week 11 | Week 12   | Week 13   | Week 14  | Week 15  | Week 16 | Total points |
 |-------|------------|---------|---------|---------|-----------|-----------|----------|----------|---------|--------------|
 | 1.    | Peter-Paul | 30      | 25      | 35      | 25        | 30        |          | 30       | 30      | 205          |
-| 2.    | Irene      | 10      | 10      | 20      | 25        | 23        | 25       | 17       | 30      | 160          |
+| 2.    | Irene      | 10      | 10      | 20      | 25        | 23        | 25       | 17       | 35      | 165          |
 | 3.    | Lars       | 25      | 15      | 18      | 30        | 18        | 17       | 17       | 12      | 152          |
 | 4.    | Aman       | 4       | 18      | 15      | 6         | 18        | 25       | 25       | 25      | 136          |
 | 5.    | Joppe      | 5       | 2       | 10      | 25        | 18        | 25       | 15       | 8       | 108          |
@@ -101,7 +101,7 @@ Update `evaluate.js` for the right challenge and then run `npm run eval [numRuns
 
 | Place | Name        | Week 13     | Week 14  | Week 15  | Week 16 | Total points |
 |-------|-------------|-------------|----------|----------|---------|--------------|
-| 1.    | Irene       | 23          | 25       | 17       | 30      | 95           |
+| 1.    | Irene       | 23          | 25       | 17       | 35      | 100          |
 | 2.    | Aman        | 18          | 25       | 25       | 25      | 93           |
 | 3.    | Peter-Paul  | 30          |          | 30       | 30      | 90           |
 | 4.    | Joppe       | 18          | 25       | 15       | 8       | 66           |

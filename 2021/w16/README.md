@@ -29,8 +29,8 @@ getMaxConsequentItemSum([-1, -2, -3]) // returns 0
 
 | Place | Name        | Performance | Codegolf | Jury award | Total points |
 |-------|-------------|-------------|----------|------------|--------------|
-| 1.    | Irene       | 25          | 5        |            | 30           |
-|       | Peter-Paul  | 25          | 5        |            | 30           |
+| 1.    | Irene       | 25          | 5        | 5          | 35           |
+| 2.    | Peter-Paul  | 25          | 5        |            | 30           |
 | 3.    | Aman        | 25          |          |            | 25           |
 | 4.    | Lars        | 12          |          |            | 12           |
 |       | Dexter      | 12          |          |            | 12           |
@@ -40,7 +40,15 @@ getMaxConsequentItemSum([-1, -2, -3]) // returns 0
 
 ### Jury vote
 
-[will be announced during the weekly call]
+#### Harijs
+1. irene2 - finding Kaden’s algorithm and applying it as theoretical CS solution to this problem
+2. dexter6 - some interesting `for` loop
+3. lars2 - interesting approach to do this with `.map`
+
+#### Israel
+1. irene2 - for finding out (or already knowing) the name of this algorithm for her solution
+2. dexter4 - for being the shortest solution in the top 10 board
+3. joppe - interesting use of control statements (for/if/continue)
 
 ### Screenshot
 
