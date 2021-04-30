@@ -1,5 +1,6 @@
 const fs = require('fs');
 const os = require('os');
+const vm = require('vm');
 const chalk = require('chalk');
 const { performance } = require('perf_hooks');
 const { shuffle, flatten, sum, sortBy, omit, map } = require('lodash');
@@ -18,7 +19,6 @@ const MAX_SIZE = 2048;
 // don't change these
 const SOLUTIONS_DIR = `./${CHALLENGE}/solutions`;
 const SOLUTIONS = fs.readdirSync(SOLUTIONS_DIR).filter(file => file.endsWith('.js'));
-const SOLUTION_FNS = SOLUTIONS.reduce((acc, sol) => ({ ...acc, [sol]: require(`${SOLUTIONS_DIR}/${sol}`) }), {});
 const SPEC = require(`./${CHALLENGE}/test-cases/spec.json`)
 const STATS = SOLUTIONS.reduce((acc, sol) => ({
   ...acc,
@@ -32,8 +32,38 @@ const STATS = SOLUTIONS.reduce((acc, sol) => ({
     worst: null,
     stdev: null,
     size: fs.statSync(`${SOLUTIONS_DIR}/${sol}`).size,
+    compiled: 'successfully',
+    compileTime: null,
   }
 }), {});
+// warm up context
+(() => {
+  const context = { module: { exports: {}}};
+  vm.createContext(context);
+  vm.runInContext(`module.exports = () => {};`, context);
+})();
+
+const SOLUTION_FNS = SOLUTIONS.reduce((acc, sol) => {
+  const code = fs.readFileSync(`${SOLUTIONS_DIR}/${sol}`, { encoding:'utf8', flag: 'r' });
+  let fn = () => {};
+  const context = { module: { exports: {}}};
+  vm.createContext(context);
+
+  try {
+    const start = performance.now();
+    vm.runInContext(code, context);
+    const end = performance.now();
+    STATS[sol].compileTime = end - start;
+    fn = context.module.exports;
+  } catch (e) {
+    STATS[sol].compiled = e.toString();
+  }
+
+  return {
+    ...acc,
+    [sol]: fn,
+  };
+}, {});
 
 const stdout = (progress) => {
   process.stdout.clearLine();
@@ -115,6 +145,7 @@ SOLUTIONS.forEach(solution => {
 
 // assemble stats and results
 const RAW_RESULTS = sortBy(Object.values(STATS), 'best');
+const COMPILE_TIMES = Object.values(STATS).map(s => s.compileTime).filter(ct => Number.isFinite(ct));
 const MIN_SIZE = Math.min(...RAW_RESULTS.filter(r => !r.failed).map(r => r.size));
 const CODEGOLF = Object.values(STATS).filter(res => res.size === MIN_SIZE).map(res => res.solution);
 // keep only the best result from each contestant
@@ -146,7 +177,7 @@ const points = {
   10: 1,
 };
 
-const PRETTY = [['Place', 'Points', 'Name', 'Best', 'Average', 'σ (st dev)', 'Size (bytes)'].map(title => chalk.whiteBright(title))];
+const PRETTY = [['Place', 'Points', 'Name', 'Best', 'Average', 'σ (st dev)', 'Size (bytes)', 'Compile time'].map(title => chalk.whiteBright(title))];
 let place = 1;
 let placeIncr = 1;
 let currentBest = 0;
@@ -170,6 +201,13 @@ for (let i = 0; i < RESULTS.length; i++) {
     currentBest = RESULTS[i].best;
   }
 
+  let compileTime = '';
+  if (RESULTS[i].compileTime) {
+    const ct = RESULTS[i].compileTime;
+    const icon = ct === Math.max(...COMPILE_TIMES) ? ' 🐢' : ct === Math.min(...COMPILE_TIMES) ? ' 🐇' : '';
+    compileTime = `${ct.toFixed(3)} ms${icon}`;
+  }
+
   const res = [
     showPlace ? chalk.cyan(place) : '',
     chalk.green(points[place] || ''),
@@ -178,6 +216,7 @@ for (let i = 0; i < RESULTS.length; i++) {
     RESULTS[i].average.toFixed(3) + 'ms',
     RESULTS[i].stdev.toFixed(3) + 'ms' + ` (${(100 * RESULTS[i].stdev / RESULTS[i].average).toFixed(1)}%)`,
     RESULTS[i].size,
+    compileTime,
   ];
 
   PRETTY.push(res);
