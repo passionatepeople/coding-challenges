@@ -108,6 +108,7 @@ const FAILED = Object.values(STATS)
 
 const VALID_SOLUTIONS = SOLUTIONS.filter(sol => !FAILED.includes(sol));
 const TEST_RUNS = shuffle(flatten(Array.from({ length: TIMES_TO_EVAL_EACH }, () => VALID_SOLUTIONS)));
+const VALID_FNS = VALID_SOLUTIONS.reduce((acc, sol) => ({ ...acc, [sol]: require(`${SOLUTIONS_DIR}/${sol}`) }), {});
 
 console.log(`\n${chalk.yellow('EVALUATION STARTED:').padEnd(LOG_PAD, ' ')} ${chalk.green(new Date())}`);
 console.log(`${chalk.yellow('EVALUATING CHALLENGE:').padEnd(LOG_PAD, ' ')} ${chalk.green(CHALLENGE)}`);
@@ -116,7 +117,7 @@ console.log(`${chalk.yellow('EVALUATING EACH').padEnd(LOG_PAD, ' ')} ${chalk.cya
 
 const totalStart = performance.now();
 TEST_RUNS.forEach((solution, idx) => {
-  const fn = SOLUTION_FNS[solution];
+  const fn = VALID_FNS[solution];
 
   const start = performance.now();
   SPEC.forEach(({ inputs }) => fn(...inputs));
