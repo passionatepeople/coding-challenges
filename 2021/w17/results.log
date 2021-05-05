@@ -1,61 +1,3 @@
-# Week 17 challenge
-
-You have joined a team which works on a new programming language. The language is intended to be functional lisp-like.
-So a lot of parenthesis in the syntax.
-
-You pick up the task to write utility for the parser, which will simply validate if in given string the parenthesis are valid.
-E.g. are they wrapping and closing properly.
-
-This function should only look at parenthesis and, thus, ignore any other characters that might be in it.
-
-
-Examples:
-```
-isValid('fn(1, 2, 3)') // returns true
-isValid('!)()()') // return false
-isValid('()') // returns true
-isValid('())') // returns false
-isValid('(()(()))') // returns true
-isValid(')(()(()))') // returns false
-isValid('((777))(((arg)())(...rest))') // returns true
-isValid('((777))((...args)())(9))') // returns false
-
-```
-
-
-## Upload link
-
-[Submissions are closed]
-
-
-## Results
-
-
-| Place | Name        | Performance | Codegolf | Jury award | Total points |
-|-------|-------------|-------------|----------|------------|--------------|
-| 1.    | Peter-Paul  | 25          | 5        |            | 30           |
-| 2.    | Irene       | 18          | 5        |            | 23           |
-| 3.    | Aman        | 18          |          |            | 18           |
-| 4.    | Tim         | 12          | 5        |            | 17           |
-| 5.    | Oskar       | 12          |          |            | 12           |
-|       | Joppe       | 12          |          |            | 12           |
-|       | Lee         | 12          |          |            | 12           |
-| 8.    | Mettin      |             | 5        |            | 5            |
-| 9.    | Jan Bart    | 4           |          |            | 4            |
-|       | Dexter      | 4           |          |            | 4            |
-| 11.   | Bram        | 1           |          |            | 1            |
-| 12.   | Lars        |             |          |            |              |
-
-### Jury vote
-
-[will be announced during the weekly call]
-
-### Screenshot
-
-![2021 Week 17 results](./results.png)
-
-### Full output log
-```
 EVALUATION STARTED:       Wed May 05 2021 11:23:23 GMT+0000 (Coordinated Universal Time)
 EVALUATING CHALLENGE:     2021/w17
 FOUND 38 SOLUTIONS:       aman.js, bram1.js, bram2.js, dexter.js, irene1.js, irene2.js, irene3.js, jmulders1.js, jmulders2.js, joppe.js, lars.js,
@@ -159,4 +101,3 @@ RAW RESULTS:
 │   36    │  'mettin3.js'   │ false  │ 749523.6603378328  │  8.328040670420364  │  7.349510001018643  │ 16.25294299982488  │  0.4901870289846222  │  54  │ 'successfully' │ 0.04831199999898672  │ 90000 │
 │   37    │ 'peterPaul4.js' │ false  │ 767574.2329557743  │  8.528602588397492  │  7.521654999814928  │ 17.343351999297738 │  0.5333789613315716  │  51  │ 'successfully' │ 0.04939100053161383  │ 90000 │
 └─────────┴─────────────────┴────────┴────────────────────┴─────────────────────┴─────────────────────┴────────────────────┴──────────────────────┴──────┴────────────────┴──────────────────────┴───────┘
-```
