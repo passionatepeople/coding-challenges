@@ -10,7 +10,7 @@ const { table } = require('table');
 const humanizeDuration = require('humanize-duration');
 
 // update for challenge you wish to evaluate, what is the tie margin and amount of default runs
-const CHALLENGE = '2021/w17';
+const CHALLENGE = '2021/w18';
 const PERCENT_MARGIN_FOR_TIE = 5;
 const TIMES_TO_EVAL_EACH = parseInt(process.argv[2], 10) || 1000;
 const LOG_PAD = 35;
