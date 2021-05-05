@@ -1,0 +1,1 @@
+module.exports = i => !(i.replace(/\w|!|\./g, '').length % 2)

@@ -1,0 +1,1 @@
+module.exports=c=>(l=_=>c.split(_).length)`(`==l`)`

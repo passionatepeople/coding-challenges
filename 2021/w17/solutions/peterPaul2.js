@@ -1,0 +1,1 @@
+module.exports=i=>i.split``.every(c=>(l+={'(':1,')':-1}[c]|0),l=1)&&l==1

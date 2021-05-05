@@ -1,0 +1,1 @@
+module.exports=e=>e.match(/\(|\)/g).length%2<1
