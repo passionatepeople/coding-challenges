@@ -34,7 +34,7 @@ isValid('((777))((...args)())(9))') // returns false
 | Place | Name        | Performance | Codegolf | Jury award | Total points |
 |-------|-------------|-------------|----------|------------|--------------|
 | 1.    | Peter-Paul  | 25          | 5        |            | 30           |
-| 2.    | Irene       | 18          | 5        |            | 23           |
+| 2.    | Irene       | 18          | 5        | 5          | 28           |
 | 3.    | Aman        | 18          |          |            | 18           |
 | 4.    | Tim         | 12          | 5        |            | 17           |
 | 5.    | Oskar       | 12          |          |            | 12           |
@@ -48,7 +48,20 @@ isValid('((777))((...args)())(9))') // returns false
 
 ### Jury vote
 
-[will be announced during the weekly call]
+#### Harijs
+1. peterPaul6 - "cheats" by figuring out a pattern in incomplete spec
+2. irene3 - fast and with ACII art :)
+3. tim7 - maxing out the character limit in a fun way
+
+#### David
+1. Irene1 - most clean & readable solution
+2. mettin1 - clean regex solution
+3. tim1 - for reusability purposes
+
+#### Israel
+1. lars - I like the approach to have a map with the open and close brackets as a quick optimization
+2. peterPaul6 - the cheats, just fun to find that out!
+3. irene3 - the ASCII art, nice addition :smile:
 
 ### Screenshot
 
