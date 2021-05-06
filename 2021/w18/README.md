@@ -16,7 +16,7 @@ getSaiyanLevel(1234); // one thousand two hundred and thirty four
 Since Vegeta doesn't comprehend levels beyond 9000 just let him know:
 
 ```
-getSaiyanLevel(9001); // it's over 9000!
+getSaiyanLevel(9001); // it's over nine thousand!
 ```
 
 ## Background
