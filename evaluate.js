@@ -27,6 +27,7 @@ const STATS = SOLUTIONS.reduce((acc, sol) => ({
     solution: sol,
     runTimes: [],
     failed: false,
+    onlyCodegolf: false,
     total: null,
     average: null,
     best: null,
@@ -51,7 +52,16 @@ const SOLUTION_FNS = SOLUTIONS.reduce((acc, sol) => {
     vm.runInContext(code, context);
     const end = performance.now();
     STATS[sol].compileTime = end - start;
-    fn = context.module.exports;
+
+    if (typeof context?.module?.exports === 'function') {
+      fn = context.module.exports;
+    } else {
+      throw Error('module.exports is not a function');
+    }
+
+    if (Object.keys(context).length !== 1) {
+      STATS[sol].onlyCodegolf = true;
+    }
   } catch (e) {
     STATS[sol].compiled = e.toString();
   }
@@ -73,9 +83,11 @@ const FAILED = Object.values(STATS)
   })
   .map(res => res.solution);
 
-const VALID_SOLUTIONS = SOLUTIONS.filter(sol => !FAILED.includes(sol));
-const TEST_RUNS = shuffle(flatten(Array.from({ length: TIMES_TO_EVAL_EACH }, () => VALID_SOLUTIONS)));
-const VALID_FNS = VALID_SOLUTIONS.reduce((acc, sol) => ({ ...acc, [sol]: require(`${SOLUTIONS_DIR}/${sol}`) }), {});
+const ONLY_CODEGOLF = Object.values(STATS).filter(({ onlyCodegolf, failed }) => !failed && onlyCodegolf).map(res => res.solution);
+const NON_EVALUATABLE = [...FAILED, ...ONLY_CODEGOLF];
+const EVALUATABLE_SOLUTIONS = SOLUTIONS.filter(sol => !NON_EVALUATABLE.includes(sol));
+const TEST_RUNS = shuffle(flatten(Array.from({ length: TIMES_TO_EVAL_EACH }, () => EVALUATABLE_SOLUTIONS)));
+const VALID_FNS = EVALUATABLE_SOLUTIONS.reduce((acc, sol) => ({ ...acc, [sol]: require(`${SOLUTIONS_DIR}/${sol}`) }), {});
 
 console.log(`\n${chalk.yellow('EVALUATION STARTED:').padEnd(LOG_PAD, ' ')} ${chalk.green(new Date())}`);
 console.log(`${chalk.yellow('EVALUATING CHALLENGE:').padEnd(LOG_PAD, ' ')} ${chalk.green(CHALLENGE)}`);
@@ -114,15 +126,19 @@ SOLUTIONS.forEach(solution => {
 // assemble stats and results
 const { PRETTY, RAW_RESULTS, DISCARDED } = computeResults(STATS, PERCENT_MARGIN_FOR_TIE);
 const MIN_SIZE = Math.min(...RAW_RESULTS.filter(r => !r.failed).map(r => r.size));
-const CODEGOLF = Object.values(STATS).filter(res => res.size === MIN_SIZE).map(res => res.solution);
+const CODEGOLF = Object.values(STATS).filter(res => !res.failed && res.size === MIN_SIZE).map(res => res.solution);
 
 console.log(`\n${chalk.yellow('RANKINGS:')}`);
 console.log(table(PRETTY));
 console.log('Keeping only best run from each contestant');
 console.log(`Using ${PERCENT_MARGIN_FOR_TIE}% margin for determening ties`);
-console.log(`\n${chalk.yellow('OMITTED FROM RANKINGS:').padEnd(LOG_PAD, ' ')} ${chalk.green(wrapAndPad(DISCARDED, LOG_PAD))}`);
+if (DISCARDED.length) {
+  console.log(`\n${chalk.yellow('OMITTED FROM RANKINGS:').padEnd(LOG_PAD, ' ')} ${chalk.green(wrapAndPad(DISCARDED, LOG_PAD))}`);
+}
+if (ONLY_CODEGOLF.length) {
+  console.log(`\n${chalk.yellow('ONLY CODEGOLF SOLUTIONS:').padEnd(LOG_PAD, ' ')} ${chalk.green(wrapAndPad(ONLY_CODEGOLF, LOG_PAD))}`);
+}
 console.log(`\n${chalk.yellow('CODEGOLF AWARD:').padEnd(LOG_PAD, ' ')} ${chalk.green(CODEGOLF.join(', '))} with ${MIN_SIZE} bytes`);
-
 if (FAILED.length) {
   console.log(`\n${chalk.yellow('FAILED SOLUTIONS:').padEnd(LOG_PAD, ' ')} ${chalk.green(wrapAndPad(FAILED, LOG_PAD))}`);
 }

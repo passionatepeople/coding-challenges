@@ -42,7 +42,7 @@ const COMPILE_TIMES = Object.values(STATS).map(s => s.compileTime).filter(ct => 
 const KEPT = [];
 const DISCARDED = [];
 const RESULTS = RAW_RESULTS.filter(res => {
-  if (res.failed) return false;
+  if (res.failed || res.onlyCodegolf) return false;
 
   const name = res.solution.match(/([a-z]+)\d*\.js/i)[1];
   if (KEPT.includes(name)) {
