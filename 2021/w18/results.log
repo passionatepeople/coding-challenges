@@ -1,62 +1,3 @@
-# Week 18 challenge
-
-![Vegeta with scouter](image.jpg)
-
-You've been tasked to help Vegeta read data from his scouter. Unfortunately he can't read digits because of the shitty free font used by the developers. Please write a script that accepts a number as input and gives back the number as text.
-
-Examples:
-```
-getSaiyanLevel(0); // zero
-getSaiyanLevel(10); // ten
-getSaiyanLevel(30); // thirty
-getSaiyanLevel(5000); // five thousand
-getSaiyanLevel(1234); // one thousand two hundred and thirty four
-```
-
-Since Vegeta doesn't comprehend levels beyond 9000 just let him know:
-
-```
-getSaiyanLevel(9001); // it's over nine thousand!
-```
-
-## Background
-![meme origin](over9000.png)
-
-[Over 9000 on Wikipedia](https://en.wikipedia.org/wiki/It%27s_Over_9000!)
-
-## Author
-
-Mettin
-
-## Upload link
-
-[Submissions are closed]
-
-
-## Results
-
-
-| Place | Name        | Performance | Codegolf | Jury award | Total points |
-|-------|-------------|-------------|----------|------------|--------------|
-| 1.    | Tim         | 25          |          |            | 25           |
-| 2.    | Peter-Paul  | 18          | 5        |            | 23           |
-| 3.    | Joppe       | 18          |          |            | 18           |
-|       | Aman        | 18          |          |            | 18           |
-|       | Lars        | 18          |          |            | 18           |
-| 6.    | Irene       | 8           |          |            | 8            |
-| 7.    | Oskar       | 6           |          |            | 6            |
-| 8.    | Jan Bart    | 4           |          |            | 4            |
-|       | Lee         | 4           |          |            | 4            |
-| 10.   | Dexter      | 1           |          |            | 1            |
-
-### Jury vote
-
-### Screenshot
-
-![2021 Week 18 results](./results.png)
-
-### Full output log
-```
 EVALUATION STARTED:                 12/05/2021, 14:46:29
 EVALUATING CHALLENGE:               2021/w18
 FOUND 33 SOLUTIONS:                 aman1.js, aman2.js, dexter.js, irene1.js, irene2.js, irene3.js, irene4.js, jmulders1.js, joppe1.js, joppe2.js, joppe3.js,
@@ -152,4 +93,3 @@ RAW RESULTS:
 │   31    │    'lee2.js'     │ false  │     true     │         0          │        null         │        null         │        null        │        null         │ 597  │ 'successfully' │ 0.15469999999913853 │   0   │
 │   32    │ 'peter-paul2.js' │ false  │     true     │         0          │        null         │        null         │        null        │        null         │ 389  │ 'successfully' │ 0.1375320000006468  │   0   │
 └─────────┴──────────────────┴────────┴──────────────┴────────────────────┴─────────────────────┴─────────────────────┴────────────────────┴─────────────────────┴──────┴────────────────┴─────────────────────┴───────┘
-```
