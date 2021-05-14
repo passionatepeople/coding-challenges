@@ -42,7 +42,9 @@ const STATS = SOLUTIONS.reduce((acc, sol) => ({
 warmUpContext();
 
 const SOLUTION_FNS = SOLUTIONS.reduce((acc, sol) => {
-  const code = fs.readFileSync(`${SOLUTIONS_DIR}/${sol}`, { encoding:'utf8', flag: 'r' });
+  const code = `(()=>{
+    ${fs.readFileSync(`${SOLUTIONS_DIR}/${sol}`, { encoding:'utf8', flag: 'r' })}
+  })()`;
   let fn = () => {};
   const context = { module: { exports: {}}};
   vm.createContext(context);
