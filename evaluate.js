@@ -72,14 +72,21 @@ const SOLUTION_FNS = SOLUTIONS.reduce((acc, sol) => {
   };
 }, {});
 
-// check if any fail
+// check if any fail or last too long
 const FAILED = Object.values(STATS)
   .filter(({ solution, size }) => {
     const fn = SOLUTION_FNS[solution];
-    return STATS[solution].failed = size > MAX_SIZE || shuffle(SPEC).some(({ inputs, result }) => {
+    const start = performance.now();
+    const result = STATS[solution].failed = size > MAX_SIZE || shuffle(SPEC).some(({ inputs, result }) => {
       const clonedInputs = clone(inputs)
       return !isEqual(fn(...clonedInputs), result) || !isEqual(clonedInputs, inputs)
     });
+    const end = performance.now();
+    if (!result && end - start > 2000) {
+      STATS[solution].onlyCodegolf = true;
+    }
+
+    return result;
   })
   .map(res => res.solution);
 
