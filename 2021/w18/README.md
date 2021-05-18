@@ -43,13 +43,27 @@ Mettin
 | 3.    | Joppe       | 18          |          |            | 18           |
 |       | Aman        | 18          |          |            | 18           |
 |       | Lars        | 18          |          |            | 18           |
-| 6.    | Irene       | 8           |          |            | 8            |
-| 7.    | Oskar       | 6           |          |            | 6            |
-| 8.    | Jan Bart    | 4           |          |            | 4            |
-|       | Lee         | 4           |          |            | 4            |
+| 6.    | Irene       | 8           |          | 5          | 13           |
+| 7.    | Oskar       | 6           |          | 5          | 11           |
+| 8.    | Jan Bart    | 4           |          | 5          | 9            |
+| 9.    | Lee         | 4           |          |            | 4            |
 | 10.   | Dexter      | 1           |          |            | 1            |
 
 ### Jury vote
+#### David
+1. irene1 - most readable solution from all solutions
+2. lars1 - Also very clean and clean useage with the map of numbers
+3. peterPaul3 - Clever way of legally breaking the rules :wink:
+
+#### Harijs
+1. joppe5 - really smart approach to pregenerate 200 items and smartly combine them for the end result
+2. oskar2 - interesting approach putting together the end result
+3. jmulders1 - pretty clear logic
+
+#### Mettin
+1. Jmulders1: Most readable solution. Most like something id use in production
+2. Oscar5 - Nice solution and happy to see his enthausiasm
+3. Irene4: only solution that was using >> bitwise operator
 
 ### Screenshot
 
