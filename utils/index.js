@@ -1,6 +1,9 @@
 const vm = require('vm');
 const chalk = require('chalk');
-const { sum, sortBy, map } = require('lodash');
+const { sum, sortBy, map, get } = require('lodash');
+const fs = require('fs');
+const path = require('path');
+const { networkInterfaces } = require('os');
 
 const stdout = (progress) => {
   process.stdout.clearLine();
@@ -35,8 +38,7 @@ const wrapAndPad = (names, logPad = 35) => {
 const computeResults = (STATS, percMargin) => {
 
 // assemble stats and results
-const RAW_RESULTS = sortBy(Object.values(STATS), 'best');
-const COMPILE_TIMES = Object.values(STATS).map(s => s.compileTime).filter(ct => Number.isFinite(ct));
+const RAW_RESULTS = sortBy(Object.values(STATS), 'total');
 
 // keep only the best result from each contestant
 const KEPT = [];
@@ -68,7 +70,9 @@ const RESULTS = RAW_RESULTS.filter(res => {
     10: 1,
   };
 
-  const PRETTY = [['Place', 'Points', 'Name', 'Best', 'Average', 'σ (st dev)', 'Size (bytes)', 'Compile time'].map(title => chalk.whiteBright(title))];
+  const NORMALIZED = [];
+
+  const PRETTY = [['Place', 'Points', 'Name', 'Total', 'Best run', 'Best compile', 'Size'].map(title => chalk.whiteBright(title))];
   let place = 1;
   let placeIncr = 1;
   let currentBest = 0;
@@ -79,41 +83,43 @@ const RESULTS = RAW_RESULTS.filter(res => {
 
     // check if solution best time is within 5% of previous
     if (i > 0) {
-      if (currentBest * (1 + percMargin / 100) > RESULTS[i].best) {
+      if (currentBest * (1 + percMargin / 100) > RESULTS[i].total) {
         showPlace = false;
         placeIncr++;
       } else {
-        currentBest = RESULTS[i].best;
+        currentBest = RESULTS[i].total;
         place += placeIncr;
         showPlace = true;
         placeIncr = 1;
       }
     } else {
-      currentBest = RESULTS[i].best;
-    }
-
-    let compileTime = '';
-    if (RESULTS[i].compileTime) {
-      const ct = RESULTS[i].compileTime;
-      const icon = ct === Math.max(...COMPILE_TIMES) ? ' 🐢' : ct === Math.min(...COMPILE_TIMES) ? ' 🐇' : '';
-      compileTime = `${ct.toFixed(3)} ms${icon}`;
+      currentBest = RESULTS[i].total;
     }
 
     const res = [
       showPlace ? chalk.cyan(place) : '',
       chalk.green(points[place] || ''),
       chalk.yellow(name),
-      RESULTS[i].best.toFixed(3) + 'ms' + ` (${(Math.abs(RESULTS[i].average - RESULTS[i].best) / RESULTS[i].stdev).toFixed(1)}σ)`,
-      RESULTS[i].average.toFixed(3) + 'ms',
-      RESULTS[i].stdev.toFixed(3) + 'ms' + ` (${(100 * RESULTS[i].stdev / RESULTS[i].average).toFixed(1)}%)`,
+      RESULTS[i].total.toFixed(3) + 'ms',
+      RESULTS[i].bestRun.toFixed(3) + 'ms',
+      RESULTS[i].bestCompile.toFixed(3) + 'ms',
       RESULTS[i].size,
-      compileTime,
     ];
+
+    NORMALIZED.push([
+      place,
+      name,
+      RESULTS[i].total.toFixed(3),
+      points[place] || '',
+      RESULTS[i].bestRun.toFixed(3),
+      RESULTS[i].bestCompile.toFixed(3),
+      RESULTS[i].size,
+    ]);
 
     PRETTY.push(res);
   }
 
-  return { PRETTY, RAW_RESULTS, DISCARDED};
+  return { PRETTY, RAW_RESULTS, DISCARDED, NORMALIZED };
 };
 
 const warmUpContext = () => {
@@ -124,10 +130,37 @@ const warmUpContext = () => {
   }
 };
 
+const normDate = date => date.toLocaleString('en-GB', { timeZone: 'Europe/Amsterdam' });
+
+const clearDir = (dir) => new Promise((resolve, reject) => {
+  fs.readdir(dir, (err, files) => {
+    if (err) reject(err);
+
+    for (const file of files) {
+      fs.unlink(path.join(dir, file), err => {
+        if (err) throw reject(err);
+      });
+    }
+
+    resolve();
+  });
+});
+
+const getLocalIp = () => {
+  const ips = Object.values(networkInterfaces())
+    .flat()
+    .filter(a => a.family === 'IPv4' && !a.internal && a.mac !== '00:00:00:00:00:00');
+
+    return get(ips, '0.address', '');
+};
+
 module.exports = {
   stdout,
   stdev,
   wrapAndPad,
   computeResults,
   warmUpContext,
+  normDate,
+  clearDir,
+  getLocalIp,
 };
