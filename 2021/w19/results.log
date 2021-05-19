@@ -1,53 +1,3 @@
-# Week 19 challenge
-
-Write a function `compute` which takes in a positive integer number.
-
-- if the number is prime, then square it, deduct 17 from it and return the result;
-- if it is not a prime, add 15 to it, take a square root of it, and return floored result
-
-Examples:
-```
-compute(1) // returns 4 // √(1 + 15) = 4
-compute(3) // returns -8 // (3 * 3) - 17 = -8
-compute(10) // returns 5 // √(10 + 15) = 5
-compute(11) // returns 104 // (11 * 11) - 17 = 121 - 17 = 104
-compute(15) // returns 5 // √(15 + 15) = √30 = 5.47... => 5
-```
-
-
-## Upload link
-
-[Submissions are closed]
-
-## Results
-
-
-| Place | Name        | Performance | Codegolf | Jury award | Total points |
-|-------|-------------|-------------|----------|------------|--------------|
-| 1.    | Lars        | 25          | 5        |            | 30           |
-| 2.    | Peter-Paul  | 18          | 5        |            | 23           |
-| 3.    | Edgar       | 15          |          |            | 15           |
-|       | Tim         | 15          |          |            | 15           |
-| 5.    | Joppe       | 10          |          |            | 10           |
-|       | Aman        | 10          |          |            | 10           |
-| 7.    | Dexter      | 6           |          |            | 6            |
-|       | Mettin      | 6           |          |            | 6            |
-| 9.    | Irene       | 2           |          |            | 2            |
-| 9.    | Jan Bart    | 2           |          |            | 2            |
-| 11.   | Daniel      |             |          |            |              |
-| 12.   | Lee         |             |          |            |              |
-| 13.   | Bram        |             |          |            |              |
-
-### Jury vote
-
-[will be announced during the weekly call]
-
-### Screenshot
-
-![2021 Week 19 results](./results.png)
-
-### Full output log
-```
 EVALUATION STARTED:                 19/05/2021, 12:38:15
 EVALUATING CHALLENGE:               2021/w19
 FOUND 38 SOLUTIONS:                 aman1.js, bram1.js, daniel1.js, daniel2.js, daniel3.js, dexter1.js, dexter2.js, dexter3.js, dexter4.js, dexter5.js,
@@ -154,4 +104,3 @@ RAW RESULTS:
 │   36    │    'lee21.js'     │ false  │     true     │         0          │        null        │        null         │        null        │         null         │  83  │ 'successfully' │ 0.061958999998751096 │ 118121.18248299998 │   0    │
 │   37    │ 'peter-paul21.js' │ false  │     true     │         0          │        null        │        null         │        null        │         null         │  65  │ 'successfully' │ 0.06124500000078115  │ 128292.99052599992 │   0    │
 └─────────┴───────────────────┴────────┴──────────────┴────────────────────┴────────────────────┴─────────────────────┴────────────────────┴──────────────────────┴──────┴────────────────┴──────────────────────┴────────────────────┴────────┘
-```
