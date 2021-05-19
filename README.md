@@ -43,6 +43,28 @@ Then sum the points together - the top one gets 5pts from jury. (ties are possib
 
 ### Proxibited solutions
 
+- caching inputs directly to results, so that consequent evaluation cases would simply return ready result from map
+
+Example:
+```
+const cache = {};
+
+module.exports = (input) {
+  if (cache[input]) return cache[input];
+
+  // expensive computation
+  const result = ....
+
+  cache[input] = result;
+
+  return result;
+}
+```
+
+*Note:* Caching is disallowed for mapping inputs directly to results! Caching _intermediary_ results is not disallowed.
+
+#### Fair play principles
+
 In principle solution should rely only on JavaScript features to come up with correct solution inside the function that is being exported from the solutions file.
 Using built in Node API's is allowed as long as it doesn't meddle with execution of tests or evaluation, or takes unfair advantage in any other way.
 
@@ -54,7 +76,6 @@ Prohibited approaches include
 - meddling with other solutions
 - running npm commands as child process etc.
 - using fs module to read/write other files/directories
-- mapping inputs directly to results, so that consequent evaluation cases would simply return ready result from map (doesn't apply to simple pregeneration of all possible inputs if the input space is less than 1000)
 - doing system calls or web requests to extenal services/servers (unless it's part of challenge)
 - mutating function inputs
 
@@ -68,7 +89,7 @@ This also prevents taking advantage and precoding responses to the test spec.
 
 ## Evaluation
 
-Update `evaluate.js` for the right challenge and then run `npm run eval [numRuns]` optionally passing how many runs should each solution be evaluated for (defaults to 1000).
+Run `node evaluate.js -c [challenge] -d [durationInSeconds]`.
 
 
 # Results
