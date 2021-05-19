@@ -53,7 +53,6 @@ const main = async () => {
       code: fs.readFileSync(`${SOLUTIONS_DIR}/${sol}`, { encoding:'utf8', flag: 'r' }),
       size: fs.statSync(`${SOLUTIONS_DIR}/${sol}`).size,
       compiled: 'successfully',
-      compileTime: null,
       validationTime: null,
     }
   }), {});
@@ -69,10 +68,7 @@ const main = async () => {
     vm.createContext(context);
 
     try {
-      const start = performance.now();
       vm.runInContext(code, context);
-      const end = performance.now();
-      STATS[sol].compileTime = end - start;
 
       if (typeof context?.module?.exports === 'function') {
         fn = context.module.exports;

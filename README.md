@@ -43,6 +43,7 @@ Then sum the points together - the top one gets 5pts from jury. (ties are possib
 
 ### Proxibited solutions
 
+- mutating function inputs
 - caching inputs directly to results, so that consequent evaluation cases would simply return ready result from map
 
 Example:
@@ -77,7 +78,6 @@ Prohibited approaches include
 - running npm commands as child process etc.
 - using fs module to read/write other files/directories
 - doing system calls or web requests to extenal services/servers (unless it's part of challenge)
-- mutating function inputs
 
 We reserve right to update this list or disqualify a solution if we see that it is taking an unfair advantage and/or is unfair to other solutions.
 This whole challenge concept is still a MVP and we iterate and improve as we go :) Thank you for your understanding ;)
