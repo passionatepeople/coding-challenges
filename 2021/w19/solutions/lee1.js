@@ -1,0 +1,1 @@
+ a=t=>{for( r=2,o=Math.sqrt(t);r<=o;r++)if(t%r==0)return!1;return t>1},b=t=>t**2-17,c=t=>Math.floor(Math.sqrt(t+15));module.exports=(t=>a(t)?b(t):c(t));

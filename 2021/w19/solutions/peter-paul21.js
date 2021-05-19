@@ -1,0 +1,1 @@
+module.exports=n=>eval("for(i=n;n%--i;);i")-1?(n+15)**.5|0:n*n-17

@@ -1,0 +1,1 @@
+module.exports=n=>n>1&(f=i=>i*i>n||n%i&&f(i+1))(2)?n*n-17:(n+15)**.5|0

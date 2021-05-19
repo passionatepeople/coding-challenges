@@ -1,0 +1,1 @@
+module.exports=(n,f=(i=>n%i<1||(i+=2)*i<=n&&f(i)))=>(n<4?n>1:n%2<1?!1:!f(3))?n*n-17:Math.sqrt(n+15)|0

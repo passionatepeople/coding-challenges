@@ -1,0 +1,1 @@
+module.exports=n=>{i=2;while(i<n&&n%i!=0)i++;return n==i?n**2-17:~~((n+15)**(1/2))}

@@ -1,0 +1,1 @@
+module.exports=n=>{i=n-1;for(;n%i>0;i--);return i==1?n*n-17:~~((n+15)**0.5)}

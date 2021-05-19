@@ -1,0 +1,1 @@
+module.exports=o=>(o=>{for(i=n=o;n%--i;);return 1==i&o>1})(o)?o*o-17:~~((o+15)**.5)

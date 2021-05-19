@@ -1,0 +1,1 @@
+module.exports=n=>eval('for(x=n;n%--x;);x^1?0|(n+15)**.5:n*n-17')
