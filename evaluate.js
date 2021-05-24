@@ -31,6 +31,7 @@ const CHALLENGE = OPTIONS.challenge;
 const PERCENT_MARGIN_FOR_TIE = parseInt(OPTIONS.marginForTies, 10);
 const LOG_PAD = parseInt(OPTIONS.logPad, 10);
 const MAX_SIZE = parseInt(OPTIONS.maxSize, 10);
+const VALIDATION_THRESHOLD = parseInt(OPTIONS.validationThreshold, 10) * 1000;
 
 // don't change these
 const SOLUTIONS_DIR = `./${CHALLENGE}/solutions`;
@@ -45,8 +46,6 @@ const main = async () => {
       solution: sol,
       runTimes: [],
       compileTimes: [],
-      failed: false,
-      onlyCodegolf: false,
       total: null,
       bestRun: null,
       bestCompile: null,
@@ -54,6 +53,9 @@ const main = async () => {
       size: fs.statSync(`${SOLUTIONS_DIR}/${sol}`).size,
       compiled: 'successfully',
       validationTime: null,
+      onlyCodegolf: false,
+      failed: false,
+      failReason: null,
     }
   }), {});
 
@@ -93,6 +95,9 @@ const main = async () => {
   const FAILED = Object.values(STATS)
     .filter(({ solution, size }) => {
       const fn = SOLUTION_FNS[solution];
+      let incorrect = false;
+      let mutated = false;
+
       const start = performance.now();
       const result = STATS[solution].failed = size > MAX_SIZE || shuffle(SPEC).some(({ inputs, result }) => {
         const clonedInputs = clone(inputs)
@@ -100,12 +105,19 @@ const main = async () => {
         const resultIncorrect = JSON.stringify(res) !== JSON.stringify(result);
         const inputsMutated = !isEqual(clonedInputs, inputs);
 
+        if (resultIncorrect) incorrect = true;
+        if (inputsMutated) mutated = true;
+
         return resultIncorrect || inputsMutated;
       });
       const end = performance.now();
       STATS[solution].validationTime = end - start;
 
-      if (!result && STATS[solution].validationTime > parseInt(OPTIONS.validationThreshold, 10) * 1000) {
+      if (incorrect && mutated) STATS[solution].failReason = 'Incorrect result & mutating inputs';
+      else if (incorrect) STATS[solution].failReason = 'Incorrect result';
+      else if (mutated) STATS[solution].failReason = 'mutating inputs';
+
+      if (!result && STATS[solution].validationTime > VALIDATION_THRESHOLD) {
         STATS[solution].onlyCodegolf = true;
       }
 
