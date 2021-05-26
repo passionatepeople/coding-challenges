@@ -1,0 +1,1 @@
+module.exports=(a,b,c)=>a.concat(b).sort((d,e,f=d-e)=>c=='asc'?f:-f)

@@ -1,0 +1,1 @@
+module.exports=((w,u,t)=>w.concat(u).sort((h,a)=>"desc"==t?a-h:h-a))

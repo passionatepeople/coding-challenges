@@ -1,0 +1,1 @@
+module.exports=(a,b,c)=>[...a,...b].sort((a,b)=>c<'d'?a-b:b-a)

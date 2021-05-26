@@ -1,0 +1,1 @@
+module.exports=(a,b,[d])=>a.concat(b).sort((a,b)=>d=='a'?a-b:b-a)
