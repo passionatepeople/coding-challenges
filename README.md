@@ -32,6 +32,7 @@ Ranking is based on performance. Fastest execution time (accross multiple tries)
 
 - +5 points for the shortest solution (codegolf). Judged by the number of bytes your solution file has. If tied, both (or more) get awarded 5 points.
 - +5 points for the most elegant and readable code. Judged by a jury (TBD). Ties are possible.
+- challenge creator gets as many points as participants in the challenge. (clamped to min: 10; max: 25)
 
 **Note:** Since you can submit multiple solutions, the shortest and most elegant solution will be ranked apart from fastest. E.g. you can submit 3 solutions - one aimed to be fastest, another one to be the shortest and the 3rd one to be most readable/elegant/novel or otherwise noteworthy for the judges. It could very well be that a solution is both elegant and fast. So all correct solutions will be evaluated independently for each award category.
 
@@ -96,45 +97,48 @@ Run `node evaluate.js -c [challenge] -d [durationInSeconds]`.
 ## 2021
 ### Overall
 
-| Place | Name       | Week 09 | Week 10 | Week 11 | Week 12   | Week 13   | Week 14  | Week 15  | Week 16 | Week 17 | Week 18 | Week 19 | Total points |
-|-------|------------|---------|---------|---------|-----------|-----------|----------|----------|---------|---------|---------|---------|--------------|
-| 1.    | Peter-Paul | 30      | 25      | 35      | 25        | 30        |          | 30       | 30      | 30      | 23      | 23      | 281          |
-| 2.    | Irene      | 10      | 10      | 20      | 25        | 23        | 25       | 17       | 35      | 28      | 13      | 2       | 208          |
-| 3.    | Lars       | 25      | 15      | 18      | 30        | 18        | 17       | 17       | 12      |         | 18      | 30      | 200          |
-| 4.    | Aman       | 4       | 18      | 15      | 6         | 18        | 25       | 25       | 25      | 18      | 18      | 10      | 182          |
-| 5.    | Joppe      | 5       | 2       | 10      | 25        | 18        | 25       | 15       | 8       | 12      | 18      | 10      | 148          |
-| 6.    | Tim        | 12      | 9       | 6       | 9         | 23        | 17       | 4        |         | 17      | 25      | 15      | 137          |
-| 7.    | Jan Bart   | 10      | 6       | 4       | 25        | 18        | 8        | 6        | 6       | 4       | 9       | 2       | 98           |
-| 8.    | Dexter     | 1       | 17      | 15      |           | 23        | 2        | 2        | 12      | 4       | 1       | 6       | 83           |
-| 9.    | Mettin     |         | 8       |         | 1         | 23        | 9        | 8        | 4       | 5       |         | 6       | 64           |
-| 10.   | Sander A.  |         |         |         | 25        | 18        |          |          |         |         |         |         | 43           |
-| 11.   | Edgar      | 15      |         |         |           |           |          |          |         |         |         | 15      | 30           |
-| 12.   | Oskar      |         |         |         |           |           |          |          |         | 12      | 11      |         | 23           |
-| 13.   | Daniel     |         | 1       |         |           | 18        |          |          |         |         |         |         | 19           |
-| 14.   | Lee        |         |         |         |           |           |          |          |         | 12      | 4       |         | 16           |
-| 15.   | Bram       |         |         |         |           |           | 6        | 1        |         | 1       |         |         | 8            |
-| 16.   | Marco      | 6       |         |         |           |           |          |          |         |         |         |         | 6            |
-| 17.   | Timo       | 4       |         |         |           |           |          |          |         |         |         |         | 4            |
-| 18.   | Mihai      |         |         | 2       |           |           |          |          |         |         |         |         | 2            |
-|       | Sander L.  |         |         |         | 2         |           |          |          |         |         |         |         | 2            |
+| Place | Name       | Week 09 | Week 10 | Week 11 | Week 12   | Week 13   | Week 14  | Week 15  | Week 16 | Week 17 | Week 18 | Week 19 | Week 20 | Total points |
+|-------|------------|---------|---------|---------|-----------|-----------|----------|----------|---------|---------|---------|---------|---------|--------------|
+| 1.    | Peter-Paul | 30      | 25      | 35      | 25        | 30        | 10       | 30       | 30      | 30      | 23      | 23      | 15      | 306          |
+| 2.    | Irene      | 10      | 10      | 20      | 25        | 23        | 25       | 17       | 35      | 28      | 13      | 2       | 17      | 225          |
+| 3.    | Aman       | 4       | 18      | 15      | 6         | 18        | 25       | 25       | 25      | 18      | 18      | 10      | 25      | 207          |
+| 4.    | Lars       | 25      | 15      | 18      | 30        | 18        | 17       | 17       | 12      |         | 18      | 35      |         | 205          |
+| 5.    | Joppe      | 5       | 2       | 10      | 25        | 18        | 25       | 15       | 8       | 12      | 18      | 10      |         | 148          |
+| 6.    | Tim        | 12      | 9       | 6       | 9         | 23        | 17       | 4        |         | 17      | 25      | 15      | 2       | 139          |
+| 7.    | Jan Bart   | 10      | 6       | 4       | 25        | 18        | 8        | 6        | 6       | 4       | 9       | 2       | 4       | 102          |
+| 8.    | Dexter     | 1       | 17      | 15      |           | 23        | 2        | 2        | 12      | 4       | 1       | 6       | 6       | 89           |
+| 9.    | Mettin     |         | 8       |         | 1         | 23        | 9        | 8        | 4       | 5       | 10      | 6       | 10      | 84           |
+| 10.   | Sander A.  |         |         |         | 25        | 18        |          |          |         |         |         |         |         | 43           |
+| 11.   | Lee        |         |         |         |           |           |          |          |         | 12      | 4       |         | 25      | 41           |
+| 12.   | Edgar      | 15      |         |         |           |           |          |          |         |         |         | 15      |         | 30           |
+| 13.   | Daniel     |         | 1       |         |           | 18        |          |          |         |         |         |         | 8       | 27           |
+| 14.   | Oskar      |         |         |         |           |           |          |          |         | 12      | 11      |         |         | 23           |
+| 15.   | Bram       |         |         |         |           |           | 6        | 1        |         | 1       |         |         |         | 8            |
+| 16.   | Marco      | 6       |         |         |           |           |          |          |         |         |         |         |         | 6            |
+| 17.   | Timo       | 4       |         |         |           |           |          |          |         |         |         |         |         | 4            |
+| 18.   | Mihai      |         |         | 2       |           |           |          |          |         |         |         |         |         | 2            |
+|       | Sander L.  |         |         |         | 2         |           |          |          |         |         |         |         |         | 2            |
+|       | Stef       |         |         |         |           |           |          |          |         |         |         |         | 2       | 2            |
 
 
 ### May
 
 | Place | Name        | Week 18 | Week 19  | Week 20  | Week 21  | Total points|
 |-------|-------------|---------|----------|----------|----------|-------------|
-| 1.    | Lars        | 18      | 30       |          |          | 48          |
-| 2.    | Peter-Paul  | 23      | 23       |          |          | 46          |
-| 3.    | Tim         | 25      | 15       |          |          | 40          |
-| 4.    | Joppe       | 18      | 10       |          |          | 28          |
-|       | Aman        | 18      | 10       |          |          | 28          |
-| 6.    | Irene       | 13      | 2        |          |          | 15          |
-|       | Edgar       |         | 15       |          |          | 15          |
-| 8.    | Oskar       | 11      |          |          |          | 11          |
-|       | Jan Bart    | 9       | 2        |          |          | 11          |
-| 10.   | Lee         | 4       |          |          |          | 4           |
-| 11.   | Dexter      | 1       | 6        |          |          | 7           |
-| 12.   | Mettin      |         | 6        |          |          | 6           |
+| 1.    | Peter-Paul  | 23      | 23       | 15       |          | 61          |
+| 2.    | Lars        | 18      | 35       |          |          | 53          |
+|       | Aman        | 18      | 10       | 25       |          | 53          |
+| 4.    | Tim         | 25      | 15       | 2        |          | 42          |
+| 5.    | Irene       | 13      | 2        | 17       |          | 32          |
+| 6.    | Lee         | 4       |          | 25       |          | 29          |
+| 7.    | Joppe       | 18      | 10       |          |          | 28          |
+| 8.    | Mettin      | 10      | 6        | 10       |          | 26          |
+| 9.    | Edgar       |         | 15       |          |          | 15          |
+|       | Jan Bart    | 9       | 2        | 4        |          | 15          |
+| 10.   | Dexter      | 1       | 6        | 6        |          | 13          |
+| 11.   | Oskar       | 11      |          |          |          | 11          |
+| 12.   | Daniel      |         |          | 8        |          | 8           |
+| 13.   | Stef        |         |          | 2        |          | 2           |
 
 
 ### April

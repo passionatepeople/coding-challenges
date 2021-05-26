@@ -1,52 +1,3 @@
-# Week 20 challenge
-
-Write a function `mergeArrays` which takes in 2 arrays as first 2 arguments and output sorting direction as 3rd.
-Both input arrays will be sorted, so perhaps you can take advantage of that.
-However, the length and and input array sorting direction is variable.
-
-**Note:**
-The input arrays should not be mutated!
-The result should always be a new array.
-
-Examples:
-```
-mergeArrays([1, 2, 3, 4], [8, 7, 6, 5], 'asc') // returns [1, 2, 3, 4, 5, 6 ,7, 8]
-mergeArrays([10, 6, 2, 1, -1, -5], [3, 4, 7, 9], 'desc') // returns [10, 9, 7, 6, 4, 3, 2, 1, -1, -5]
-```
-
-
-## Upload link
-
-[Submissions are closed]
-
-## Results
-
-
-| Place | Name        | Performance | Codegolf | Jury award | Total points |
-|-------|-------------|-------------|----------|------------|--------------|
-| 1.    | Aman        | 25          |          |            | 25           |
-|       | Lee         | 25          |          |            | 25           |
-| 3.    | Irene       | 12          | 5        |            | 17           |
-| 4.    | Peter-Paul  | 15          |          |            | 15           |
-| 5.    | Mettin      | 10          |          |            | 10           |
-| 6.    | Daniel      | 8           |          |            | 8            |
-| 7.    | Dexter      | 6           |          |            | 6            |
-| 8.    | Jan Bart    | 4           |          |            | 4            |
-| 9.    | Tim         | 2           |          |            | 2            |
-| 9.    | Stef        | 2           |          |            | 2            |
-
-### Jury vote
-
-[will be announced later]
-
-### Screenshot
-
-![2021 Week 20 podium](./podium.png)
-
-![2021 Week 20 results](./results.png)
-
-### Full output log
-```
 EVALUATION STARTED:                 26/05/2021, 12:08:01
 EVALUATING CHALLENGE:               2021/w20
 FOUND 39 SOLUTIONS:                 alba21.js, aman1.js, bram1.js, daniel1.js, daniel2.js, daniel3.js, daniel4.js, dexter1.js, dexter2.js, edgar1.js,
@@ -178,4 +129,3 @@ RAW RESULTS:
 │   37    │    'nick1.js'    │ 106.86956300074235 │ 106.84616200020537 │ 0.023401000536978245 │ 1994 │ 'successfully' │ 1324.5310290000016 │    false     │ false  │    null    │ 4400 │
 │   38    │    'jos1.js'     │ 107.6185459997505  │ 107.5986700002104  │ 0.01987599954009056  │ 872  │ 'successfully' │ 415.75459899999987 │    false     │ false  │    null    │ 4400 │
 └─────────┴──────────────────┴────────────────────┴────────────────────┴──────────────────────┴──────┴────────────────┴────────────────────┴──────────────┴────────┴────────────┴──────┘
-```
