@@ -20,9 +20,8 @@ _Macro-optimizations are what you apply in the real world if there's a (potentia
 - use for loops where possible (instead .forEach) (Jan Bart)
 - consider if there is stuff you can pre-generate (the prime number, for instance)(Jan Bart)
 - creating objects is expensive, so make them first and then fill them (Dexter)
-- declaring objects in arguments saves declarations (Dexter)
 - function calls are expensive (Dexter)
-- Lookups from nested closures take longer than local variables (Dexter)
+- lookups from nested closures take longer than local variables (Dexter)
 
 ## Micro optimizations
 - `~~n` is faster than `n|0` (Peter-Paul)
@@ -33,3 +32,4 @@ _Macro-optimizations are what you apply in the real world if there's a (potentia
 - as a general tip - knowing JS API surface helps a lot, so reading through documentation ([1](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference) [2](https://nodejs.org/dist/latest-v14.x/docs/api/)) regularly will not only let you find short solutions, but be a really knowledgeable developer (Harijs)
 - study older code golf submissions for ideas (Irene)
 - read [tips-for-golfing-in-javascript](https://codegolf.stackexchange.com/questions/2682/tips-for-golfing-in-javascript) and [tips-for-golfing-in-ecmascript-6-and-above](https://codegolf.stackexchange.com/questions/37624/tips-for-golfing-in-ecmascript-6-and-above) because they cover a lot of cases (Irene)
+- declaring objects in arguments saves declarations (Dexter)
