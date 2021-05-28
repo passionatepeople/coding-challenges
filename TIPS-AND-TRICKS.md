@@ -4,7 +4,7 @@ Here are some Tips & Tricks that have been shared by our regular participants wh
 
 *Disclaimer:* since the principles in real life differ greatly from coding challenges, don't treat these as suggestions for good code.
 In real life maintainability, readability and simplicity plays a far more important role.
-Performance comes into play only when you are dealing with particular bottlenecks. For example, you might want to optimize aggressively if you are dealing with sophisticated computation in an event lister for a scroll event.
+Performance comes into play only when you are dealing with particular bottlenecks. For example, you might want to optimize aggressively if you are dealing with sophisticated computation in an event listener for a scroll event.
 And currently I can't think of a plausible real life scenario where codegolf principles would be useful :)
 
 
@@ -19,6 +19,10 @@ _Macro-optimizations are what you apply in the real world if there's a (potentia
 - can use a Map or object to store intermediary results so you can reuse those (Jan Bart)
 - use for loops where possible (instead .forEach) (Jan Bart)
 - consider if there is stuff you can pre-generate (the prime number, for instance)(Jan Bart)
+- creating objects is expensive, so make them first and then fill them (Dexter)
+- declaring objects in arguments saves declarations (Dexter)
+- function calls are expensive (Dexter)
+- Lookups from nested closures take longer than local variables (Dexter)
 
 ## Micro optimizations
 - `~~n` is faster than `n|0` (Peter-Paul)
