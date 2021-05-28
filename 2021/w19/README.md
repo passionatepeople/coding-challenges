@@ -24,7 +24,7 @@ compute(15) // returns 5 // √(15 + 15) = √30 = 5.47... => 5
 
 | Place | Name        | Performance | Codegolf | Jury award | Total points |
 |-------|-------------|-------------|----------|------------|--------------|
-| 1.    | Lars        | 25          | 5        |            | 30           |
+| 1.    | Lars        | 25          | 5        | 5          | 35           |
 | 2.    | Peter-Paul  | 18          | 5        |            | 23           |
 | 3.    | Edgar       | 15          |          |            | 15           |
 |       | Tim         | 15          |          |            | 15           |
@@ -40,8 +40,11 @@ compute(15) // returns 5 // √(15 + 15) = √30 = 5.47... => 5
 
 ### Jury vote
 
-[will be announced during the weekly call]
+#### Harijs
 
+1. Lars1 - first to submit and to remain in first place also great way of storing primes in Uint8Array
+2. jmulders1 - interesting approach with jumping 30 numbers at a time and checking increments  in-between
+3. tim3 - similar idea with jumps of 30 and checking certain numbers in-inbetween
 ### Screenshot
 
 ![2021 Week 19 results](./results.png)
