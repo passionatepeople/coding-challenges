@@ -88,6 +88,10 @@ This whole challenge concept is still a MVP and we iterate and improve as we go 
 Since challenges are intended to be relatively small, solvable in short time and withhout excessive coding, there's a practical limit of max 2048 bytes per solution.
 This also prevents taking advantage and precoding responses to the test spec.
 
+## Tips and Tricks
+
+[List of ideas from our participants](TIPS-AND-TRICKS.md)
+
 ## Evaluation
 
 Run `node evaluate.js -c [challenge] -d [durationInSeconds]`.
