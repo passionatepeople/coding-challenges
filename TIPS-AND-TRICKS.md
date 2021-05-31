@@ -12,6 +12,9 @@ We can split the tips & tricks into sections for Macro, Micro and Codegolf.
 
 _Macro-optimizations are what you apply in the real world if there's a (potential) performance bottleneck. Micro-optimizations are what you apply in the real world if you hate your colleagues._ - Peter-Paul
 
+## General tips
+- Google is your friend :) a lot of problems have been solved already and/or have optimal solutions for them. Try to find and understand them, and modify if needed (Irene)
+- When doing optimizations run multiple, slightly modified solutions against each other to see which one consistently comes out top (Irene)
 
 ## Macro optimizations
 - avoid unnecessary loops (and other things that affect time complexity order), how trubofan and other optimizing compilers work, etc. (Peter-Paul)
@@ -22,6 +25,8 @@ _Macro-optimizations are what you apply in the real world if there's a (potentia
 - creating objects is expensive, so make them first and then fill them (Dexter)
 - function calls are expensive (Dexter)
 - lookups from nested closures take longer than local variables (Dexter)
+- be aware that a lot of functions in Javascript are just syntactic sugar (think of `.map`, `.reduce`, `.filter`, etc.) that do loops under the hood. Depending on your use case, a plain ol' `for` or `while` loop can be faster (Irene)
+- go for mathematical solutions if possible (see W12 for example) (Irene)
 
 ## Micro optimizations
 - `~~n` is faster than `n|0` (Peter-Paul)
