@@ -30,14 +30,23 @@ mergeArrays([10, 6, 2, 1, -1, -5], [3, 4, 7, 9], 'desc') // returns [10, 9, 7, 6
 | 4.    | Peter-Paul  | 15          |          |            | 15           |
 | 5.    | Mettin      | 10          |          |            | 10           |
 | 6.    | Daniel      | 8           |          |            | 8            |
-| 7.    | Dexter      | 6           |          |            | 6            |
-| 8.    | Jan Bart    | 4           |          |            | 4            |
-| 9.    | Tim         | 2           |          |            | 2            |
-| 9.    | Stef        | 2           |          |            | 2            |
+| 7.    | Tim         | 2           |          | 5          | 7            |
+| 8.    | Dexter      | 6           |          |            | 6            |
+| 9.    | Jan Bart    | 4           |          |            | 4            |
+| 10.   | Stef        | 2           |          |            | 2            |
 
 ### Jury vote
 
-[will be announced later]
+#### Harijs
+1. Aman1 - fast as hell and using empty for (; ;) statements which I hadn’t seen in practice before :smile:
+2. Irene1 - genious c[3]? for shortest way to check if sorting is to be done descending
+3. Tim1 - Code like an Egyptian :joy:
+
+#### David
+
+1. Tim1 Thats the coolest piece of code I've seen so far in this coding challange
+2. Jos1 The combo breaker throw :'D
+3. Nick1 AJAX!!!!
 
 ### Screenshot
 
