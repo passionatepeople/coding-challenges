@@ -1,0 +1,1 @@
+module.exports=n=>(r=[],l=n=>(m=n**.5,f=n%2?eval("for(i=3;n%i&&i<m;i+=2){};i"):2,r.push(f=f<m?f:n),f^n?l(n/f):r),l(n));

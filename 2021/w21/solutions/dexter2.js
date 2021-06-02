@@ -1,0 +1,1 @@
+module.exports=(n,f=[],p=2)=>{while(n>1){while(!(n%p)){f.push(p);n=n/p}p+=p%2?2:1}return f}

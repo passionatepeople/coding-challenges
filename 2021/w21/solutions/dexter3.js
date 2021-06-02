@@ -1,0 +1,1 @@
+module.exports=(n,f=[],p=2)=>{for(;n>1;p+=p%2?2:1){for(;!(n%p);n=n/p){f.push(p)}}return f}
