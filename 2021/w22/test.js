@@ -136,6 +136,54 @@ describe.each(solutions)("%s", (filename) => {
         },
       ],
     ],
+    [
+      [
+        [
+          { away: "Valencia", home: "Eibar", result: "1-1" },
+          { home: "Vallecano", result: "1-2", away: "Malaga" },
+          { away: "Real Madrid", result: "1-0", home: "Villarreal" },
+          { away: "Vallecano", result: "10-2", home: "Real Madrid" },
+        ],
+      ],
+      [
+        {
+          team: "Real Madrid",
+          matches: 2,
+          points:3,
+          goals: { for: 10, against: 3, difference: 7 },
+        },
+        {
+          team: "Malaga",
+          matches: 1,
+          points: 3,
+          goals: { for: 2, against: 1, difference: 1 },
+        },
+        {
+          team: "Villarreal",
+          matches: 1,
+          points:3,
+          goals: { for: 1, against: 0, difference: 1 },
+        },
+        {
+          team: "Eibar",
+          matches: 1,
+          points:1,
+          goals: { for: 1, against: 1, difference: 0 },
+        },
+        {
+          team: "Valencia",
+          matches: 1,
+          points:1,
+          goals: { for: 1, against: 1, difference: 0 },
+        },
+        {
+          team: "Vallecano",
+          matches: 2,
+          points: 0,
+          goals: { for: 3, against: 12, difference: -9 },
+        }
+      ]
+    ],
   ])("%j = %j", (inputs, result) => {
     expect(evaluate(...inputs)).toEqual(result);
   });
