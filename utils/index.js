@@ -154,6 +154,37 @@ const getLocalIp = () => {
     return get(ips, '0.address', '');
 };
 
+/**
+ * Test whether a and b are equal. Does not support NaN or RegExp.
+ * @param {unknown} a
+ * @param {unknown} b
+ * @return {boolean}
+ */
+const isEqual = (a, b) => {
+  if (a === b) return true;
+  if (!a || !b) return false;
+  if (a.constructor.name !== b.constructor.name) return false;
+  if (Array.isArray(a)) {
+    if (a.length !== b.length) return false;
+    for (let i = a.length; i--;) {
+      if (!isEqual(a[i], b[i])) return false;
+    }
+  }
+  if (a.valueOf !== Object.prototype.valueOf) {
+    return a.valueOf() === b.valueOf();
+  }
+  if (a.toString !== Object.prototype.toString) {
+    return a.toString() === b.toString();
+  }
+  const keys = Object.keys(a);
+  if (keys.length !== Object.keys(b).length) return false;
+  for (const key of keys) {
+    if (!Object.prototype.hasOwnProperty.call(a, key)) return false;
+    if (!isEqual(a[key], b[key])) return false;
+  }
+  return true;
+};
+
 module.exports = {
   stdout,
   stdev,
@@ -163,4 +194,5 @@ module.exports = {
   normDate,
   clearDir,
   getLocalIp,
+  isEqual,
 };
