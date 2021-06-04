@@ -101,7 +101,7 @@ const main = async () => {
       const result = STATS[solution].failed = size > MAX_SIZE || shuffle(SPEC).some(({ inputs, result }) => {
         const clonedInputs = clone(inputs)
         const res = fn(...clonedInputs);
-        const resultIncorrect = !isEqual(res, result);
+        const resultIncorrect = !isEqual(result, res);
         const inputsMutated = !isEqual(clonedInputs, inputs);
 
         if (resultIncorrect) incorrect = true;
