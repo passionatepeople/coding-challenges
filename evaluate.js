@@ -6,11 +6,10 @@ const vm = require('vm');
 const chalk = require('chalk');
 const { performance } = require('perf_hooks');
 const { shuffle, flatten, omit, pick, min } = require('lodash');
-const isEqual = require('fast-deep-equal');
 const clone = require('rfdc')();
 const { table } = require('table');
 const humanizeDuration = require('humanize-duration');
-const { stdout, wrapAndPad, computeResults, warmUpContext, normDate, clearDir, getLocalIp } = require('./utils');
+const { stdout, wrapAndPad, computeResults, warmUpContext, normDate, clearDir, getLocalIp, isEqual } = require('./utils');
 
 program.version('1.0.0');
 
@@ -102,7 +101,7 @@ const main = async () => {
       const result = STATS[solution].failed = size > MAX_SIZE || shuffle(SPEC).some(({ inputs, result }) => {
         const clonedInputs = clone(inputs)
         const res = fn(...clonedInputs);
-        const resultIncorrect = JSON.stringify(res) !== JSON.stringify(result);
+        const resultIncorrect = !isEqual(res, result);
         const inputsMutated = !isEqual(clonedInputs, inputs);
 
         if (resultIncorrect) incorrect = true;
