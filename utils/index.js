@@ -170,12 +170,6 @@ const isEqual = (a, b) => {
       if (!isEqual(a[i], b[i])) return false;
     }
   }
-  if (a.valueOf !== Object.prototype.valueOf) {
-    return a.valueOf() === b.valueOf();
-  }
-  if (a.toString !== Object.prototype.toString) {
-    return a.toString() === b.toString();
-  }
   const keys = Object.keys(a);
   if (keys.length !== Object.keys(b).length) return false;
   for (const key of keys) {
