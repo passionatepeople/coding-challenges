@@ -114,7 +114,8 @@ const main = async () => {
 
       if (incorrect && mutated) STATS[solution].failReason = 'Incorrect result & mutating inputs';
       else if (incorrect) STATS[solution].failReason = 'Incorrect result';
-      else if (mutated) STATS[solution].failReason = 'mutating inputs';
+      else if (mutated) STATS[solution].failReason = 'Mutating inputs';
+      else if (size > MAX_SIZE) STATS[solution].failReason = `Exceeded ${MAX_SIZE} bytes`;
 
       if (!result && STATS[solution].validationTime > VALIDATION_THRESHOLD) {
         STATS[solution].onlyCodegolf = true;
