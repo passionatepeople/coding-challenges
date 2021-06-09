@@ -1,0 +1,1 @@
+module.exports=M=>(R={},u=(t,f,a)=>{r=R[t]=R[t]||[t,0,0,0,0,0];r[1]+=f>a?3:f==a?1:0;r[2]+=f;r[3]+=a;r[4]+=f-a;r[5]++},M.map(m=>{[h,a]=m.result.split`-`;u(m.home,+h,+a);u(m.away,+a,+h)}),Object.values(R).sort((a,b)=>b[1]-a[1]||b[4]-a[4]||(b[0]<a[0]?1:-1)).map(t=>({team:t[0],points:t[1],goals:{for:t[2],against:t[3],difference:t[4]},matches:t[5]})))
