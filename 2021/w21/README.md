@@ -31,7 +31,7 @@ getPrimeFactors(100) // return [2, 2, 5, 5]
 
 | Place | Name        | Performance | Codegolf | Jury award | Total points |
 |-------|-------------|-------------|----------|------------|--------------|
-| 1.    | Lars        | 25          |          |            | 25           |
+| 1.    | Lars        | 25          |          | 5          | 30           |
 | 2.    | Peter-Paul  | 18          | 5        |            | 23           |
 | 3.    | Irene       | 15          |          |            | 15           |
 |       | Jan Bart    | 15          |          |            | 15           |
@@ -45,7 +45,11 @@ getPrimeFactors(100) // return [2, 2, 5, 5]
 
 ### Jury vote
 
-[will be announced later]
+#### Harijs
+
+1. lars1 - well structured and readable
+2. tim1 - using Uint8Array
+3. mettin1 - admission of guilt for stealing :D
 
 ### Screenshot
 
