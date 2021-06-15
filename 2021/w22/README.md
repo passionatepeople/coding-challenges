@@ -99,7 +99,7 @@ Tim (+ 10 pts)
 | Place | Name        | Performance | Codegolf | Jury award | Total points |
 |-------|-------------|-------------|----------|------------|--------------|
 | 1.    | Aman        | 25          |          |            | 25           |
-| 2.    | Lars        | 18          |          |            | 18           |
+| 2.    | Lars        | 18          |          | 5          | 23           |
 |       | Irene       | 18          |          |            | 18           |
 | 4.    | Peter-Paul  | 12          | 5        |            | 17           |
 | 5.    | Mettin      | 12          |          |            | 12           |
@@ -110,7 +110,18 @@ Tim (+ 10 pts)
 
 ### Jury vote
 
-[will be announced later]
+#### Israel
+
+(this week I went only for readability):
+
+1. aman2.js
+2. lee3.js
+3. lars1.js
+
+#### Harijs
+
+1. lars2 - own sorting implementation
+2. peterPaul2/irene2 - readable and well structured
 
 ### Screenshot
 
