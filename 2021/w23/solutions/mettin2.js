@@ -1,0 +1,1 @@
+module.exports=(s,p=[],A=60,B=60,C=24,D=365,E=' and ',g=(w,m,l)=>{a=(l?~~(s/l):s)%m;a&&p.push(a+' '+w+(a>1?'s':''))})=>{g('year',D,D*C*B*A);g('day',D,C*B*A);g('hour',C,B*A);g('minute',B,A);g('second',A);let{length:l}=p;return l==1?p[0]:l==2?p.join(E):[p.slice(0,l-1).join(', '),p.slice(-1)].join(E);}

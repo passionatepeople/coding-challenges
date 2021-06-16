@@ -1,0 +1,1 @@
+module.exports=d=>(r="",a=a=>p&&(r+=(r?d?", ":" and ":"")+p+" "+a+(p-1?"s":"")),p=d/31536e3|0,d%=31536e3,a`year`,p=d/86400|0,d%=86400,a`day`,p=d/3600|0,d%=3600,a`hour`,p=d/60|0,d%=60,a`minute`,p=d,d=0,a`second`,r)

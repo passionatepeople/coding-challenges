@@ -1,0 +1,1 @@
+module.exports=(s,S=1,M=60,H=M*M,D=24*H,Y=365*D,Q='year,day,hour,minute,second'.split`,`,r='',a,i,d)=>{for (i=0;i<=4;i++)(d=[Y,D,H,M,S][i],a=s/d|0)&&(s%=d,r+=(!r?'':s?', ':' and ')+a+' '+Q[i]+(a>1?'s':''));return r}
