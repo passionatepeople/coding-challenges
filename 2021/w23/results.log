@@ -1,62 +1,3 @@
-# Week 23 challenge
-
-You need to write `howLong` function, which takes in a number representing seconds and returns a string in a human readable form.
-
-Inputs range from 1 to 100000000 seconds (including)
-
-**Notes:**
-- parts are separated by commas, except the last (or only) parts are separated by "and"
-- if there is a single part, it is written as singular, otherwise as plural
-- output starts with larger units (e.g., years before months)
-- parts with 0 units are skipped
-
-Examples:
-```
-howLong(1) // returns "1 second"
-howLong(60) // returns "1 minute"
-howLong(123) // returns "2 minutes and 3 seconds"
-howLong(3599) // returns "59 minutes and 59 seconds"
-howLong(3600) // returns "1 hour"
-howLong(3601) // returns "1 hour and 1 second"
-howLong(100000) // returns "1 day, 3 hours, 46 minutes and 40 seconds"
-howLong(1000000) // returns "11 days, 13 hours, 46 minutes and 40 seconds"
-howLong(10000000) // returns "115 days, 17 hours, 46 minutes and 40 seconds"
-howLong(100000000) // returns "3 years, 62 days, 9 hours, 46 minutes and 40 seconds"
-```
-
-
-## Upload link
-
-[PP Connect](https://connect.passionatepeople.io/code-challenge-submission)
-
-## Results
-
-
-| Place | Name        | Performance | Codegolf | Jury award | Total points |
-|-------|-------------|-------------|----------|------------|--------------|
-| 1.    | Peter-Paul  | 25          | 5        |            | 30           |
-| 2.    | Lars        | 25          |          |            | 25           |
-| 3.    | Mettin      | 15          |          |            | 15           |
-| 4.    | Aman        | 12          |          |            | 12           |
-| 5.    | Irene       | 10          |          |            | 10           |
-| 6.    | Jan Bart    | 8           |          |            | 8            |
-| 7.    | Dexter      | 6           |          |            | 6            |
-|       | Alexander   | 6           |          |            | 6            |
-| 9.    | Tim         | 2           |          |            | 2            |
-| 10.   | Lee         | 1           |          |            | 1            |
-
-### Jury vote
-
-[will be announced later]
-
-### Screenshot
-
-![2021 Week 23 podium](./podium.png)
-
-![2021 Week 23 results](./results.png)
-
-### Full output log
-```
 EVALUATION STARTED:                 16/06/2021, 12:08:21
 EVALUATING CHALLENGE:               2021/w23
 FOUND 24 SOLUTIONS:                 alexanderquintero1.js, alexanderquintero2.js, alexanderquintero3.js, alexanderquintero4.js, aman1.js, dexter1.js,
@@ -140,4 +81,3 @@ RAW RESULTS:
 │   22    │      'dexter3.js'       │ 23.13042700011283  │ 23.117882000282407 │ 0.012544999830424786 │ 215  │ 'successfully' │ 51.20760199999859  │    false     │ false  │    null    │ 24500 │
 │   23    │       'lee21.js'        │ 34.199803999159485 │ 34.18664199998602  │ 0.013161999173462391 │ 382  │ 'successfully' │ 79.63559000000168  │    false     │ false  │    null    │ 24500 │
 └─────────┴─────────────────────────┴────────────────────┴────────────────────┴──────────────────────┴──────┴────────────────┴────────────────────┴──────────────┴────────┴────────────┴───────┘
-```
