@@ -42,12 +42,21 @@ howLong(100000000) // returns "3 years, 62 days, 9 hours, 46 minutes and 40 seco
 | 6.    | Jan Bart    | 8           |          |            | 8            |
 | 7.    | Dexter      | 6           |          |            | 6            |
 |       | Alexander   | 6           |          |            | 6            |
-| 9.    | Tim         | 2           |          |            | 2            |
-| 10.   | Lee         | 1           |          |            | 1            |
+|       | Lee         | 1           |          | 5          | 6            |
+| 10.   | Tim         | 2           |          |            | 2            |
 
 ### Jury vote
 
-[will be announced later]
+#### David
+
+1. jmulders1 - most readable solution
+2. dexter1 - similair to jmulders1 just a little less readable
+3. lee21 - creativity award for hacking the system
+
+#### Harijs
+
+1. lee21 - finding a way to require a module nevertheless
+2. Lars/Peter-Paul - finding an optimal balance between pregeneration and computation
 
 ### Screenshot
 
