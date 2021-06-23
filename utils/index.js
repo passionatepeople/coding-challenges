@@ -162,6 +162,15 @@ const getLocalIp = () => {
  */
 const isEqual = (a, b) => {
   if (a === b) return true;
+  if (
+    (typeof a === "string" && typeof b === "string") ||
+    (typeof a === "boolean" && typeof b === "boolean") ||
+    (typeof a === "number" && typeof b === "number")
+  ) {
+    if (a !== b) {
+      return false;
+    }
+  }
   if (!a || !b) return false;
   if (a.constructor.name !== b.constructor.name) return false;
   if (Array.isArray(a)) {
