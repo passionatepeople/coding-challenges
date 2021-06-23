@@ -16,6 +16,7 @@
     "test": "node test-latest.js",
     "test:all": "jest --runInBand",
     "test:watch": "node test-latest.js --watch",
+    "test:utils": "jest utils",
     "eval": "node evaluate.js -c 2021/w20 -d 15"
   },
   "engines": {
