@@ -1,0 +1,1 @@
+module.exports=(o,n,r)=>eval("for(b=2;o*n!==r;)o<<=1,n<<=1,r<<=1,b++")

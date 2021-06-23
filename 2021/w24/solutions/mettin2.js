@@ -1,0 +1,1 @@
+module.exports=(a,b,c,d=1,e=parseInt)=>{while(1){if((e(a,d)*e(b, d))==e(c,d)){return d}d++}}

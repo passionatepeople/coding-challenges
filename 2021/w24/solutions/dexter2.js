@@ -1,0 +1,1 @@
+module.exports=(n,m,p,b=(Math.max(...(n+m+p).split(''))||10)+1,c=n=>parseInt(n,b))=>eval("for(;c(n)*c(m)!==c(p);b++);b")

@@ -1,0 +1,1 @@
+module.exports=(a,b,c)=>{for(i=1;i++;){e=f=>parseInt(f,i);if(e(a)*e(b)==e(c))return i}}
