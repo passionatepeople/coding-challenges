@@ -1,52 +1,3 @@
-# Week 24 challenge
-
-Write a function `findBase` which will receive 3 numbers as arguments - `num1`, `num2` and `product`. However, the base of the numbers is not known, so they will be encoded as strings.
-
-The relationship between the numbers is that `num1` times `num2` equals `product`. Your task is to find the lowest possible base in which these numbers were encoded so that relationship would hold true.
-
-Examples:
-```
-findBase('10', '11', '110') // returns 2
-findBase('10', '10', '100') // returns 2
-findBase('22', '1', '22') // returns 3
-findBase('2', '3', '12') // returns 4
-findBase('12', '5', '60') // returns 10
-findBase('4', '17', '68') // returns 10
-findBase('e', '2', '1c') // returns 16
-```
-
-
-## Upload link
-
-[PP Connect](https://connect.passionatepeople.io/code-challenge-submission)
-
-
-## Results
-
-
-| Place | Name        | Performance | Codegolf | Jury award | Total points |
-|-------|-------------|-------------|----------|------------|--------------|
-| 1.    | Lee         | 25          | 5        |            | 30           |
-| 2.    | Peter-Paul  | 18          |          |            | 18           |
-| 3.    | Lars        | 15          |          |            | 15           |
-| 4.    | Dexter      | 12          |          |            | 12           |
-| 5.    | Aman        | 10          |          |            | 10           |
-| 6.    | Jan Bart    | 8           |          |            | 8            |
-|       | Tim         | 8           |          |            | 8            |
-|       | Mettin      | 8           |          |            | 8            |
-
-### Jury vote
-
-[will be announced later]
-
-### Screenshot
-
-![2021 Week 24 podium](./podium.png)
-
-![2021 Week 24 results](./results.png)
-
-### Full output log
-```
 EVALUATION STARTED:       23/06/2021, 16:15:18
 EVALUATING CHALLENGE:     2021/w24
 FOUND 23 SOLUTIONS:       aman1.js, aman2.js, dexter1.js, dexter2.js, dexter3.js, dexter4.js, dexter5.js, dexter6.js, jmulders1.js, lars1.js,
@@ -125,4 +76,3 @@ RAW RESULTS:
 │   21    │   'dexter3.js'   │ 29.805381999816746  │ 29.792673000134528 │ 0.012708999682217836 │ 113  │ 'successfully' │ 131.25149299995974 │    false     │ false  │    null    │ 14200 │
 │   22    │    'lee2.js'     │  33.67053800006397  │ 33.657529000076465 │ 0.013008999987505376 │  70  │ 'successfully' │ 165.57170200004475 │    false     │ false  │    null    │ 14200 │
 └─────────┴──────────────────┴─────────────────────┴────────────────────┴──────────────────────┴──────┴────────────────┴────────────────────┴──────────────┴────────┴────────────┴───────┘
-```
