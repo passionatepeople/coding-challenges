@@ -90,6 +90,14 @@ const main = async () => {
     };
   }, {});
 
+  // get validation function
+  let validator;
+  try {
+    validator = require(`./${CHALLENGE}/validator.js`);
+  } catch (_) {
+    validator = (result, expected) => isEqual(result, expected);
+  }
+
   // check if any fail or last too long
   const FAILED = Object.values(STATS)
     .filter(({ solution, size }) => {
@@ -101,7 +109,7 @@ const main = async () => {
       const result = STATS[solution].failed = size > MAX_SIZE || shuffle(SPEC).some(({ inputs, result }) => {
         const clonedInputs = clone(inputs)
         const res = fn(...clonedInputs);
-        const resultIncorrect = !isEqual(res, result);
+        const resultIncorrect = !validator(res, result);
         const inputsMutated = !isEqual(clonedInputs, inputs);
 
         if (resultIncorrect) incorrect = true;
