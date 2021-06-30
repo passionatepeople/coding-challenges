@@ -26,7 +26,7 @@ findBase('e', '2', '1c') // returns 16
 
 | Place | Name        | Performance | Codegolf | Jury award | Total points |
 |-------|-------------|-------------|----------|------------|--------------|
-| 1.    | Lee         | 25          | 5        |            | 30           |
+| 1.    | Lee         | 25          | 5        | 5          | 35           |
 | 2.    | Peter-Paul  | 18          |          |            | 18           |
 | 3.    | Lars        | 15          |          |            | 15           |
 | 4.    | Dexter      | 12          |          |            | 12           |
@@ -37,7 +37,11 @@ findBase('e', '2', '1c') // returns 16
 
 ### Jury vote
 
-[will be announced later]
+#### Harijs
+
+1. lee6 - hacking again, finding a fatal bug
+2. peter-paul3 - smart way to start looking starting from max digit
+3. lars1 - cool approach with digits map
 
 ### Screenshot
 
