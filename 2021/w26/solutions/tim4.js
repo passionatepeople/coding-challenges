@@ -1,0 +1,1 @@
+;;module.exports=e=(r,o=[],f=0)=>{for(l="length",c="slice";f<r[l];f++)r.indexOf(r[f])==f&&e(r[c](0,f)+r[c](f+1,r[l])).forEach(e=>o.push(r[f]+e));return r[1]?o:[r]}

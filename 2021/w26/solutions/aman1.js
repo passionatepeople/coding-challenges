@@ -1,37 +1,29 @@
-const
-  NUM_WORDS = ['twenty', 'thirty', 'forty', 'fifty', 'sixty', 'seventy', 'eighty', 'ninety'],
-  TENS = ['zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten', 'eleven',
-    'twelve', 'thirteen', 'fourteen', 'fifteen', 'sixteen', 'seventeen', 'eighteen', 'nineteen'],
-  HUNDREDS = []
+const substring = String.prototype.substring
 
-for (let i = 0; i < 10; i++) HUNDREDS[i] = i === 0 ? '' : (TENS[i] + ' hundred')
+let findPermutations = (string, keys = [], values = []) => {
+  let index = keys.indexOf(string), len = string.length, permutationsArray = [], char, remain, result, i, j, resultLen
+  if (index !== -1) return values[index]
 
-for (let i = 0; i < 8; i++) for (let ii = 0; ii < 10; ii++)
-    TENS.push(ii === 0 ? NUM_WORDS[i] : (NUM_WORDS[i] + '-' + TENS[ii]))
+  if (len === 1) return [string]
 
-module.exports = number => {
-  let sign = '', input = number
+  for (i = 0; i < len; i++) {
+    char = string[i]
 
-  if (number < 0 && (sign = 'minus ', input *= -1), input < 100) {
-    return sign + TENS[input]
+    if (string.indexOf(char) !== i)
+      continue
+
+    remain = substring.call(string, 0, i) + substring.call(string, i + 1, len)
+
+    result = findPermutations(remain, keys, values)
+
+    for (j = 0, resultLen = result.length; j < resultLen; j++)
+      permutationsArray.push(char + result[j])
   }
 
-  if (input < 1000) {
-    const first = input / 100 | 0, second = input % 100
-    return sign + HUNDREDS[first] + (second ? ' ' + TENS[second] : '')
-  }
+  keys.push(string)
+  values.push(permutationsArray)
 
-  const first = input / 1000 | 0,
-        second = (input % 1000) / 100 | 0,
-        third = (input % 1000) % 100,
-
-        first1 = (first % 1000) / 100 | 0,
-        first2 = (first % 1000) % 100
-
-  return sign
-    + (first1 ? HUNDREDS[first1] : '')
-    + (first2 ? (first1 ? ' ' : '') + TENS[first2] : '')
-    + ' thousand'
-    + (second ? ' ' + HUNDREDS[second] : '')
-    + (third ? ' ' + TENS[third] : '')
+  return permutationsArray
 }
+
+module.exports = findPermutations

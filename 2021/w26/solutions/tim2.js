@@ -1,1 +1,22 @@
-for(_=1e3,ͺ=10,ˬ=_/ͺ,t=["zero","one","two","three","four","five","six","seven","eight","nine","ten","eleven","twelve","thirteen","fourteen","fifteen","sixteen","seventeen","eighteen","nineteen","twenty"],t[30]="thirty",t[40]="forty",t[50]="fifty",t[60]="sixty",t[70]="seventy",t[80]="eighty",t[90]="ninety",t[ˬ]="hundred",i=21;i<_;)h=~~(i/ˬ),j=~~((i-h*ˬ)/ͺ),s=i-h*ˬ-j*ͺ,n=0,i<ˬ&&(t[i]=t[j*ͺ],s>0&&(t[i]+="-"+t[s])),h&&(t[i]=t[h]+" hundred",n=i-h*ˬ,n&&(t[i]+=" "+t[n])),i++;z=(t=>"minus "+t),q=t.slice(0,_).map(t=>t+" thousand"),w=q.map(t=>t+" "),e=q.map(z),r=w.map(z),y=t.map(t=>""+t),u=t.map(z),module.exports=(i=>(a=Math.abs(i),a<_?i<0?u[a]:t[i]:(f=(a-a%_)/_,m=f*_,n=a-m,l=i<0?n?r[f]:e[f]:n?w[f]:q[f],n?l+y[n]:l)))
+const permutateMe = (string) => {
+  if (string.length < 2) {
+    return [string];
+  }
+
+  let permutations = [];
+
+  for (let i = 0; i < string.length; i++) {
+    let char = string[i];
+
+    if (string.indexOf(char) == i) {
+      let remainder = string.slice(0, i) + string.slice(i + 1, string.length);
+
+      for (let permutation of permutateMe(remainder)) {
+        permutations.push(char + permutation);
+      }
+    }
+  }
+  return permutations;
+};
+
+module.exports = permutateMe;
