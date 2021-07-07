@@ -33,13 +33,17 @@ spellItOut(-999999) // return 'minus nine hundred ninety-nine thousand nine hund
 | 1.    | Lee         | 25          | 5        |            | 30           |
 | 2.    | Tim         | 18          |          |            | 18           |
 |       | Lars        | 18          |          |            | 18           |
-| 4.    | Aman        | 12          |          |            | 12           |
+| 4.    | Aman        | 12          |          | 5          | 17           |
 | 5.    | Jan Bart    | 10          |          |            | 10           |
 | 6.    | Mettin      | 8           |          |            | 8            |
 
 ### Jury vote
 
-[will be announced later]
+#### Harijs
+
+1. aman - Assembling result from hundreds and tens
+2. jmulders - Interesting approach with convert and getting hundreds
+3. lee1 - nice to see all the functionality in 631 bytes
 
 ### Screenshot
 

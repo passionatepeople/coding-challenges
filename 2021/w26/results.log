@@ -1,53 +1,3 @@
-# Week 26 challenge
-
-With this week's challenge you need to create `permutateMe` function, which takes in a string and returns all possible permutations of its' characters;
-There should be no duplicates.
-
-Since the permutation count grows exponentially, the string will not be longer than 7 characters.
-
-*Note: The order of the permutations does not matter.
-If the connect portal gives you an error based on it, please use the google form for that solution.*
-
-Examples:
-```
-permutateMe('ab') // returns ["ab", "ba"]
-permutateMe('abc') // returns ["abc", "acb", "bac", "bca", "cab", "cba"]
-permutateMe('aac') // returns ["aac", "aca", "caa"]
-```
-
-
-## Upload link
-
-[PP Connect](https://connect.passionatepeople.io/code-challenge-submission)
-
-[Google form](https://forms.gle/uTnNAahd9Jd3CfUx8)
-
-## Results
-
-
-| Place | Name        | Performance | Codegolf | Jury award | Total points |
-|-------|-------------|-------------|----------|------------|--------------|
-| 1.    | Aman        | 25          |          |            | 25           |
-| 2.    | Javad       | 18          |          |            | 18           |
-| 3.    | Tim         | 15          |          |            | 15           |
-|       | Anuradha    | 10          | 5        |            | 15           |
-| 5.    | Lee         | 12          |          |            | 12           |
-| 6.    | Patrick     | 10          |          |            | 10           |
-|       | Jan Bart    | 10          |          |            | 10           |
-| 8.    | Lars        | 4           |          |            | 4            |
-| 9.    | Mettin      | 2           |          |            | 2            |
-
-### Jury vote
-
-[will be announced later]
-### Screenshot
-
-![2021 Week 26 podium](./podium.png)
-
-![2021 Week 26 results](./results.png)
-
-### Full output log
-```
 EVALUATION STARTED:                 07/07/2021, 13:08:32
 EVALUATING CHALLENGE:               2021/w26
 FOUND 22 SOLUTIONS:                 alexanderquintero1.js, aman1.js, anuradha1.js, anuradha2.js, anuradha21.js, anuradha3.js, anuradha4.js, javad1.js,
@@ -130,4 +80,3 @@ RAW RESULTS:
 │   20    │        'tim3.js'        │        null        │        null        │         null         │ 164  │ 'successfully' │  304.894605999998  │     true     │ false  │        null        │   0   │
 │   21    │        'tim4.js'        │        null        │        null        │         null         │ 163  │ 'successfully' │ 301.86532799999986 │     true     │ false  │        null        │   0   │
 └─────────┴─────────────────────────┴────────────────────┴────────────────────┴──────────────────────┴──────┴────────────────┴────────────────────┴──────────────┴────────┴────────────────────┴───────┘
-```
