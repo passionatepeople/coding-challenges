@@ -107,15 +107,20 @@ const main = async () => {
 
       const start = performance.now();
       const result = STATS[solution].failed = size > MAX_SIZE || shuffle(SPEC).some(({ inputs, result }) => {
-        const clonedInputs = clone(inputs)
-        const res = fn(...clonedInputs);
-        const resultIncorrect = !validator(res, result);
-        const inputsMutated = !isEqual(clonedInputs, inputs);
+        try {
+          const clonedInputs = clone(inputs)
+          const res = fn(...clonedInputs);
+          const resultIncorrect = !validator(res, result);
+          const inputsMutated = !isEqual(clonedInputs, inputs);
 
-        if (resultIncorrect) incorrect = true;
-        if (inputsMutated) mutated = true;
+          if (resultIncorrect) incorrect = true;
+          if (inputsMutated) mutated = true;
 
-        return resultIncorrect || inputsMutated;
+          return resultIncorrect || inputsMutated;
+        } catch (e) {
+          STATS[solution].failReason = e.toString();
+          return true;
+        }
       });
       const end = performance.now();
       STATS[solution].validationTime = end - start;
