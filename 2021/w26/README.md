@@ -28,7 +28,7 @@ permutateMe('aac') // returns ["aac", "aca", "caa"]
 | Place | Name        | Performance | Codegolf | Jury award | Total points |
 |-------|-------------|-------------|----------|------------|--------------|
 | 1.    | Aman        | 25          |          |            | 25           |
-| 2.    | Javad       | 18          |          |            | 18           |
+| 2.    | Javad       | 18          |          | 5          | 23           |
 | 3.    | Tim         | 15          |          |            | 15           |
 |       | Anuradha    | 10          | 5        |            | 15           |
 | 5.    | Lee         | 12          |          |            | 12           |
@@ -39,7 +39,10 @@ permutateMe('aac') // returns ["aac", "aca", "caa"]
 
 ### Jury vote
 
-[will be announced later]
+1. javad1 - idea of sorting the string in the beginning
+2. lee1 - using generator
+3. tim6 - going for shortcuts :D
+
 ### Screenshot
 
 ![2021 Week 26 podium](./podium.png)
