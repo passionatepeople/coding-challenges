@@ -1,0 +1,1 @@
+const b=e=>{if(1==e.length)return 0;let t=0,n=e.reduce((e,t)=>e+t,0)-e[0];for(let r=0;r<e.length;r++){if(t==n)return r;t+=e[r],r+1==e.length?n=0:n-=e[r+1]}return-1};module.exports=b;

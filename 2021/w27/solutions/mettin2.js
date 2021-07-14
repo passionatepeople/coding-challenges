@@ -1,0 +1,1 @@
+module.exports=(a,b=c=>c.reduce((a,i)=>a+i,0))=>a.findIndex((e,f)=>b(a.slice(0,f))==b(a.slice(f+1)))

@@ -1,0 +1,1 @@
+module.exports=(e=>{let r,t,l;for(r=t=l=0,e.map(e=>t+=e);l<e.length;l++){if(r==(t-=e[l]))return l;r+=e[l]}return-1})

@@ -1,0 +1,1 @@
+module.exports=(a,l=a.reduce((r,c)=>r+c),r=0)=>a.reduceRight((y,c,i)=>{l-=c;y=l==r?i:y;r+=c;return y},-1)
