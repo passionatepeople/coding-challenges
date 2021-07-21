@@ -33,8 +33,8 @@ balanceMe([2, 2, 2, 2]) // returns -1
 |       | Pablo       | 25          |          |            | 25           |
 |       | Anuradha    | 25          |          |            | 25           |
 |       | Javad       | 25          |          |            | 25           |
-| 6.    | Sander      | 8           |          |            | 8            |
-| 7.    | Ezzeddine   | 6           |          |            | 6            |
+| 6.    | Ezzeddine   | 6           |          | 5          | 11           |
+| 7.    | Sander      | 8           |          |            | 8            |
 |       | Gift        | 6           |          |            | 6            |
 | 9.    | Hossein     | 2           |          |            | 2            |
 | 10.   | Mettin      | 1           |          |            | 1            |
@@ -42,7 +42,9 @@ balanceMe([2, 2, 2, 2]) // returns -1
 
 ### Jury vote
 
-[will be announced later]
+1. ezzeddine2 - commented and clear explanation of algorithm
+2. hossein21 - creative approach to the problem
+3. sander1 - clear naming of variables and easy to comprehend
 
 ### Screenshot
 
