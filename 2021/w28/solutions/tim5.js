@@ -1,0 +1,1 @@
+module.exports=(r,e)=>{for(;e;){o=e;e=r%e,r=o}return r}

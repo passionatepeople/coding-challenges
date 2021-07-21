@@ -1,0 +1,1 @@
+module.exports=e=(o,d)=>d?e(d,o%d):o

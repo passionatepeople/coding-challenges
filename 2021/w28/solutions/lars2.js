@@ -1,0 +1,1 @@
+f=(a,b)=>b>0?f(b,a%b):a,module.exports=f

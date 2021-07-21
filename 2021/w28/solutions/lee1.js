@@ -1,0 +1,1 @@
+module.exports=c=(o,n)=>n?c(n,o%n):o
