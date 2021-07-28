@@ -29,13 +29,15 @@ largestCommonDivisor(12, 18) // returns 6
 | 6.    | Tim         | 8           | 5        |            | 13           |
 | 7.    | Hossein     | 8           |          |            | 8            |
 |       | Anuradha    | 8           |          |            | 8            |
-| 9.    | Gift        | 2           |          |            | 2            |
-|       | Jan Bart    | 2           |          |            | 2            |
+| 9.    | Gift        | 2           |          | 5          | 7            |
+| 10.   | Jan Bart    | 2           |          |            | 2            |
 | 11.   | Mettin      |             |          |            |              |
 
 ### Jury vote
 
-[will be announced later]
+1. gift2 - commented and clear
+2. javad1 - hardcoding prime numbers
+3. jmulders1 - shortcut if and recursion
 
 ### Screenshot
 
