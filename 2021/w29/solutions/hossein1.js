@@ -1,0 +1,1 @@
+module.exports=(a,c=2,e="_")=>{for(var b=[],d=0,f=a.length;d<f;d+=c)b.push(a.substr(d,c));a=b.length-1;b[a]=b[a].padEnd(c,e);return b};

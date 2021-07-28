@@ -1,0 +1,1 @@
+module.exports=((e,t,r)=>{if(t||(t=2),r||(r="_"),e.length===t||1==t||0==t)return[e];const l=[];for(let r=0;r<e.length;r+=t)l.push(e.slice(r,r+t));for(let e=l.length-1;e>=0;e--){if(l[e].length>=t)return l;for(;l[e].length<t;)l[e]=l[e]+r}return l});

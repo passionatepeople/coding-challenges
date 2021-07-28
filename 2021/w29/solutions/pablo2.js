@@ -1,0 +1,1 @@
+module.exports=f=(a,b=2,c='_')=>{let n=a.match(RegExp(`.{1,${b}}`,'g')),p=n.length-1;for(;n[p].length<b;)n[p]+=c;return n}

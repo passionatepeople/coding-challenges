@@ -1,0 +1,1 @@
+module.exports=(w,n=2,s="_",r=w.match(RegExp(".{1,"+n+"}","g")),l=r.length-1,_=(r[l]=r[l].padEnd(n,s)))=>r

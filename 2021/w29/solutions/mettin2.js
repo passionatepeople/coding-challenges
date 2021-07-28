@@ -1,0 +1,1 @@
+module.exports=(a,n= 2,s='_',o=[])=>{for(i=0;i<a.length;i+=n){o.push(a.substr(i,n).padEnd(n,s))}return o}

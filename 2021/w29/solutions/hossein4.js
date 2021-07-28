@@ -1,0 +1,1 @@
+module.exports=(a,b=2,c="_")=>{a=a.match(new RegExp(`.{1,${b}}`,"g"));a.push(a.pop().padEnd(b,c));return a}

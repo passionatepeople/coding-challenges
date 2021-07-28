@@ -1,0 +1,1 @@
+module.exports=(st,n=2,s="_")=>{let r=st.match(RegExp(".{1,"+n+"}","g")),l=r.length-1;r[l]=r[l].padEnd(n,s);return r}

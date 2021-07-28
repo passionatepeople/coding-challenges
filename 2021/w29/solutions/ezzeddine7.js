@@ -1,0 +1,1 @@
+module.exports=((e,t,l)=>{if(t||(t=2),l||(l="_"),e.length===t||1==t||0==t)return[e];const r=Math.ceil(e.length/t),n=[];for(let l=0,h=0;l<r;l++)n[l]=e.substr(h,t),h+=t;for(let e=n.length-1;e>=0;e--){if(n[e].length>=t)return n;do{n[e]=n[e]+l}while(n[e].length<t)}return n});

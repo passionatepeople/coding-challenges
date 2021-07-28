@@ -1,0 +1,1 @@
+module.exports=((e,r=2,t="_")=>{let l,n,o,s,u=[];for(l=0;l<e.length;l+=r){if((o=(n=e.substring(l,l+r)).length)<r)for(s=o;s<r;s++)n+=t;u.push(n)}return u})
