@@ -1,0 +1,1 @@
+module.exports=((e,d)=>e.flat(1/0).indexOf(d)>=0)

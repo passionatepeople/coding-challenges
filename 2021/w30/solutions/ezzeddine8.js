@@ -1,0 +1,1 @@
+module.exports=(r,n)=>{return-1!=function r(n){return Array.isArray(n)?[].concat(...n.map(r)):n}(r).indexOf(n)}

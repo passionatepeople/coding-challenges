@@ -1,0 +1,1 @@
+module.exports=(o,n)=>-1!==o.flat(1/0).indexOf(n)

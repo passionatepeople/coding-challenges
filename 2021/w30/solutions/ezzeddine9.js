@@ -1,0 +1,1 @@
+module.exports=(e,l)=>e.flat(1/0).includes(l)

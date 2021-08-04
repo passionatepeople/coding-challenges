@@ -1,0 +1,1 @@
+module.exports=(h,n)=>h.flat(3).includes(n)

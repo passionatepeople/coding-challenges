@@ -1,0 +1,1 @@
+module.exports=(e,o)=>e.flat(1/0).some(e=>e==o)

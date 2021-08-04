@@ -1,0 +1,1 @@
+module.exports=((e,t)=>{let o=!1;(function e(l){let f=[];for(let n=0;n<l.length;n++){if(l[n]===t){o=!0;break}if("object"==typeof l[n]){l[n];f=f.concat(e(l[n]))}else f.push(l[n])}})(e);return o});
