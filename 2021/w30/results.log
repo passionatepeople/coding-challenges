@@ -1,47 +1,3 @@
-# Week 30 challenge
-
-Write a function `findMeDeep` which takes in an array as first argument (haystack) and needle as second and returns wether the needle is found within the haystack.
-The caveat is that the haystack typically is nested (multidimensional).
-
-Examples:
-```
-findMeDeep([1, 2, 3], 2) // returns true
-findMeDeep([1, 2, 3], 7) // returns false
-findMeDeep([1, 2, 3, [4], [5, [6, 7]]], 7) // returns true
-```
-
-## Upload link
-
-[PP Connect](https://connect.passionatepeople.io/code-challenge-submission)
-
-## Results
-
-| Place | Name        | Performance | Codegolf | Jury award | Total points |
-|-------|-------------|-------------|----------|------------|--------------|
-| 1.    | Hossein     | 25          | 5        |            | 30           |
-|       | Pablo       | 25          | 5        |            | 30           |
-| 3.    | Javad       | 25          |          |            | 25           |
-| 4.    | Anuradha    | 12          | 5        |            | 17           |
-|       | Irene       | 12          | 5        |            | 17           |
-|       | Lee         | 12          | 5        |            | 17           |
-| 7.    | Bram        | 12          |          |            | 12           |
-| 8.    | Lars        |             | 5        |            | 5            |
-| 9.    | Jan Bart    | 4           |          |            | 4            |
-| 10.   | Alexander   | 2           |          |            | 2            |
-| 11.   | Ezzeddine   | 1           |          |            | 1            |
-
-### Jury vote
-
-[will be announced later]
-
-### Screenshot
-
-![2021 Week 30 podium](./podium.png)
-
-![2021 Week 30 results](./results.png)
-
-### Full output log
-```
 EVALUATION STARTED:                 04/08/2021, 12:07:15
 EVALUATING CHALLENGE:               2021/w30
 FOUND 43 SOLUTIONS:                 alexanderquintero1.js, alexanderquintero2.js, anuradha1.js, anuradha2.js, anuradha3.js, anuradha4.js, anuradha5.js,
@@ -156,4 +112,3 @@ RAW RESULTS:
 │   41    │       'bram2.js'        │        null        │        null        │         null         │  81  │ 'successfully' │  828.4246849999981  │     true     │ false  │        null        │  0   │
 │   42    │      'patrick1.js'      │        null        │        null        │         null         │ 121  │ 'successfully' │ 0.30887399999483023 │    false     │  true  │ 'Incorrect result' │  0   │
 └─────────┴─────────────────────────┴────────────────────┴────────────────────┴──────────────────────┴──────┴────────────────┴─────────────────────┴──────────────┴────────┴────────────────────┴──────┘
-```

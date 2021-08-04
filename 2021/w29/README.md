@@ -28,14 +28,22 @@ chopMeUp('abcdefghij', 7, '*') // returns ["abcdefg", "hij****"]
 |       | Bram        | 12          |          |            | 12           |
 |       | Gift        | 12          |          |            | 12           |
 |       | Lars        | 12          |          |            | 12           |
-| 8.    | Jan Bart    |             |  5       |            | 5            |
-| 9.    | Hossein     | 4           |          |            | 4            |
-|       | Lee         | 4           |          |            | 4            |
+| 8.    | Lee         | 4           |          | 5          | 9            |
+| 9.    | Jan Bart    |             |  5       |            | 5            |
+| 10.   | Hossein     | 4           |          |            | 4            |
 |       | Mettin      | 4           |          |            | 4            |
 
 ### Jury vote
 
-[will be decided later]
+#### Israel
+1. hossein2.js - Nice code-golf precursor that is is still very readable
+2. lee2.js - fun function name “whyNotRegex”
+3. gift1.js - usage of “statement” expressions in non-codegolf submission
+
+#### Harijs
+1. pablo3 - pretty elegant solution overall
+2. lee2 - elegant regex solution
+3. bram1 - first to submit reasonably performant solution
 
 ### Screenshot
 
