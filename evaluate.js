@@ -52,6 +52,7 @@ const main = async () => {
       size: fs.statSync(`${SOLUTIONS_DIR}/${sol}`).size,
       compiled: 'successfully',
       validationTime: null,
+      memoryEstimate: null,
       onlyCodegolf: false,
       failed: false,
       failReason: null,
@@ -137,6 +138,10 @@ const main = async () => {
       return result;
     })
     .map(res => res.solution);
+
+  // assign estimated memory to each
+  const { other } = await vm.measureMemory({ mode: 'detailed', execution: 'eager' });
+  SOLUTIONS.forEach((sol, idx) => STATS[sol].memoryEstimate = other[idx].jsMemoryEstimate);
 
   const ONLY_CODEGOLF = Object.values(STATS).filter(({ onlyCodegolf, failed }) => !failed && onlyCodegolf).map(res => res.solution);
   const NON_EVALUATABLE = [...FAILED, ...ONLY_CODEGOLF];
@@ -233,6 +238,9 @@ const main = async () => {
 
   console.log(`\n${chalk.yellow('RAW RESULTS:')}`);
   console.table(RAW_RESULTS.map(res => ({ ...omit(res, 'runTimes', 'code', 'compileTimes'), runs: res.runTimes.length })));
+
+  console.log(`\n${chalk.yellow('MEMORY USAGE:')}`);
+  console.table([...RAW_RESULTS].filter(r => !r.failed).sort((a, b) => a.memoryEstimate - b.memoryEstimate).map(r => pick(r, ['solution', 'memoryEstimate'])),);
 };
 
 main();
