@@ -1,0 +1,1 @@
+module.exports=(e,t)=>{let s=[],l=new Map;for(let h=0;h<e.length;h++){let p=l.get(e[h]);p>0&&p<t?(l.set(e[h],p+1),s.push(e[h])):l.has(e[h])||(s.push(e[h]),l.set(e[h],1))}return s}

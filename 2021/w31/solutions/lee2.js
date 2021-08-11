@@ -1,0 +1,1 @@
+module.exports=(e,o)=>{t=[],l={};for(n=0;n<e.length;n++)l[e[n]]=l[e[n]]?l[e[n]]+1:1,l[e[n]]<=o&&t.push(e[n]);return t}

@@ -1,0 +1,1 @@
+module.exports=((e,t)=>{let l=[],r={};for(let u=0;u<e.length;u++)r[e[u]]>0&&r[e[u]]<t?(r[e[u]]++,l.push(e[u])):r[e[u]]||(l.push(e[u]),r[e[u]]=1);return l});
