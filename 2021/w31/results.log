@@ -1,49 +1,3 @@
-# Week 31 challenge
-
-Write a function `thatsEnough` that takes in an array as the first argument and limit `N` as 2nd.
-The returned array should limit the occurrence of each item in the array to max `N` times.
-The order of items should be preserved.
-
-**Note:** The input array shouldn't be mutated.
-
-
-Examples:
-```
-thatsEnough([5, 5, 1, 5, 1, 7], 2) // [5, 5, 1, 1, 7]
-thatsEnough([5, 5, 1, 5, 1, 7], 1) // [5, 1, 7]
-```
-
-## Upload link
-
-[PP Connect](https://connect.passionatepeople.io/code-challenge-submission)
-
-## Results
-
-| Place | Name        | Performance | Codegolf | Jury award | Total points |
-|-------|-------------|-------------|----------|------------|--------------|
-| 1.    | Javad       | 25          |          |            | 25           |
-| 2.    | Pablo       | 18          | 5        |            | 23           |
-| 3.    | Tori        | 18          |          |            | 18           |
-|       | Varun       | 18          |          |            | 18           |
-|       | Hossein     | 18          |          |            | 18           |
-|       | Irene       | 18          |          |            | 18           |
-|       | Jan Bart    | 18          |          |            | 18           |
-|       | Bram        | 18          |          |            | 18           |
-| 9.    | Ezzeddine   | 2           |          |            | 2            |
-| 10.   | Lee         | 1           |          |            | 1            |
-
-### Jury vote
-
-[will be announced later]
-
-### Screenshot
-
-![2021 Week 31 podium](./podium.png)
-
-![2021 Week 31 results](./results.png)
-
-### Full output log
-```
 EVALUATION STARTED:                 11/08/2021, 12:07:05
 EVALUATING CHALLENGE:               2021/w31
 FOUND 42 SOLUTIONS:                 anuradha1.js, anuradha2.js, anuradha3.js, anuradha4.js, bram1.js, bram2.js, bram3.js, ezzeddine1.js, ezzeddine2.js,
@@ -199,4 +153,3 @@ MEMORY USAGE:
 │   40    │ 'ezzeddine4.js' │     173344     │
 │   41    │  'hossein6.js'  │     179456     │
 └─────────┴─────────────────┴────────────────┘
-```

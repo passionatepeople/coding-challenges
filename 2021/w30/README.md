@@ -18,8 +18,8 @@ findMeDeep([1, 2, 3, [4], [5, [6, 7]]], 7) // returns true
 
 | Place | Name        | Performance | Codegolf | Jury award | Total points |
 |-------|-------------|-------------|----------|------------|--------------|
-| 1.    | Hossein     | 25          | 5        |            | 30           |
-|       | Pablo       | 25          | 5        |            | 30           |
+| 1.    | Pablo       | 25          | 5        | 5          | 35           |
+| 2.    | Hossein     | 25          | 5        |            | 30           |
 | 3.    | Javad       | 25          |          |            | 25           |
 | 4.    | Anuradha    | 12          | 5        |            | 17           |
 |       | Irene       | 12          | 5        |            | 17           |
@@ -32,7 +32,12 @@ findMeDeep([1, 2, 3, [4], [5, [6, 7]]], 7) // returns true
 
 ### Jury vote
 
-[will be announced later]
+#### Harijs
+
+1. pablo3 - firsts to come up with the idea for nested logic
+2. lee2 - interesting idea with JSON stringify
+3. ezzedine - only minified code :)
+
 
 ### Screenshot
 
