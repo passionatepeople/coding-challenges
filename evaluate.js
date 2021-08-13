@@ -59,6 +59,11 @@ const main = async () => {
     }
   }), {});
 
+  let globals = {};
+  try {
+    globals = require(`./${CHALLENGE}/globals.js`);
+  } catch (_) {}
+
   warmUpContext();
 
   const SOLUTION_FNS = SOLUTIONS.reduce((acc, sol) => {
@@ -66,7 +71,8 @@ const main = async () => {
       ${STATS[sol].code}
     })()`;
     let fn = () => {};
-    const context = { module: { exports: {}}};
+    const context = { module: { exports: {} }, ...globals };
+    const initialGlobalCount = Object.keys(context).length;
     vm.createContext(context);
 
     try {
@@ -78,7 +84,7 @@ const main = async () => {
         throw Error('module.exports is not a function');
       }
 
-      if (Object.keys(context).length !== 1) {
+      if (Object.keys(context).length !== initialGlobalCount) {
         STATS[sol].onlyCodegolf = true;
       }
     } catch (e) {
