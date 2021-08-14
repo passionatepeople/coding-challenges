@@ -11,6 +11,13 @@ Since you will send the contents of this file as your solution, all your code sh
 **WARNING!!: Do not commit your solution!** as that will disclose your approach to others!
 The solution should be submitted via an upload link provided for each solution.
 
+### Evaluation
+
+You can also run the evaluation locally and compare various versions of your solution. This is the same script that is running in the cloud.
+It can serve as a rough benchmark for relative performance. However, it might differ on the cloud machine due to different underlying hardware.
+
+Run `node evaluate.js -c [challenge] -d [durationInSeconds]`.
+
 ## Ranking
 Only correct solutions count. Failing at least 1 test case immediately disqualifies the solution.
 So you should make sure the solution works with the provided tests before submitting it.
@@ -92,10 +99,9 @@ This also prevents taking advantage and precoding responses to the test spec.
 
 [List of ideas from our participants](TIPS-AND-TRICKS.md)
 
-## Evaluation
+## Authoring
 
-Run `node evaluate.js -c [challenge] -d [durationInSeconds]`.
-
+If you'd like to contribute and create a challenge, here are instructions for [authoring](AUTHORING.md) one.
 
 # Results
 ## 2021
