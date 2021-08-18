@@ -21,7 +21,7 @@ thatsEnough([5, 5, 1, 5, 1, 7], 1) // [5, 1, 7]
 
 | Place | Name        | Performance | Codegolf | Jury award | Total points |
 |-------|-------------|-------------|----------|------------|--------------|
-| 1.    | Javad       | 25          |          |            | 25           |
+| 1.    | Javad       | 25          |          | 5          | 30           |
 | 2.    | Pablo       | 18          | 5        |            | 23           |
 | 3.    | Tori        | 18          |          |            | 18           |
 |       | Varun       | 18          |          |            | 18           |
@@ -34,7 +34,10 @@ thatsEnough([5, 5, 1, 5, 1, 7], 1) // [5, 1, 7]
 
 ### Jury vote
 
-[will be announced later]
+#### Harijs
+1. javad2 - great find with array indices
+2. ezzedine - only minified code :)
+3. aundradha4 - attempt with splice :)
 
 ### Screenshot
 
