@@ -1,0 +1,1 @@
+module.exports=imSpecial=e=>{let l=e[0];for(let t=1;t<e.length;t++)if(e[t]!==l)return e[t]}

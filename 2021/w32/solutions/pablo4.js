@@ -1,0 +1,1 @@
+module.exports=(a,b=[...a].sort(),[x,y]=b)=>x^y?x:b.pop()

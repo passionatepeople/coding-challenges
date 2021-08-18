@@ -1,0 +1,1 @@
+module.exports=e=>e.find(l=>e.filter(e=>e==l).length<2)

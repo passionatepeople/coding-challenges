@@ -1,0 +1,1 @@
+module.exports=a=>a.find(x=>a.indexOf(x)==a.lastIndexOf(x))

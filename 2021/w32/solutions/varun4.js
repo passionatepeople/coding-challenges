@@ -1,0 +1,1 @@
+module.exports=([o,...e],l=0)=>e.filter(e=>e!==o)[0]

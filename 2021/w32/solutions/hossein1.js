@@ -1,0 +1,1 @@
+module.exports=a=>a.filter((v,i)=>i==a.lastIndexOf(v))[0]

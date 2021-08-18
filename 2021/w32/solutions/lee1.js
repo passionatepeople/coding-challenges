@@ -1,0 +1,1 @@
+module.exports=e=>(a=[...new Set(e)],e[0]===e[1]||e[0]===e[2]?a[1]:a[0])

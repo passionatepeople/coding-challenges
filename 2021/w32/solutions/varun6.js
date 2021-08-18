@@ -1,0 +1,1 @@
+module.exports=o=>([a,b]=v=[...o].sort(),a^b?a:v.pop())

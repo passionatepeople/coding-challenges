@@ -1,7 +1,5 @@
 const imSpecial = (arr) => {
-  // your solution here
-
-  return undefined;
+  return arr.reduce((a, b) => a ^ b);
 };
 
 module.exports = imSpecial;

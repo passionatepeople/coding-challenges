@@ -1,0 +1,1 @@
+module.exports=a=>{b=[...a].sort();return b[0]==b[1]?b[b.length-1]:b[0]}
