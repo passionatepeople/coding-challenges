@@ -125,8 +125,8 @@ If you'd like to contribute and create a challenge, here are instructions for [a
 | 14.   | Hossein    |         |         |         |           |           |          |          |         |         |         |         |         |         |         |         |         |         |         | 2       | 8       | 4       | 30      | 18      | 25      | 87           | 14.   | Hossein    |
 | 15.   | Bram       |         |         |         |           |           | 6        | 1        |         | 1       |         |         |         |         |         |         |         |         |         |         |         | 12      | 12      | 18      | 8       | 58           | 15.   | Bram       |
 | 16.   | Ezzeddine  |         |         |         |           |           |          |          |         |         |         |         |         |         |         |         |         |         |         | 11      | 25      | 18      | 1       | 2       |         | 57           | 16.   | Ezzeddine  |
-| 17.   | Sander A.  |         |         |         | 25        | 18        |          |          |         |         |         |         |         |         |         |         |         |         |         | 8       |         |         |         |         |         | 51           | 17.   | Sander A.  |
-| 18.   | Varun      |         |         |         |           |           |          |          |         |         |         |         |         |         |         |         |         |         |         |         |         |         |         | 18      | 30      | 48           | 18.   | Varun      |
+| 17.   | Varun      |         |         |         |           |           |          |          |         |         |         |         |         |         |         |         |         |         |         |         |         |         |         | 18      | 35      | 53           | 17.   | Varun      |
+| 18.   | Sander A.  |         |         |         | 25        | 18        |          |          |         |         |         |         |         |         |         |         |         |         |         | 8       |         |         |         |         |         | 51           | 18.   | Sander A.  |
 | 19.   | Edgar      | 15      |         |         |           |           |          |          |         |         |         | 15      |         |         |         |         |         |         |         |         |         |         |         |         |         | 30           | 19.   | Edgar      |
 | 20.   | Daniel     |         | 1       |         |           | 18        |          |          |         |         |         |         | 8       |         |         |         |         |         |         |         |         |         |         |         |         | 27           | 20.   | Daniel     |
 | 21.   | Gift       |         |         |         |           |           |          |          |         |         |         |         |         | 1       |         |         |         |         |         | 6       | 7       | 12      |         |         |         | 26           | 21.   | Gift       |
@@ -145,8 +145,8 @@ If you'd like to contribute and create a challenge, here are instructions for [a
 
 | Place | Name        | Week 31 | Week 32  | Week 33  | Week 34  | Total points|
 |-------|-------------|---------|----------|----------|----------|-------------|
-| 1.    | Pablo       | 23      | 25       |          |          | 48          |
-|       | Varun       | 18      | 30       |          |          | 48          |
+| 1.    | Varun       | 18      | 35       |          |          | 53          |
+| 2.    | Pablo       | 23      | 25       |          |          | 48          |
 |       | Irene       | 18      | 30       |          |          | 48          |
 | 4.    | Hossein     | 18      | 25       |          |          | 43          |
 | 5.    | Javad       | 30      | 4        |          |          | 34          |

@@ -1,0 +1,1 @@
+module.exports=(a,b="*")=>Array(a).fill().map((_,i)=>eval("p=''.padEnd(a-i-1);p+b.repeat(2*i+1)+p"))

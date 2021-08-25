@@ -1,0 +1,1 @@
+module.exports=(f,c='*')=>Array(f).fill().map((_,i)=>c.repeat(i*2+1).padStart(f+i).padEnd(2*f-1))

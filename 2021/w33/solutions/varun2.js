@@ -1,0 +1,1 @@
+module.exports=(f,c='*')=>[...Array(f)].map((a,i)=>(s=' '.repeat(f-i-1),s+c.repeat(i*2+1)+s))

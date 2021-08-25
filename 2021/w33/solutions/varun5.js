@@ -1,0 +1,1 @@
+module.exports=(e,r="*")=>{if(1===e)return[r];let t=0;const o=[],n=2*e-1,c=" ".repeat(n),i=r.repeat(n);for(;t<e;t++){if(t+1===e){o[t]=i;break}const r=c.slice(0,e-t-1);o[t]=r+i.slice(0,2*t+1)+r}return o}
