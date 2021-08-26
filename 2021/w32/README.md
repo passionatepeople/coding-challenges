@@ -29,6 +29,12 @@ imSpecial([1,1,2]) // return 2
 | 8.    | Javad       | 4           |          |            | 4            |
 |       | Tori        | 4           |          |            | 4            |
 
+### Screenshot
+
+![2021 Week 32 podium](./podium.png)
+
+![2021 Week 32 results](./results.png)
+
 ### Vote
 
 ```
@@ -50,12 +56,6 @@ imSpecial([1,1,2]) // return 2
 ║ israel         │ tori1  │ I like the use of do ... while for this solution                                             ║
 ╚════════════════╧════════╧══════════════════════════════════════════════════════════════════════════════════════════════╝
 ```
-
-### Screenshot
-
-![2021 Week 32 podium](./podium.png)
-
-![2021 Week 32 results](./results.png)
 
 ### Full output log
 ```
