@@ -123,8 +123,8 @@ If you'd like to contribute and create a challenge, here are instructions for [a
 | 12.   | Dexter     | 1       | 17      | 15      |           | 23        | 2        | 2        | 12      | 4       | 1       | 6       | 6       | 8       | 4       | 6       | 12      |         |         |         |         |         |         |         |         |         | 119          | 12.   | Dexter     |
 | 13.   | Anuradha   |         |         |         |           |           |          |          |         |         |         |         |         |         |         |         |         |         | 15      | 25      | 8       | 25      | 17      |         | 13      | 12      | 115          | 13.   | Anuradha   |
 | 14.   | Hossein    |         |         |         |           |           |          |          |         |         |         |         |         |         |         |         |         |         |         | 2       | 8       | 4       | 30      | 18      | 25      | 12      | 99           | 14.   | Hossein    |
-| 15.   | Bram       |         |         |         |           |           | 6        | 1        |         | 1       |         |         |         |         |         |         |         |         |         |         |         | 12      | 12      | 18      | 8       | 25      | 83           | 15.   | Bram       |
-|       | Varun      |         |         |         |           |           |          |          |         |         |         |         |         |         |         |         |         |         |         |         |         |         |         | 18      | 35      | 30      | 83           |       | Varun      |
+| 15.   | Bram       |         |         |         |           |           | 6        | 1        |         | 1       |         |         |         |         |         |         |         |         |         |         |         | 12      | 12      | 18      | 8       | 30      | 88           | 15.   | Bram       |
+| 16.   | Varun      |         |         |         |           |           |          |          |         |         |         |         |         |         |         |         |         |         |         |         |         |         |         | 18      | 35      | 30      | 83           | 16.   | Varun      |
 | 17.   | Ezzeddine  |         |         |         |           |           |          |          |         |         |         |         |         |         |         |         |         |         |         | 11      | 25      | 18      | 1       | 2       |         |         | 57           | 17.   | Ezzeddine  |
 | 18.   | Sander A.  |         |         |         | 25        | 18        |          |          |         |         |         |         |         |         |         |         |         |         |         | 8       |         |         |         |         |         |         | 51           | 18.   | Sander A.  |
 | 19.   | Edgar      | 15      |         |         |           |           |          |          |         |         |         | 15      |         |         |         |         |         |         |         |         |         |         |         |         |         |         | 30           | 19.   | Edgar      |
@@ -148,8 +148,8 @@ If you'd like to contribute and create a challenge, here are instructions for [a
 | 1.    | Varun       | 18      | 35       | 30       |          | 83          |
 | 2.    | Pablo       | 23      | 25       | 12       |          | 60          |
 |       | Irene       | 18      | 30       | 12       |          | 60          |
-| 4.    | Hossein     | 18      | 25       | 12       |          | 55          |
-| 5.    | Bram        | 18      | 8        | 25       |          | 51          |
+| 4.    | Bram        | 18      | 8        | 30       |          | 56          |
+| 5.    | Hossein     | 18      | 25       | 12       |          | 55          |
 | 6.    | Lee         | 1       | 25       | 15       |          | 41          |
 | 7.    | Javad       | 30      | 4        |          |          | 34          |
 | 8.    | Anuradha    |         | 13       | 12       |          | 25          |

@@ -45,7 +45,7 @@ buildPyramid(3, '$');
 | Place | Name        | Performance | Codegolf | Jury award | Total points |
 |-------|-------------|-------------|----------|------------|--------------|
 | 1.    | Varun       | 25          | 5        |            | 30           |
-| 3.    | Bram        | 25          |          |            | 25           |
+|       | Bram        | 25          |          | 5          | 30           |
 | 3.    | Lee         | 15          |          |            | 15           |
 | 4.    | Anuradha    | 12          |          |            | 12           |
 |       | Hossein     | 12          |          |            | 12           |

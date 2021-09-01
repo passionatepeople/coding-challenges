@@ -1,0 +1,1 @@
+module.exports=s=>(w=s.split(' '),b=w.map(x=>[...x].map(z=>t+=z.toLowerCase().charCodeAt(0)-96,t=0)&&t),w[b.indexOf(Math.max.apply(0,b))])

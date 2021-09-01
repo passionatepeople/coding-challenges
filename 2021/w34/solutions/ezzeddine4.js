@@ -1,0 +1,1 @@
+module.exports=e=>{let t=e.toUpperCase();const l=[];let n=0,o=0,r=0,h="";for(let p=0;p<e.length;p++){let s=t.charCodeAt(p);if(s>64&&s<91?(n+=s-64,h+=e[p]):32!==s&&(n+=0,h+=e[p]),32===s||p===e.length-1){if(r==n){h="",n=0;continue}l.push(h),(r=r>n?r:n)<=n&&(o=l.length-1),n=0,h=""}}return l[o]}

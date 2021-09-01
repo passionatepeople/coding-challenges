@@ -1,0 +1,1 @@
+module.exports=e=>{let t,a=e.split(" "),p=a.map(e=>e.split("").reduce((e,a)=>(t=parseInt(a,36)-9,isNaN(t)?0:e+t),0));return a[p.indexOf(Math.max(...p))]}

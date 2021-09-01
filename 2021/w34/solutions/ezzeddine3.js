@@ -1,0 +1,1 @@
+module.exports=e=>{let t=e.toUpperCase();const l=[];let n=0,o=0,h=0,r="";for(let a=0;a<e.length;a++){let p=t.charCodeAt(a);if(p>64&&p<91?(n+=p-64,r+=e[a]):" "!==e[a]&&(n+=0,r+=e[a])," "===e[a]||a===e.length-1){if(l.push(r),h==n){r="",n=0;continue}(h=Math.max(h,n))<=n&&(o=l.length-1),n=0,r=""}}return l[o]}
