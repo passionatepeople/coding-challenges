@@ -1,0 +1,1 @@
+module.exports=(n,a=n+'')=>+a.split`0`.join``.padEnd(a.length,0)

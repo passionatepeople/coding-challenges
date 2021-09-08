@@ -1,0 +1,1 @@
+module.exports=e=>{let r=""+e,t=[],o=0;for(let e=0;e<r.length;e++)"0"===r[e]?o++:t.push(r[e]);if(!o)return e;for(;o;)t.push(0),o--;return+t.join("")}

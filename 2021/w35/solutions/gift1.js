@@ -1,0 +1,1 @@
+module.exports = (number) => { const result = number.toString().split(''); for (let i = result.length - 1; i >= 0; i--) { result[i] === '0' ? result.splice(i, 1) && result.push('0') : result[i]; } return Number(result.join('')); };

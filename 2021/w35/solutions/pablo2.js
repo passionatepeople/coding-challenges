@@ -1,0 +1,1 @@
+module.exports=s=>(t=''+s,+(t.replace(/0/g,'').padEnd(t.length,0)))

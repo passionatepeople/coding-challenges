@@ -1,0 +1,1 @@
+module.exports = n => {n+='';return +n.replace(/0/g, '').padEnd(n.length, '0')};

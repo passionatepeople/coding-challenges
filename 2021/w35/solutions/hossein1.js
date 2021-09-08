@@ -1,0 +1,1 @@
+module.exports=a=>(b=""+a,c=+b.replace(/0/g,""),c==a?a:c*Math.pow(10,b.match(/0/g).length))
