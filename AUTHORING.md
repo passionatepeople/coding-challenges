@@ -4,7 +4,7 @@ Authoring challenges can be fun and creative endeavour. Ideally you should aim t
 Giving enough room for variability of approaches, but not too difficult to require extensive time to get it right.
 
 You can scan through the past challenges and learn from those examples.
-All challenges must have at least these 3 files: `README.md`,  `test.js` and `test-cases/spec.json`.
+All challenges must have at least these 4 files: `README.md`,  `test.js`, `solutions/solution.js` and `test-cases/spec.json`.
 
 ## `README.md` file
 
@@ -19,7 +19,7 @@ You can pretty much copy this file from other challenges since they are very gen
 
 
 Example `test.js` file (used for 2021/w29 challenge)
-```
+```javasript
 const fs = require("fs");
 const path = require("path");
 const spec = require("./test-cases/spec.json");
@@ -47,6 +47,19 @@ describe.each(solutions)("%s", (filename) => {
 ```
 
 
+## `solutions/solution.js`
+
+This is the initial state of the solution. It should have a descriptive name, specified arguments and a minimal body
+
+```javasript
+const yourChallengeFunctionName = (input1, input2, etc) => {
+  // your solution here
+
+  return undefined;
+};
+
+module.exports = yourChallengeFunctionName;
+```
 
 ## `test-cases/spec.json` file
 
