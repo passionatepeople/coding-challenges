@@ -38,16 +38,16 @@ Ranking is based on performance. Fastest execution time (accross multiple tries)
 ### Extra points
 
 - +5 points for the shortest solution (codegolf). Judged by the number of bytes your solution file has. If tied, both (or more) get awarded 5 points.
-- +5 points for the most elegant and readable code. Judged by a jury (TBD). Ties are possible.
+- +5 points determined via voting procedure. Ties are also possible.
 - challenge creator gets as many points as participants in the challenge. (clamped to min: 10; max: 25)
 
-**Note:** Since you can submit multiple solutions, the shortest and most elegant solution will be ranked apart from fastest. E.g. you can submit 3 solutions - one aimed to be fastest, another one to be the shortest and the 3rd one to be most readable/elegant/novel or otherwise noteworthy for the judges. It could very well be that a solution is both elegant and fast. So all correct solutions will be evaluated independently for each award category.
+**Note:** Since you can submit multiple solutions, the shortest and most elegant solution will be ranked apart from fastest. E.g. you can submit 3 solutions - one aimed to be fastest, another one to be the shortest and the 3rd one to be most readable/elegant/novel or otherwise noteworthy for the voting. It could very well be that a solution is both elegant and fast. So all correct solutions will be evaluated independently for each award category.
 
-#### Jury process
+#### Voting process
 
-Jury consists of 3 judges: David, Israel and Harijs (or whoever is available that week).
-Each picks 3 favourite solutions and ranks them. (most favourite gets 3pts, 2nd - 2, 3rd - 1).
-Then sum the points together - the top one gets 5pts from jury. (ties are possible; then multiple get 5pts).
+Voting commences as soon as official run is completed.
+Each Slack member can run `/vote` command and select the best solution of the last week.
+The votes are counted after a week - the top one gets 5pts from jury. (ties are possible; then multiple get 5pts).
 
 ### Proxibited solutions
 
