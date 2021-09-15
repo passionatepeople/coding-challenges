@@ -1,0 +1,1 @@
+module.exports=r=>r.reduce((a,c)=>c%1==0?(a%1==0?(c<a?c:a):c):a)

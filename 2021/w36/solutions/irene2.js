@@ -1,0 +1,1 @@
+module.exports=a=>Math.min(...a.filter(x=>x%1==0))

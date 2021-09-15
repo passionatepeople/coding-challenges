@@ -1,0 +1,1 @@
+module.exports=a=>a.map(n=>~~n==n&n<l?l=n:n,l=9e3)|l

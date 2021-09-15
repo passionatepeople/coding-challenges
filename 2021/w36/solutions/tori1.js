@@ -1,0 +1,1 @@
+module.exports=n=>n.filter(e=>e%1==0).sort((a, b)=>a-b)[0];
