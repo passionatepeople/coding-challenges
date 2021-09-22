@@ -1,0 +1,1 @@
+module.exports=(a,b,c)=>a+c>b&&a+b>c&&b+c>a

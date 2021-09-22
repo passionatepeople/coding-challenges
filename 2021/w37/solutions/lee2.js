@@ -1,0 +1,1 @@
+module.exports=(o,n,d)=>o+n>d&&n+d>o&&o+d>n
