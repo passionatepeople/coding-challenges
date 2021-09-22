@@ -1,63 +1,3 @@
-# Week 37 challenge
-
-Write a function `wouldEuclidBeHappy` which takes in 3 numbers as arguments. The numbers each represent length of 3 sides of a triangle.
-It should return `true` if a valid triangle can be constructed with these sides. Otherwise `false`.
-
-
-Examples:
-```
-wouldEuclidBeHappy(1, 2, 2) // true
-wouldEuclidBeHappy(8, 3, 3) // false
-wouldEuclidBeHappy(3, 4, 5) // true
-wouldEuclidBeHappy(9, 9, 9) // true
-wouldEuclidBeHappy(9, 9, 1) // true
-wouldEuclidBeHappy(1, 5, 1) // false
-```
-
-
-## Upload link
-
-[PP Connect](https://connect.passionatepeople.io/code-challenge-submission)
-
-## Results
-
-| Place | Name       | Performance | Codegolf | Vote  | Total points |
-|-------|------------|-------------|----------|-------|--------------|
-| 1.    | Bram       | 25          | 5        |       | 30           |
-|       | Anuradha   | 25          | 5        |       | 30           |
-|       | Lars       | 25          | 5        |       | 30           |
-|       | Ji         | 25          | 5        |       | 30           |
-|       | Pablo      | 25          | 5        |       | 30           |
-|       | Javad      | 25          | 5        |       | 30           |
-|       | Peter-Paul | 25          | 5        |       | 30           |
-|       | Lee        | 25          | 5        |       | 30           |
-|       | Hossein    | 25          | 5        |       | 30           |
-|       | Irene      | 25          | 5        |       | 30           |
-|       | Tim        | 25          | 5        |       | 30           |
-|       | Varun      | 25          | 5        |       | 30           |
-| 13.   | Aman       | 25          |          |       | 25           |
-|       | Patrick    | 25          |          |       | 25           |
-|       | Tori       | 25          |          |       | 25           |
-|       | Gift       | 25          |          |       | 25           |
-
-
-### Screenshot
-
-![2021 Week 37 podium](./podium1.png)
-
-![2021 Week 37 podium](./podium2.png)
-
-![2021 Week 37 podium](./podium3.png)
-
-![2021 Week 37 results](./results.png)
-
-### Vote
-
-Voting is ongoing. Please `/vote` in Slack.
-
-
-### Full output log
-```
 
 EVALUATION STARTED:                 22/09/2021, 12:06:54
 EVALUATING CHALLENGE:               2021/w37
@@ -158,5 +98,3 @@ RAW RESULTS:
 │   25    │  'patrick2.js'   │ 0.3143390000332147  │ 0.30280299996957183 │ 0.01153600006364286  │ 260  │ 'successfully' │ 7.763030000001891  │    false     │ false  │        null        │ 259200 │
 │   26    │    'tim1.js'     │        null         │        null         │         null         │ 128  │ 'successfully' │ 0.1971769999981916 │    false     │  true  │ 'Incorrect result' │   0    │
 └─────────┴──────────────────┴─────────────────────┴─────────────────────┴──────────────────────┴──────┴────────────────┴────────────────────┴──────────────┴────────┴────────────────────┴────────┘
-```
-  
