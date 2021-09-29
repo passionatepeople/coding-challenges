@@ -1,0 +1,1 @@
+module.exports=n=>(f=i=>n>9?f(i+1,[...''+n].map(d=>n*=d,n=1)):i)(0)
