@@ -1,6 +1,6 @@
 # Week 39 challenge
 
-Write a function `removeDupes` which takes in a string and removes duplicate consequent characters.
+Write a function `removeDupes` which takes in a string and removes duplicate consequent alphabetical characters.
 When checking for duplicates, case is ignored, however, the first instance of the character is left in string (whichever case it was)
 
 
