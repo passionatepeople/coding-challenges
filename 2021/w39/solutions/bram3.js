@@ -1,0 +1,1 @@
+module.exports=s=>s.replace(/([a-z])\1+/gi,'$1')

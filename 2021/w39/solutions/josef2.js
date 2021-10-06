@@ -1,0 +1,1 @@
+const x=91,y=96;module.exports=(t=>{let e="",o="";for(let n=0;n<t.length;n++){c=t[n];const r=c.charCodeAt(0);if(r>=x&&r<=y){e+=o=c;continue}const s=c.toLowerCase();s!==o&&(e+=c,o=s)}return e})
