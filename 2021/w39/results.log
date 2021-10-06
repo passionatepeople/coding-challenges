@@ -1,53 +1,3 @@
-# Week 39 challenge
-
-Write a function `removeDupes` which takes in a string and removes duplicate consequent alphabetical characters.
-When checking for duplicates, case is ignored, however, the first instance of the character is left in string (whichever case it was)
-
-
-Examples:
-```
-removeDupes('abcd') // return 'abcd'
-removeDupes('ABCD') // return 'ABCD'
-removeDupes('aabccd') // return 'abcd'
-removeDupes('aAbCcccd') // return 'abCd'
-removeDupes('aAbCcccdabbcdDD') // return 'abCdabcd'
-```
-
-
-## Upload link
-
-[PP Connect](https://connect.passionatepeople.io/code-challenge-submission)
-
-## Results
-
-| Place | Name       | Performance | Codegolf | Vote  | Total points |
-|-------|------------|-------------|----------|-------|--------------|
-| 1.    | Anuradha   | 25          |          |       | 25           |
-| 2.    | Jan Bart   | 18          |          |       | 18           |
-| 3.    | Lee        | 15          |          |       | 15           |
-| 4.    | Peter-Paul | 8           | 5        |       | 13           |
-|       | Varun      | 8           | 5        |       | 13           |
-| 6.    | Aman       | 12          |          |       | 12           |
-| 7.    | Tori       | 10          |          |       | 10           |
-| 8.    | Josef      | 4           | 5        |       | 9            |
-| 9.    | Hossein    | 1           | 5        |       | 6            |
-|       | Bram       | 1           | 5        |       | 6            |
-| 11.   | Irene      | 4           |          |       | 4            |
-
-
-### Screenshot
-
-![2021 Week 39 podium](./podium.png)
-
-![2021 Week 39 results](./results.png)
-
-### Vote
-
-Voting is ongoing. Please `/vote` in Slack.
-
-
-### Full output log
-```
 
 EVALUATION STARTED:                 06/10/2021, 12:07:10
 EVALUATING CHALLENGE:               2021/w39
@@ -146,5 +96,3 @@ RAW RESULTS:
 │   28    │   'devin1.js'    │ 13.589379000011832 │ 13.575922999996692 │ 0.01345600001513958  │ 609  │ 'successfully' │ 47.089366000000155 │    false     │ false  │    null    │ 21250 │
 │   29    │     'ji1.js'     │ 16.218461000185926 │ 16.204652000044007 │ 0.01380900014191866  │ 412  │ 'successfully' │ 27.33062599999903  │    false     │ false  │    null    │ 21250 │
 └─────────┴──────────────────┴────────────────────┴────────────────────┴──────────────────────┴──────┴────────────────┴────────────────────┴──────────────┴────────┴────────────┴───────┘
-```
-  
