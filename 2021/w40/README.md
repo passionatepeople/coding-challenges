@@ -8,7 +8,7 @@ Jerry knows the initial set of cards in the deck and the current set. Help in id
 
 Example:
 ```
-helpJerry(['aysllash', 'haasslyh']) // return ['l', 'h']
+helpJerry('aysllash', 'haasslyh') // return ['l', 'h']
 ```
 
 Explanation:
@@ -21,10 +21,10 @@ By looking at both the sets, the stranger has swapped the card `l` with the card
 
 Other Examples:
 ```
-helpJerry(['iermnerw', 'eenrmwri']) // return []
-helpJerry(['abbcse', 'bcaedb']) // return ['s', 'd']
-helpJerry(['rcjVnbgFkKlRAdhCakABwNdnsSjanDHkEe', 'hjRgkaHkeNKnEBFckanjAsAdrjVdDbCnlw']) // return ['S', 'j']
-helpJerry(['QEEKFUpHRBNAWHBYUwKqVJBBKJ', 'UpKFBUQHJVKEPNqBYKEBABRWwH']) // return ['J', 'P']
+helpJerry('iermnerw', 'eenrmwri') // return []
+helpJerry('abbcse', 'bcaedb') // return ['s', 'd']
+helpJerry('rcjVnbgFkKlRAdhCakABwNdnsSjanDHkEe', 'hjRgkaHkeNKnEBFckanjAsAdrjVdDbCnlw') // return ['S', 'j']
+helpJerry('QEEKFUpHRBNAWHBYUwKqVJBBKJ', 'UpKFBUQHJVKEPNqBYKEBABRWwH') // return ['J', 'P']
 ```
 
 ## Author
