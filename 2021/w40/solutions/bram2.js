@@ -1,0 +1,1 @@
+module.exports=(s,f,r=(l,i)=>l.slice(0,i)+l.slice(i+1))=>[...s].filter(c=>(i=f.indexOf(c))&&(i<0)||(f=r(f,i))&&false).concat([...f]);

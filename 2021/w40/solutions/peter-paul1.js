@@ -1,0 +1,1 @@
+module.exports=(a,b,c=(d,e,f)=>[...''+e].map(g=>d[g]=f(d[g]|0))&&d,h=[])=>Object.entries(c(c({},a,n=>n+1),b,n=>n-1)).map(([i,j])=>j?h[+!~j&&1]=i:0)&&h

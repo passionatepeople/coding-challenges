@@ -1,0 +1,1 @@
+module.exports=((e,l)=>{let r,t;for(let o of e.split(""))t=l.replace(o,""),l===t&&(r=o),l=t;return r?[r,l]:[]})
