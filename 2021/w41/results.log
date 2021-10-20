@@ -1,54 +1,3 @@
-# Week 41 challenge
-
-Write a function `addUpWithoutTens` which takes in a number `N` and returns the sum of all integers from 1 until `N` including, except those which are divisible by 10;
-
-
-Examples:
-```
-addUpWithoutTens(1) // returns 1
-addUpWithoutTens(5) // returns 15
-addUpWithoutTens(9) // returns 45
-addUpWithoutTens(10) // returns 45
-addUpWithoutTens(11) // returns 56
-addUpWithoutTens(19) // returns 180
-addUpWithoutTens(20) // returns 180
-```
-
-
-## Upload link
-
-[PP Connect](https://connect.passionatepeople.io/code-challenge-submission)
-
-## Results
-
-| Place | Name      | Performance | Codegolf | Vote  | Total points |
-|-------|-----------|-------------|----------|-------|--------------|
-| 1.    | Hossein   | 25          |          |       | 25           |
-|       | Varun     | 25          |          |       | 25           |
-|       | Aman      | 25          |          |       | 25           |
-|       | Anuradha  | 25          |          |       | 25           |
-|       | Medhat    | 25          |          |       | 25           |
-|       | Lee       | 25          |          |       | 25           |
-|       | Jan Bart  | 25          |          |       | 25           |
-| 8.    | Dexter    | 1           | 5        |       | 6            |
-| 9.    | Lars      | 4           |          |       | 4            |
-|       | Ezzeddine | 4           |          |       | 4            |
-| 11.   | Josef     | 1           |          |       | 1            |
-
-
-### Screenshot
-
-![2021 Week 41 podium](./podium.png)
-
-![2021 Week 41 results](./results.png)
-
-### Vote
-
-Voting is ongoing. Please `/vote` in Slack.
-
-
-### Full output log
-```
 
 EVALUATION STARTED:                 20/10/2021, 12:07:39
 EVALUATING CHALLENGE:               2021/w41
@@ -154,5 +103,3 @@ RAW RESULTS:
 │   35    │  'patrick1.js'  │        null         │        null         │         null         │ 220  │ 'successfully' │ 4.443657000003441  │    false     │  true  │ 'Incorrect result' │  0   │
 │   36    │  'patrick2.js'  │        null         │        null         │         null         │  75  │ 'successfully' │ 6.319482999999309  │    false     │  true  │ 'Incorrect result' │  0   │
 └─────────┴─────────────────┴─────────────────────┴─────────────────────┴──────────────────────┴──────┴────────────────┴────────────────────┴──────────────┴────────┴────────────────────┴──────┘
-```
-  
