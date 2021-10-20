@@ -1,0 +1,1 @@
+module.exports =n=>{return (n * (n + 1)) / 2 - (Math.trunc(n / 10) * (10 + (Math.trunc(n / 10) * 10))) / 2}

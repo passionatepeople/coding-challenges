@@ -1,0 +1,1 @@
+var m=Math.trunc;module.exports=n=>{d=m(n/10);return((n*(n+1))-(10*(d+d*d)))/2}

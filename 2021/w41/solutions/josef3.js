@@ -1,0 +1,1 @@
+module.exports=(n,m=(n-n%10)/10)=>n/2*++n-m/2*++m*10

@@ -1,0 +1,1 @@
+module.exports=(e=>{let r=e/10>>0;return e*(e+1)/2-r*(r+1)*10/2});

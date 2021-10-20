@@ -1,0 +1,1 @@
+module.exports=(n,t=0|n/10,s=(n,m=n+1)=>m*(0|n/2)+n%2*m/2)=>s(n)-10*s(t)

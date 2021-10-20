@@ -1,0 +1,1 @@
+module.exports=n=>{m=Math.trunc(n/10);return((n*(n+1))-(10*(m+m*m)))/2}

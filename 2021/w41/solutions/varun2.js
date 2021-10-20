@@ -1,0 +1,1 @@
+module.exports=n=>(t=~~(n/10),n*(n+1)/2-t*(t+1)*5)
