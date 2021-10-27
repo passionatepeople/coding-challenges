@@ -23,13 +23,13 @@ addUpWithoutTens(20) // returns 180
 
 | Place | Name      | Performance | Codegolf | Vote  | Total points |
 |-------|-----------|-------------|----------|-------|--------------|
-| 1.    | Hossein   | 25          |          |       | 25           |
+| 1.    | Jan Bart  | 25          |          | 5     | 30           |
+| 2.    | Hossein   | 25          |          |       | 25           |
 |       | Varun     | 25          |          |       | 25           |
 |       | Aman      | 25          |          |       | 25           |
 |       | Anuradha  | 25          |          |       | 25           |
 |       | Medhat    | 25          |          |       | 25           |
 |       | Lee       | 25          |          |       | 25           |
-|       | Jan Bart  | 25          |          |       | 25           |
 | 8.    | Dexter    | 1           | 5        |       | 6            |
 | 9.    | Lars      | 4           |          |       | 4            |
 |       | Ezzeddine | 4           |          |       | 4            |
@@ -44,7 +44,21 @@ addUpWithoutTens(20) // returns 180
 
 ### Vote
 
-Voting is ongoing. Please `/vote` in Slack.
+```
+╔════════════════╤═══════════╤═══════════════════════════════════════════╗
+║ Name           │ Vote      │ Comment                                   ║
+╟────────────────┼───────────┼───────────────────────────────────────────╢
+║ patrick        │ lee1      │ Elegant and readable                      ║
+╟────────────────┼───────────┼───────────────────────────────────────────╢
+║ lee            │ jmulders1 │ I like extracting out that addUp function ║
+╟────────────────┼───────────┼───────────────────────────────────────────╢
+║ aman.tuladhar  │ dexter4   │ Genius! poetry man poetry                 ║
+╟────────────────┼───────────┼───────────────────────────────────────────╢
+║ harijs.deksnis │ jmulders1 │ Well readable and with a reusable logic.  ║
+╟────────────────┼───────────┼───────────────────────────────────────────╢
+║ varun          │ hossein3  │ Getting the solution faster with ~~       ║
+╚════════════════╧═══════════╧═══════════════════════════════════════════╝
+```
 
 
 ### Full output log
