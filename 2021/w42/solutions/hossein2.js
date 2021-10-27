@@ -1,0 +1,1 @@
+module.exports=S=(a,b,x=a.length,y=b.length)=>x<y?S(b,a):(([s,c]=[...a].reduceRight(([s,c],d,i)=>((p=c+(+d||0)+(+b[i+y-x]||0)),p>9?[p-10+s,1]:[p+s,0]),["",0])),(c+s).replace(/^0+/,""))

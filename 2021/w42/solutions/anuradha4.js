@@ -1,0 +1,1 @@
+module.exports=(t,e,a=t.length,d=e.length,r=a,l="",n=0,o)=>{for(a>d?e=e.padStart(r,"0"):(r=d,t=t.padStart(r,"0")),o=r-1;o>=0;o--){let a=+t[o]+ +e[o]+ +n,d=a+"";n=a>9?d[0]:0,l=d[a>9?1:0]+l}return(n+l).replace(/^0+/,"")}

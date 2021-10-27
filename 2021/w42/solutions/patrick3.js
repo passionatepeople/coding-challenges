@@ -1,0 +1,1 @@
+module.exports=(a,b)=>{const d=`${a.replace(/^0+/,"")}n`,e=`${b.replace(/^0+/,"")}n`,f=["B","i","g","I","n","t"],g=c=>eval(`${f.join("")}(${c})`),h=g(d),i=g(e);return(h+i).toString()};

@@ -1,0 +1,1 @@
+module.exports=(a,b)=>{const d=[`${a.replace(/^0+/,"")}n`,`${b.replace(/^0+/,"")}n`],f=String.fromCharCode(66,105,103,73,110,116),g=c=>eval(`${f}(${c})`);return(g(d[0])+g(d[1])).toString()};

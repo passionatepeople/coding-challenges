@@ -1,0 +1,1 @@
+module.exports=add=(t,e)=>{let n=e.replace(/^0+/,""),l=t.replace(/^0+/,""),r="";l.length<n.length&&(t=n,n=l,l=t);let h=0,a,g,c,s;for(let t=0;t<l.length;t++)a=parseInt(l.charAt(l.length-1-t)),g=parseInt(n.charAt(n.length-1-t)),g=g||0,c=(h+a+g).toString(),s=c.charAt(c.length-1),h=parseInt(c.substr(0,c.length-1)),h=h||0,r=t===l.length-1?c+r:s+r;return r};;

@@ -1,0 +1,1 @@
+module.exports=(s,t)=>{let i=s.length-1,j=t.length-1,r="",c=0;while(i>=0||j>=0||c){let a=s[i]||0,b=t[j]||0,o=+a+ +b+c;c=o>9?1:0;r=o%10+r;i--;j--}return r.replace(/^[0]+/,'')}

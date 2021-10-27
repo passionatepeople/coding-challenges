@@ -1,0 +1,1 @@
+module.exports=(a,b,c=a.length,d=b.length,o=0,s,n=[],g=(s,c)=>s.charCodeAt(c)-48||0)=>{while(c>0||d>0)(s=g(a,--c)+g(b,--d)+o,o=s/10|0,n.unshift(s%10));n.unshift(o);return n.reduce((r,c)=>r||c?r+String.fromCharCode(c+48):r,'')}
