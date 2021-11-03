@@ -1,0 +1,1 @@
+module.exports=a=>{const b=a.toUpperCase();for(let c=65;90>=c;c++)if(-1===b.indexOf(String.fromCharCode(c)))return!1;return!0};

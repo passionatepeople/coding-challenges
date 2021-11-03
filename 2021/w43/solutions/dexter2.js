@@ -1,0 +1,1 @@
+module.exports=n=>[...new Set(n.toLowerCase())].filter(c=>c<'{'&c>'`').length==26

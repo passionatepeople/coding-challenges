@@ -1,0 +1,1 @@
+module.exports=e=>{e=e.toLowerCase().replace(/[^a-z]/g,"");for(var r=0;r<26;r++)if(e.indexOf("zqxjkvbpygfwmucldrhsnioate"[r])<0)return!1;return!0}

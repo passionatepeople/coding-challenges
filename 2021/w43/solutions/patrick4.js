@@ -1,0 +1,1 @@
+module.exports=o=>{const r=o.toUpperCase();for(let o=65;o<=90;o++)if(!r.includes(String.fromCharCode(o)))return!1;return!0}

@@ -1,0 +1,1 @@
+module.exports=b=>26===new Set(b.toLowerCase().match(/[a-z]/g)).size;

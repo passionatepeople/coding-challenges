@@ -1,0 +1,1 @@
+module.exports=a=>{const b=a.toUpperCase(),c=["E","T","A","O","I","N","S","R","H","D","L","U","C","M","F","Y","W","G","P","B","V","K","X","Q","J","Z"];for(let d=0;d<c.length;d++)if(-1===b.indexOf(c[d]))return!1;return!0};

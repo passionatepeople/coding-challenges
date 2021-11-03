@@ -1,0 +1,1 @@
+module.exports=i=>new Set(i.toUpperCase().replace(/[^A-Z]/g,'')).size==26

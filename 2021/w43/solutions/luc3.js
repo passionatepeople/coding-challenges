@@ -1,0 +1,1 @@
+module.exports=(i)=>i.length>=26&&"abcdefghijklmnopqrstuvwxyz".split('').some(a=>i.toLowerCase().indexOf(a)==-1)==false

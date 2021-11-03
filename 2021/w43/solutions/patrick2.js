@@ -1,0 +1,1 @@
+module.exports=a=>{let b="abcdefghijklmnopqrstuvwxyz",c=a.toLowerCase().replace(/\s/g,"");for(let d=0;d<b.length;d++)if(-1===c.indexOf(b[d]))return!1;return!0};

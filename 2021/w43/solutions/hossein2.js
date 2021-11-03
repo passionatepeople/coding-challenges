@@ -1,0 +1,1 @@
+module.exports=n=>26==new Set(n.toLowerCase().replace(/\W/g,"")).size
