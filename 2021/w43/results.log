@@ -1,52 +1,3 @@
-# Week 43 challenge
-
-Write a function `hasItAll` which detects if given sentence is a pangram; A pangram is a sentence using every letter of the (Latin) alphabet at least once.
-
-
-Letter case, numbers and punctuations can be ignored.
-
-Examples:
-```
-hasItAll('Quick zephyrs blow, vexing daft Jim.') // returns true
-hasItAll('Coding challenges are fun and interesting to create.') // returns false
-hasItAll('Pack my box with five dozen liquor jugs.') // returns true
-hasItAll('A wizard\'s job is to vex chumps quickly in fog.') // returns true
-```
-
-
-## Upload link
-
-[PP Connect](https://connect.passionatepeople.io/code-challenge-submission)
-
-## Results
-
-| Place | Name     | Performance | Codegolf | Vote  | Total points |
-|-------|----------|-------------|----------|-------|--------------|
-| 1.    | Lars     | 25          |          |       | 25           |
-| 2.    | Aman     | 18          |          |       | 18           |
-| 3.    | Medhat   | 12          | 5        |       | 17           |
-| 4.    | Anuradha | 15          |          |       | 15           |
-| 5.    | Irene    | 12          |          |       | 12           |
-|       | Bram     | 12          |          |       | 12           |
-|       | Lee      | 12          |          |       | 12           |
-| 8.    | Hossein  | 4           | 5        |       | 9            |
-| 9.    | Patrick  | 4           |          |       | 4            |
-| 10.   | Varun    | 1           |          |       | 1            |
-
-
-### Screenshot
-
-![2021 Week 43 podium](./podium.png)
-
-![2021 Week 43 results](./results.png)
-
-### Vote
-
-Voting is ongoing. Please `/vote` in Slack.
-
-
-### Full output log
-```
 EVALUATION STARTED:                 03/11/2021, 12:06:59
 EVALUATING CHALLENGE:               2021/w43
 FOUND 42 SOLUTIONS:                 aman1.js, aman2.js, anuradha1.js, anuradha2.js, anuradha3.js, anuradha4.js, bram1.js, bram2.js, bram3.js, dexter1.js,
@@ -159,4 +110,3 @@ RAW RESULTS:
 │   40    │ 'hossein5.js'  │ 1176.2977249997202 │ 1176.2693569997791 │ 0.02836799994111061  │  63  │ 'successfully' │ 1307.6466180000025 │    false     │ false  │    null    │ 1850 │
 │   41    │  'dexter4.js'  │        null        │        null        │         null         │ 192  │ 'successfully' │ 72.51376900000105  │     true     │ false  │    null    │  0   │
 └─────────┴────────────────┴────────────────────┴────────────────────┴──────────────────────┴──────┴────────────────┴────────────────────┴──────────────┴────────┴────────────┴──────┘
-```
