@@ -1,0 +1,1 @@
+module.exports=(a,f)=>a.filter(b=>f||!(f=b==Math.min(...a)))

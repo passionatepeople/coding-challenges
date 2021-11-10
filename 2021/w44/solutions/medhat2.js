@@ -1,0 +1,1 @@
+module.exports=e=>(t=[...e],t.splice(e.indexOf(Math.min(...t)),1),t)

@@ -1,0 +1,1 @@
+module.exports=n=>(i=n.indexOf(Math.min(...n)),[...n.slice(0,i),...n.slice(i+1)])

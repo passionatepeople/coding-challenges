@@ -1,0 +1,1 @@
+module.exports=a=>{const b=Array.from(a),c=Math.min(...b),d=a.indexOf(c);return-1<d&&b.splice(d,1),b};

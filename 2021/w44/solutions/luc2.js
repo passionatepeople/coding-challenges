@@ -1,0 +1,1 @@
+module.exports=(a)=>{let b=a.reduce((c,d,i)=>a[c]>d?i:c,0);return[...a.slice(0,b),...a.slice(b+1,a.length)]}

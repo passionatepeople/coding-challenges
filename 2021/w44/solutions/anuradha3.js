@@ -1,0 +1,1 @@
+module.exports=t=>t.filter((e,n)=>n!=t.indexOf(Math.min(...t)))

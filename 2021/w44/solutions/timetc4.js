@@ -1,0 +1,1 @@
+module.exports=a=>a.filter((_,i)=>i^a.indexOf(Math.min(...a)))
