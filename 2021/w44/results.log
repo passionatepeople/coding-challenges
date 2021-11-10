@@ -1,53 +1,3 @@
-# Week 44 challenge
-
-Write a function `offWithIt` accepts an array and removes the first occurance of minimum value. The original order should be preserved.
-
-
-*Note:* Do not mutate input array, always return a new one. If there is more than one instance of minimum value, remove only the first occurrence.
-
-Examples:
-```
-offWithIt([1, 2, 3, 4]) // returns [2, 3, 4]
-offWithIt([1, 2, 3, 1, 4]) // returns [2, 3, 1, 4]
-offWithIt([1, 1, 1, 1]) // returns [1, 1, 1]
-offWithIt([2, 1, 2, 1, 2, 1, 2, 1]) // returns [2, 2, 1, 2, 1, 2, 1]
-```
-
-
-## Upload link
-
-[PP Connect](https://connect.passionatepeople.io/code-challenge-submission)
-
-## Results
-
-| Place | Name     | Performance | Codegolf | Vote  | Total points |
-|-------|----------|-------------|----------|-------|--------------|
-| 1.    | Lars     | 25          |          |       | 25           |
-| 2.    | Hossein  | 18          | 5        |       | 23           |
-| 3.    | Ji       | 18          |          |       | 18           |
-|       | Anuradha | 18          |          |       | 18           |
-| 5.    | Aman     | 10          |          |       | 10           |
-|       | Medhat   | 10          |          |       | 10           |
-|       | Luc      | 10          |          |       | 10           |
-| 8.    | Bram     | 4           |          |       | 4            |
-| 9.    | Lee      | 2           |          |       | 2            |
-| 10.   | Tim v B. | 1           |          |       | 1            |
-|       | Tim      | 1           |          |       | 1            |
-
-
-### Screenshot
-
-![2021 Week 44 podium](./podium.png)
-
-![2021 Week 44 results](./results.png)
-
-### Vote
-
-Voting is ongoing. Please `/vote` in Slack.
-
-
-### Full output log
-```
 
 EVALUATION STARTED:                 10/11/2021, 12:06:57
 EVALUATING CHALLENGE:               2021/w44
@@ -164,5 +114,3 @@ RAW RESULTS:
 │   42    │   'luc6.js'    │        null        │        null        │         null         │  65  │ 'successfully' │ 0.5265939999990223  │    false     │  true  │ 'Incorrect result' │  0   │
 │   43    │   'tim3.js'    │        null        │        null        │         null         │  61  │ 'successfully' │ 0.44095500000184984 │    false     │  true  │ 'Mutating inputs'  │  0   │
 └─────────┴────────────────┴────────────────────┴────────────────────┴──────────────────────┴──────┴────────────────┴─────────────────────┴──────────────┴────────┴────────────────────┴──────┘
-```
-  
