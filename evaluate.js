@@ -34,6 +34,9 @@ const VALIDATION_THRESHOLD = parseInt(OPTIONS.validationThreshold, 10) * 1000;
 
 // don't change these
 const SOLUTIONS_DIR = `./${CHALLENGE}/solutions`;
+const ALLOWED_GLOBALS = {
+  Buffer,
+};
 
 const main = async () => {
 
@@ -71,7 +74,7 @@ const main = async () => {
       ${STATS[sol].code}
     })()`;
     let fn = () => {};
-    const context = { module: { exports: {} }, ...globals };
+    const context = { ...ALLOWED_GLOBALS, module: { exports: {} }, ...globals };
     const initialGlobalCount = Object.keys(context).length;
     vm.createContext(context);
 
@@ -178,7 +181,7 @@ const main = async () => {
       const end = performance.now();
       STATS[solution].runTimes.push(end - start);
 
-      const context = { module: { exports: {}}};
+      const context = { ...ALLOWED_GLOBALS, module: { exports: {}}};
       vm.createContext(context);
       const code = STATS[solution].code;
       const startCompile = performance.now();
