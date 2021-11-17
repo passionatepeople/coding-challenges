@@ -1,0 +1,1 @@
+module.exports=(e,t,o=t.toString(2),p=0)=>e.split``.map(((e,t)=>/[a-z]/i.test(e)?"1"==o[(t-p)%o.length]?e.toUpperCase()===e?e.toLowerCase():e.toUpperCase():e:(p++,e))).join``

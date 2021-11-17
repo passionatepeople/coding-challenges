@@ -1,0 +1,1 @@
+module.exports=(s,n,m=n.toString(2),i=0)=>s.replace(/[a-z]/gi,c=>m[i++%m.length]==1?c>"`"?c.toUpperCase():c.toLowerCase():c)

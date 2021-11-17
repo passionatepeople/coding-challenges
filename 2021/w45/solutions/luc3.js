@@ -1,0 +1,1 @@
+module.exports=(s,n,a=(n>>>0).toString(2),b=0,al=a.length)=>s.replace(/[a-zA-Z]/g,(d)=>+a[b++%al]?(d.charCodeAt(0)>96?d.toUpperCase():d.toLowerCase()):d)

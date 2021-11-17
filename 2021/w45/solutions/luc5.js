@@ -1,0 +1,1 @@
+module.exports=(s,n,a=n.toString(2),b=0)=>s.replace(/[a-z]/ig,d=>+a[b++%a.length]?/[a-z]/.test(d)?d.toUpperCase():d.toLowerCase():d)
