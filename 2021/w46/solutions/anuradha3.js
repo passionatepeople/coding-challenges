@@ -1,0 +1,1 @@
+module.exports=s=>Math.max(...s.replace(/\D/g, '-').split('-'))

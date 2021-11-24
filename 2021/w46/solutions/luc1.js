@@ -1,0 +1,1 @@
+module.exports=a=>Math.max(...a.match(/[0-9]+/g).map(a=>+a))

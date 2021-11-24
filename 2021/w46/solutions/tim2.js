@@ -1,0 +1,1 @@
+module.exports=h=>Math.max(...h.match(/\d+/g))
