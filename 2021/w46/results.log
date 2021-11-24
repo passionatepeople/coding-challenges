@@ -1,47 +1,3 @@
-# Week 46 challenge
-
-Write a function `wheatFromTheChaff` which accepts an alphanumeric string. You task is to dismiss the letters and return the highest number of consecutive digits.
-
-Examples:
-```
-wheatFromTheChaff('abcd1abfafa5fafafa3rc') // returns 5
-wheatFromTheChaff('qwerty17gga6fafa13ppp') // returns 17
-```
-
-
-## Upload link
-
-[PP Connect](https://connect.passionatepeople.io/code-challenge-submission)
-
-## Results
-
-| Place | Name     | Performance | Codegolf | Vote  | Total points |
-|-------|----------|-------------|----------|-------|--------------|
-| 1.    | Lars     | 25          |          |       | 25           |
-| 2.    | Hossein  | 15          | 5        |       | 20           |
-| 3.    | Aman     | 18          |          |       | 18           |
-| 4.    | Anuradha | 15          |          |       | 15           |
-|       | Tim      | 15          |          |       | 15           |
-|       | Patrick  | 15          |          |       | 15           |
-| 7.    | Lee      | 6           |          |       | 6            |
-| 8.    | Devin    | 4           |          |       | 4            |
-|       | Luc      | 4           |          |       | 4            |
-| 10.   | Medhat   | 1           |          |       | 1            |
-
-
-### Screenshot
-
-![2021 Week 46 podium](./podium.png)
-
-![2021 Week 46 results](./results.png)
-
-### Vote
-
-Voting is ongoing. Please `/vote` in Slack.
-
-
-### Full output log
-```
 
 EVALUATION STARTED:                 24/11/2021, 12:06:59
 EVALUATING CHALLENGE:               2021/w46
@@ -132,5 +88,3 @@ RAW RESULTS:
 │   22    │  'anuradha3.js'  │  62.4596859999001  │ 62.44508500024676  │ 0.014600999653339386 │  63  │ 'successfully' │ 79.31958200000008  │    false     │ false  │        null        │ 14700 │
 │   23    │   'amine1.js'    │        null        │        null        │         null         │ 204  │ 'successfully' │ 19.62248300000283  │    false     │  true  │ 'Incorrect result' │   0   │
 └─────────┴──────────────────┴────────────────────┴────────────────────┴──────────────────────┴──────┴────────────────┴────────────────────┴──────────────┴────────┴────────────────────┴───────┘
-```
-  
