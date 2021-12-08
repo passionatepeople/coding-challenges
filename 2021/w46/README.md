@@ -15,18 +15,19 @@ wheatFromTheChaff('qwerty17gga6fafa13ppp') // returns 17
 
 ## Results
 
-| Place | Name     | Performance | Codegolf | Vote  | Total points |
-|-------|----------|-------------|----------|-------|--------------|
-| 1.    | Lars     | 25          |          |       | 25           |
-| 2.    | Hossein  | 15          | 5        |       | 20           |
-| 3.    | Aman     | 18          |          |       | 18           |
-| 4.    | Anuradha | 15          |          |       | 15           |
-|       | Tim      | 15          |          |       | 15           |
-|       | Patrick  | 15          |          |       | 15           |
-| 7.    | Lee      | 6           |          |       | 6            |
-| 8.    | Devin    | 4           |          |       | 4            |
-|       | Luc      | 4           |          |       | 4            |
-| 10.   | Medhat   | 1           |          |       | 1            |
+| Place | Name       | Performance | Codegolf | Vote  | Total points |
+|-------|------------|-------------|----------|-------|--------------|
+| 1.    | Lars       | 25          |          | 5     | 30           |
+| 2.    | Hossein    | 15          | 5        | 5     | 25           |
+| 3.    | Aman       | 18          |          |       | 18           |
+| 4.    | Anuradha   | 15          |          |       | 15           |
+|       | Tim        | 15          |          |       | 15           |
+|       | Patrick    | 15          |          |       | 15           |
+| 7.    | Lee        | 6           |          |       | 6            |
+| 8.    | Peter-Paul |             |          | 5     | 5            |
+| 9.    | Devin      | 4           |          |       | 4            |
+|       | Luc        | 4           |          |       | 4            |
+| 11.   | Medhat     | 1           |          |       | 1            |
 
 
 ### Screenshot
@@ -37,7 +38,17 @@ wheatFromTheChaff('qwerty17gga6fafa13ppp') // returns 17
 
 ### Vote
 
-Voting is ongoing. Please `/vote` in Slack.
+```
+╔════════════════╤═════════════╤════════════════════════════════════════════════════════════╗
+║ Name           │ Vote        │ Comment                                                    ║
+╟────────────────┼─────────────┼────────────────────────────────────────────────────────────╢
+║ tim            │ peter-paul1 │ using charcode and manually calculating the max + cheat :) ║
+╟────────────────┼─────────────┼────────────────────────────────────────────────────────────╢
+║ harijs.deksnis │ hossein2    │ The split with \D was genius                               ║
+╟────────────────┼─────────────┼────────────────────────────────────────────────────────────╢
+║ anuradha       │ lars3       │ usage of char < '0' || char > '9'                          ║
+╚════════════════╧═════════════╧════════════════════════════════════════════════════════════╝
+```
 
 
 ### Full output log

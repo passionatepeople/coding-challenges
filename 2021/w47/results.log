@@ -1,62 +1,3 @@
-# Week 47 challenge
-
-Write a function `pingMeMaybe` which accepts a string. Your task is to determine if it is a valid IPv4 address.
-A valid IPv4 address consists of 4 octets (with values 0 to 255 including) separated by dots.
-
-*Note:* Leading zeroes are not valid
-
-
-Examples:
-```
-pingMeMaybe('0.0.0.0') // true
-pingMeMaybe('255.255.255.255') // true
-pingMeMaybe('10.123.17.2') // true
-pingMeMaybe('3.12.1.1') // returns true
-pingMeMaybe('262.12.1.1') // returns false
-pingMeMaybe('3.12.1.01') // returns false
-```
-
-
-## Upload link
-
-[PP Connect](https://connect.passionatepeople.io/code-challenge-submission)
-
-## Results
-
-| Place | Name     | Performance | Codegolf | Vote  | Total points |
-|-------|----------|-------------|----------|-------|--------------|
-| 1.    | Aman     | 25          |          | 5     | 30           |
-| 2.    | Hossein  | 18          | 5        |       | 23           |
-| 3.    | Lars     | 12          | 5        | 5     | 22           |
-| 4.    | Varun    | 18          |          |       | 18           |
-| 5.    | Tim      | 10          | 5        |       | 15           |
-| 6.    | Anuradha | 6           | 5        |       | 11           |
-| 7.    | Bram     | 10          |          |       | 10           |
-| 8.    | Patrick  | 6           |          |       | 6            |
-| 9.    | Lee      | 2           |          |       | 2            |
-| 10.   | Devin    | 1           |          |       | 1            |
-
-### Screenshot
-
-![2021 Week 47 podium](./podium.png)
-
-![2021 Week 47 results](./results.png)
-
-### Vote
-
-```
-╔════════════════╤═══════╤═════════════════════════════════════════════════════╗
-║ Name           │ Vote  │ Comment                                             ║
-╟────────────────┼───────┼─────────────────────────────────────────────────────╢
-║ harijs.deksnis │ aman2 │ Really smart and efficient                          ║
-╟────────────────┼───────┼─────────────────────────────────────────────────────╢
-║ aman.tuladhar  │ lars8 │ simple, elegant regx expression and smart execution ║
-╚════════════════╧═══════╧═════════════════════════════════════════════════════╝
-```
-
-
-### Full output log
-```
 
 EVALUATION STARTED:                 01/12/2021, 12:06:45
 EVALUATING CHALLENGE:               2021/w47
@@ -174,5 +115,3 @@ RAW RESULTS:
 │   47    │   'luc6.js'    │        null        │        null        │         null         │  148   │ 'ReferenceError: require is not defined' │  0.21753000000171596  │    false     │  true  │  'Incorrect result'   │   0   │
 │   48    │   'luc7.js'    │        null        │        null        │         null         │ 440327 │              'successfully'              │ 0.0007420000001729932 │    false     │  true  │ 'Exceeded 2048 bytes' │   0   │
 └─────────┴────────────────┴────────────────────┴────────────────────┴──────────────────────┴────────┴──────────────────────────────────────────┴───────────────────────┴──────────────┴────────┴───────────────────────┴───────┘
-```
-  
