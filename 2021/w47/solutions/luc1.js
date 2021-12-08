@@ -1,0 +1,1 @@
+module.exports=a=>Math.max(...a.split('.'))<256*!/\D01/.test(a)

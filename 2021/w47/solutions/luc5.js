@@ -1,0 +1,1 @@
+module.exports=a=>a.split('.').every(b=>b<256&b!='01')

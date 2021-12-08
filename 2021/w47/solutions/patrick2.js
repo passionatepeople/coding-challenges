@@ -1,0 +1,1 @@
+module.exports=a=>{const b=a.split(".");return!(4!==b.length)&&b.every(function(a){return 0<=parseInt(a,10)&&255>=parseInt(a,10)})};

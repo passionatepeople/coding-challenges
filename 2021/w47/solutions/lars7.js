@@ -1,0 +1,1 @@
+module.exports=i=>!i.split`.`.some(e=>e&256)

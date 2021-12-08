@@ -1,0 +1,1 @@
+module.exports=x=>x.split`.`.map(t=>[t&255]==t&&[])==`,,,`

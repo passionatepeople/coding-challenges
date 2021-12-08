@@ -1,0 +1,1 @@
+module.exports=a=>!a.split('.').some(b=>b>255||b=='01')

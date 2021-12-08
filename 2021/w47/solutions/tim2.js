@@ -1,0 +1,1 @@
+module.exports=e=>e.split`.`.every(o=>o<256)

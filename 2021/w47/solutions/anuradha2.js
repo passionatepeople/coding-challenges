@@ -1,0 +1,1 @@
+module.exports=p=>!p.split`.`.some(x=>x>255)

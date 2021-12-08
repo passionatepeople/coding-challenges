@@ -1,0 +1,1 @@
+module.exports=(a,p=a.split`.`)=>p.length==4&&p.every(b=>b<256)

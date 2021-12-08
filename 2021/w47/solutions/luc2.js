@@ -1,0 +1,1 @@
+module.exports=a=>/\D01/.test(a)+a.split('.').some(a=>a>255)<1
