@@ -6,7 +6,7 @@ const { last } = require("lodash");
 const dirs = (p) =>
   readdirSync(p).filter((f) => statSync(join(p, f)).isDirectory());
 
-const YEAR = "2021";
+const YEAR = "2022";
 
 const challenges = dirs(YEAR);
 const latest = last(challenges.sort());
