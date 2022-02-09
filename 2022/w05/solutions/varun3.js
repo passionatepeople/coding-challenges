@@ -1,0 +1,1 @@
+module.exports=(s,i=0)=>{for(l=s.toLowerCase();i<s.length;i++)if(l.indexOf(l[i])===l.lastIndexOf(l[i]))return s[i];return""}

@@ -1,0 +1,1 @@
+module.exports=(e,o=e.toLowerCase().split(""),s="")=>(o.some((t,r)=>{if(o.indexOf(t)==o.lastIndexOf(t))return s=e[r],!0}),s)
