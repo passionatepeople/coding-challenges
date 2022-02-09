@@ -107,3 +107,18 @@ If you'd like to contribute and create a challenge, here are instructions for [a
 
 
 - [2021](2021/README.md)
+
+## 2022
+
+| Place | Name     | Week 05 | Total points |
+|-------|----------|---------|--------------|
+| 1.    | Varun    | 30      | 30           |
+| 2.    | Medhat   | 18      | 18           |
+| 3.    | Lars     | 15      | 15           |
+|       | Lee      | 15      | 15           |
+| 5.    | Anuradha | 11      | 11           |
+| 6.    | Aman     | 10      | 10           |
+| 7.    | Joseph   | 8       | 8            |
+| 8.    | Ji       | 6       | 6            |
+| 9.    | Daan     | 2       | 2            |
+| 10.   | Koodal   | 1       | 1            |

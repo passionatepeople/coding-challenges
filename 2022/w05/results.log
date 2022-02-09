@@ -1,52 +1,3 @@
-# Week 05 challenge
-
-Write a function `imSpecial` which accepts a string and returns the first non-repeating characer.
-Upper and lower case are considered the same character, but the function should correcly return the right case.
-
-If all characters are repeating, then the result should be an empty string.
-
-
-Examples:
-```
-imSpecial('Property') // returns 'o'
-imSpecial('Abba') // returns ''
-imSpecial('sTreSS') // returns 'T'
-```
-
-
-## Upload link
-
-[PP Connect](https://connect.passionatepeople.io/code-challenge-submission)
-
-## Results
-
-| Place | Name     | Performance | Codegolf | Vote  | Total points |
-|-------|----------|-------------|----------|-------|--------------|
-| 1.    | Varun    | 25          | 5        |       | 30           |
-| 2.    | Medhat   | 18          |          |       | 18           |
-| 3.    | Lars     | 15          |          |       | 15           |
-|       | Lee      | 15          |          |       | 15           |
-| 5.    | Anuradha | 6           | 5        |       | 11           |
-| 6.    | Aman     | 10          |          |       | 10           |
-| 7.    | Joseph   | 8           |          |       | 8            |
-| 8.    | Ji       | 6           |          |       | 6            |
-| 9.    | Daan     | 2           |          |       | 2            |
-| 10.   | Koodal   | 1           |          |       | 1            |
-
-
-### Screenshot
-
-![2022 Week 05 podium](./podium.png)
-
-![2022 Week 05 results](./results.png)
-
-### Vote
-
-Voting is ongoing. Please `/vote` in Slack.
-
-
-### Full output log
-```
 
 EVALUATION STARTED:                 09/02/2022, 12:06:53
 EVALUATING CHALLENGE:               2022/w05
@@ -136,5 +87,3 @@ RAW RESULTS:
 │   25    │     'daan1.js'     │ 92.30478200037032  │ 92.27920099999756  │ 0.02558100037276745  │ 432  │ 'successfully' │ 327.30497099999775 │    false     │ false  │    null    │ 4800 │
 │   26    │   'matthias2.js'   │ 201.3190730002243  │ 201.29217100003734 │ 0.02690200018696487  │ 294  │ 'successfully' │ 273.42181600000185 │    false     │ false  │    null    │ 4800 │
 └─────────┴────────────────────┴────────────────────┴────────────────────┴──────────────────────┴──────┴────────────────┴────────────────────┴──────────────┴────────┴────────────┴──────┘
-```
-  
