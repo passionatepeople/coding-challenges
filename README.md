@@ -110,15 +110,18 @@ If you'd like to contribute and create a challenge, here are instructions for [a
 
 ## 2022
 
-| Place | Name     | Week 05 | Total points |
-|-------|----------|---------|--------------|
-| 1.    | Varun    | 30      | 30           |
-| 2.    | Medhat   | 18      | 18           |
-| 3.    | Lars     | 15      | 15           |
-|       | Lee      | 15      | 15           |
-| 5.    | Anuradha | 11      | 11           |
-| 6.    | Aman     | 10      | 10           |
-| 7.    | Joseph   | 8       | 8            |
-| 8.    | Ji       | 6       | 6            |
-| 9.    | Daan     | 2       | 2            |
-| 10.   | Koodal   | 1       | 1            |
+| Place | Name     | Week 05 | Week 06 | Total points |
+|-------|----------|---------|---------|--------------|
+| 1.    | Varun    | 35      | 25      | 60           |
+| 2.    | Lee      | 15      | 25      | 40           |
+| 3.    | Aman     | 10      | 25      | 35           |
+| 4.    | Lars     | 15      | 15      | 30           |
+| 5.    | Irene    |         | 25      | 25           |
+| 6.    | Anuradha | 11      | 10      | 21           |
+| 7.    | Medhat   | 18      | 1       | 19           |
+| 8.    | Joseph   | 8       | 10      | 18           |
+| 9.    | Daan     | 2       | 10      | 12           |
+| 10.   | Ji       | 6       |         | 6            |
+| 11.   | Hossein  |         | 2       | 2            |
+| 12.   | Koodal   | 1       |         | 1            |
+|       | Matthias |         | 1       | 1            |

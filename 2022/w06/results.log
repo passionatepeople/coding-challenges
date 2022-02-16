@@ -1,50 +1,3 @@
-# Week 06 challenge
-
-Write a function `whatsMissing` which accepts a subset of ordered alphabet letters and returns which of the letters is missing.
-The letters will always be in the same case.
-
-
-Examples:
-```
-whatsMissing(['b','c','d','f']) // returns 'e'
-whatsMissing(['H','I','K','L']) // returns 'J'
-```
-
-
-## Upload link
-
-[PP Connect](https://connect.passionatepeople.io/code-challenge-submission)
-
-## Results
-
-| Place | Name     | Performance | Codegolf | Vote  | Total points |
-|-------|----------|-------------|----------|-------|--------------|
-| 1.    | Aman     | 25          |          |       | 25           |
-|       | Irene    | 25          |          |       | 25           |
-|       | Varun    | 25          |          |       | 25           |
-|       | Lee      | 25          |          |       | 25           |
-| 5.    | Lars     | 10          | 5        |       | 15           |
-| 6.    | Daan     | 10          |          |       | 10           |
-|       | Joseph   | 10          |          |       | 10           |
-|       | Anuradha | 10          |          |       | 10           |
-| 9.    | Hossein  | 2           |          |       | 2            |
-| 10.   | Medhat   | 1           |          |       | 1            |
-|       | Matthias | 1           |          |       | 1            |
-
-
-### Screenshot
-
-![2022 Week 06 podium](./podium.png)
-
-![2022 Week 06 results](./results.png)
-
-### Vote
-
-Voting is ongoing. Please `/vote` in Slack.
-
-
-### Full output log
-```
 
 EVALUATION STARTED:                 16/02/2022, 12:06:53
 EVALUATING CHALLENGE:               2022/w06
@@ -136,5 +89,3 @@ RAW RESULTS:
 │   25    │ 'patrick1.js'  │  6.15570999996271   │  6.142938999983016  │ 0.012770999979693443 │ 435  │ 'successfully' │ 32.17853699999978  │    false     │ false  │    null    │ 73950 │
 │   26    │   'lars2.js'   │ 17.242812999873422  │  17.23106200003531  │ 0.011750999838113785 │  79  │ 'successfully' │ 1230.461642000002  │    false     │ false  │    null    │ 73950 │
 └─────────┴────────────────┴─────────────────────┴─────────────────────┴──────────────────────┴──────┴────────────────┴────────────────────┴──────────────┴────────┴────────────┴───────┘
-```
-  
