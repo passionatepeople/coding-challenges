@@ -1,0 +1,1 @@
+module.exports=a=>{const b=!/[a-z]/.test(a)&&/[A-Z]/.test(a),c=b?"ABCDEFGHIJKLMNOPQRSTUVWXYZ":"abcdefghijklmnopqrstuvwxyz";let d=c.indexOf(a[0]);for(let b=0;b<a.length+1;b++)if(a[b]!==c[d+b])return c[d+b]};

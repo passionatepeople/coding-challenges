@@ -1,0 +1,1 @@
+module.exports=s=>String.fromCharCode(s.map(i=>i.charCodeAt()).reduce((p,n)=>n-p==1?n:p)+1)

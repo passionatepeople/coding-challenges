@@ -1,0 +1,1 @@
+module.exports=(a=>String.fromCharCode(a.find((c,i)=>a[i+1].charCodeAt()-c.charCodeAt()==2).charCodeAt(0)+1));

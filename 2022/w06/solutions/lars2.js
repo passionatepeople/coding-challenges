@@ -1,0 +1,1 @@
+module.exports=s=>(g=p=>(c=String.fromCharCode(n++))<s[p]?p?c:g(p):g(p+1))(n=0)

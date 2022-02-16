@@ -1,0 +1,1 @@
+module.exports=a=>{b=a[0].charCodeAt(),i=0;while((c=String.fromCharCode(++b))&&++i)if(c!=a[i])return c}

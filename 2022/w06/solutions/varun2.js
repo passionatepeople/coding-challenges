@@ -1,0 +1,1 @@
+module.exports=s=>{for(i of(v=0,s)){if(w=i.charCodeAt(0),v&&w-v>1)return String.fromCharCode(v+1);v=w}}
