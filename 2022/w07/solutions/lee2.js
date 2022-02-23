@@ -1,0 +1,1 @@
+module.exports=o=>(c=[...o].sort((o,c)=>o-c),[c[0],c[c.length-1]])

@@ -1,0 +1,1 @@
+module.exports=o=>[Math.min(...o),Math.max(...o)]

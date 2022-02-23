@@ -1,0 +1,1 @@
+module.exports=n=>[Math.min(...n),Math.max(...n)]

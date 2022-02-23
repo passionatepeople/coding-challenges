@@ -23,7 +23,7 @@ whatsMissing(['H','I','K','L']) // returns 'J'
 |       | Irene    | 25          |          |       | 25           |
 |       | Varun    | 25          |          |       | 25           |
 |       | Lee      | 25          |          |       | 25           |
-| 5.    | Lars     | 10          | 5        |       | 15           |
+| 5.    | Lars     | 10          | 5        | 5     | 20           |
 | 6.    | Daan     | 10          |          |       | 10           |
 |       | Joseph   | 10          |          |       | 10           |
 |       | Anuradha | 10          |          |       | 10           |

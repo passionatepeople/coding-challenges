@@ -1,0 +1,1 @@
+module.exports=(e=>{c=b=e[0],l=e.length;for(let t=1;t<l;t++){let l=e[t];l<b?b=l:l>c&&(c=l)}return[b,c]})
