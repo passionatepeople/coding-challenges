@@ -110,18 +110,19 @@ If you'd like to contribute and create a challenge, here are instructions for [a
 
 ## 2022
 
-| Place | Name     | Week 05 | Week 06 | Total points |
-|-------|----------|---------|---------|--------------|
-| 1.    | Varun    | 35      | 25      | 60           |
-| 2.    | Lee      | 15      | 25      | 40           |
-| 3.    | Aman     | 10      | 25      | 35           |
-| 4.    | Lars     | 15      | 15      | 30           |
-| 5.    | Irene    |         | 25      | 25           |
-| 6.    | Anuradha | 11      | 10      | 21           |
-| 7.    | Medhat   | 18      | 1       | 19           |
-| 8.    | Joseph   | 8       | 10      | 18           |
-| 9.    | Daan     | 2       | 10      | 12           |
-| 10.   | Ji       | 6       |         | 6            |
-| 11.   | Hossein  |         | 2       | 2            |
-| 12.   | Koodal   | 1       |         | 1            |
-|       | Matthias |         | 1       | 1            |
+| Place | Name     | Week 05 | Week 06 | Week 07 | Total points |
+|-------|----------|---------|---------|---------|--------------|
+| 1.    | Lee      | 15      | 25      | 30      | 70           |
+| 2.    | Varun    | 35      | 25      | 6       | 66           |
+| 3.    | Lars     | 15      | 20      | 30      | 65           |
+| 4.    | Aman     | 10      | 25      | 25      | 60           |
+| 5.    | Anuradha | 11      | 10      | 11      | 32           |
+|       | Hossein  |         | 2       | 30      | 32           |
+| 7.    | Luc      |         |         | 30      | 30           |
+| 8.    | Joseph   | 8       | 10      | 11      | 29           |
+| 9.    | Koodal   | 1       |         | 25      | 26           |
+| 10.   | Irene    |         | 25      |         | 25           |
+| 11.   | Medhat   | 18      | 1       |         | 19           |
+|       | Daan     | 2       | 10      | 7       | 19           |
+| 13.   | Ji       | 6       |         |         | 6            |
+| 14.   | Matthias |         | 1       |         | 1            |
