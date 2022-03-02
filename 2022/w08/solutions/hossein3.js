@@ -1,0 +1,1 @@
+module.exports=(a,t,x=0,l=a.slice(0,t))=>{while(t<a.length)x+=1,l=l.map(l=>l-1||a[t++]||0);return x+Math.max(...l)}

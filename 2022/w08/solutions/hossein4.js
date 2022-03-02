@@ -1,0 +1,1 @@
+module.exports=(a,t,l=a.slice(0,t),f=x=>t<a.length?(l=l.map(l=>l-1||a[t++]||0),f(x+1)):x)=>f(0)+Math.max(...l)

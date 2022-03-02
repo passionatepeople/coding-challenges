@@ -1,0 +1,1 @@
+module.exports=(c,x)=>{t=Array(x).fill(0);c.map(a=>{t.sort((a,b)=>a-b);t[0]+=a});return Math.max(...t)}

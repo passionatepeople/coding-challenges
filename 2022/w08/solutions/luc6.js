@@ -1,0 +1,1 @@
+module.exports=(c,n)=>Math.max(...c.reduce((l,n)=>(l[l.indexOf(Math.min(...l))]+=n,l),[0,0,0,0,0]))

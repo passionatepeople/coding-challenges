@@ -1,0 +1,1 @@
+module.exports=(a,t)=>{s=Array(t).fill(0);for(let i of a){s[s.indexOf(Math.min(...s))]+=i}return Math.max(...s)}

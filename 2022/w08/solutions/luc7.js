@@ -1,0 +1,1 @@
+module.exports=(c,r,f=Array(r).fill(0))=>(c.map(n=>f[f.indexOf(Math.min(...f))]+=n),Math.max(...f))

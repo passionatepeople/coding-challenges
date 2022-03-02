@@ -1,0 +1,1 @@
+module.exports=(h,r)=>(a=Array(r).fill(0),h.map(h=>a[a.indexOf(Math.min(...a))]+=h),Math.max(...a))

@@ -1,0 +1,1 @@
+module.exports=(c,n,f=[0,0,0,0,0])=>(c.map(r=>{f[n-1]+=r;f.sort((a,b)=>b-a)}),f[0])
