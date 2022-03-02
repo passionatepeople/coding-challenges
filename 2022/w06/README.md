@@ -40,7 +40,17 @@ whatsMissing(['H','I','K','L']) // returns 'J'
 
 ### Vote
 
-Voting is ongoing. Please `/vote` in Slack.
+```
+╔════════════════╤═══════╤══════════════════════════╗
+║ Name           │ Vote  │ Comment                  ║
+╟────────────────┼───────┼──────────────────────────╢
+║ aman.tuladhar  │ lars2 │ Brilliant!               ║
+╟────────────────┼───────┼──────────────────────────╢
+║ harijs.deksnis │ aman2 │ Beautiful and performant ║
+╟────────────────┼───────┼──────────────────────────╢
+║ varun          │ lars2 │ creative!                ║
+╚════════════════╧═══════╧══════════════════════════╝
+```
 
 
 ### Full output log
