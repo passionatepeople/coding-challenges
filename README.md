@@ -127,4 +127,5 @@ If you'd like to contribute and create a challenge, here are instructions for [a
 | 13.   | Ji       | 6       |         |         | 2       | 8            |
 | 14.   | Adjoa    |         |         |         | 6       | 6            |
 | 15.   | Patrick  |         |         | 5       |         | 5            |
-| 16.   | Matthias |         | 1       |         |         | 1            |
+|       | Tim      |         |         | 5       |         | 5            |
+| 17.   | Matthias |         | 1       |         |         | 1            |

@@ -31,7 +31,8 @@ minAndMax([1]) // returns [1, 1]
 |       | Joseph   | 6           | 5        |       | 11           |
 | 9.    | Daan     | 2           | 5        |       | 7            |
 | 10.   | Varun    | 1           | 5        |       | 6            |
-| 11.   | Patrick  |             |          | 5     | 5            |
+| 11.   | Tim      |             | 5        |       | 5            |
+|       | Patrick  |             |          | 5     | 5            |
 
 
 ### Screenshot
