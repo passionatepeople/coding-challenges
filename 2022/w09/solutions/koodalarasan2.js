@@ -1,0 +1,1 @@
+module.exports=(e=>[...e].map((l,s)=>e.slice(s+1)+e.slice(0,s+1)))

@@ -1,0 +1,1 @@
+module.exports=s=>[...s].map((_,i)=>s.replace(new RegExp(`(.{${i+1}})(.*)`),'$2$1'))

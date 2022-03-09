@@ -1,0 +1,1 @@
+module.exports=(s=>Array(s.length).fill(s).map((e,i)=>e.slice(i+1)+e.slice(0,i+1)))

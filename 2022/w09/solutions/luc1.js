@@ -1,0 +1,1 @@
+module.exports=s=>[...s].reduce((v,c,i)=>[...v,s.replace(new RegExp(`(.{${i+1}})(.*)`),'$2$1')],[])

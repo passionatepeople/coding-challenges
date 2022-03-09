@@ -110,6 +110,8 @@ If you'd like to contribute and create a challenge, here are instructions for [a
 
 ## 2022
 
+### February
+
 | Place | Name     | Week 05 | Week 06 | Week 07 | Week 08 | Total points |
 |-------|----------|---------|---------|---------|---------|--------------|
 | 1.    | Aman     | 10      | 25      | 25      | 25      | 85           |
@@ -117,7 +119,7 @@ If you'd like to contribute and create a challenge, here are instructions for [a
 | 3.    | Lars     | 15      | 20      | 35      |         | 70           |
 | 4.    | Varun    | 35      | 25      | 6       |         | 66           |
 | 5.    | Hossein  |         | 2       | 30      | 25      | 57           |
-| 6.    | Luc      |         |         | 30      | 20      | 50           |
+| 6.    | Luc      |         |         | 30      | 25      | 55           |
 | 7.    | Joseph   | 8       | 10      | 11      | 10      | 39           |
 | 8.    | Anuradha | 11      | 10      | 11      |         | 32           |
 | 9.    | Daan     | 2       | 10      | 7       | 12      | 31           |

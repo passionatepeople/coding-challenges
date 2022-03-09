@@ -1,0 +1,1 @@
+module.exports=s=>s.split('').map((e,i)=>s.slice(i+1)+s.slice(0,i+1))

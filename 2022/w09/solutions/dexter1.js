@@ -1,0 +1,1 @@
+module.exports=(s,l=s.length)=>Array(l).fill(0).map(()=>(s=s.substr(1)+s[0]))

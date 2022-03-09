@@ -20,7 +20,7 @@ imSpecial([1,1,2]) // return 2
 | Place | Name        | Performance | Codegolf | Jury award | Total points |
 |-------|-------------|-------------|----------|------------|--------------|
 | 1.    | Varun       | 25          | 5        | 5          | 35           |
-|       | Irene       | 25          | 5        |            | 30           |
+| 2.    | Irene       | 25          | 5        |            | 30           |
 | 3.    | Lee         | 25          |          |            | 25           |
 |       | Hossein     | 25          |          |            | 25           |
 |       | Pablo       | 25          |          |            | 25           |
