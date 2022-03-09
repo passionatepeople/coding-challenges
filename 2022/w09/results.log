@@ -1,55 +1,3 @@
-# Week 09 challenge
-
-Write a function `goAround` which accepts a string and returns an array of strings representing a full rotation of the initial string.
-
-First item of the array consists of all the characters shifted one position to the right, and the last character looping back to become the first character.
-Every next array item is a further rotational step with the last item being the initial string itself.
-
-
-
-Examples:
-```
-goAround('Victory') // returns ['ictoryV', 'ctoryVi', 'toryVic', 'oryVict', 'ryVicto', 'yVictor', 'Victory']
-goAround('a') // returns ['a']
-goAround('aB') // returns ['Ba', 'aB']
-goAround('teNis') // returns ['eNist', 'Niste', 'isteN', 'steNi', 'teNis']
-```
-
-
-## Upload link
-
-[PP Connect](https://connect.passionatepeople.io/code-challenge-submission)
-
-## Results
-
-| Place | Name    | Performance | Codegolf | Vote  | Total points |
-|-------|---------|-------------|----------|-------|--------------|
-| 1.    | Lars    | 25          | 5        |       | 30           |
-| 2.    | Medhat  | 25          |          |       | 25           |
-|       | Aman    | 25          |          |       | 25           |
-|       | Lee     | 25          |          |       | 25           |
-| 5.    | Hossein | 10          | 5        |       | 15           |
-| 6.    | Irene   | 8           |          |       | 8            |
-| 7.    | Adjoa   | 6           |          |       | 6            |
-| 8.    | Koodal  | 4           |          |       | 4            |
-|       | Joseph  | 4           |          |       | 4            |
-|       | Tim     | 4           |          |       | 4            |
-|       | Amine   | 4           |          |       | 4            |
-
-
-### Screenshot
-
-![2022 Week 09 podium](./podium.png)
-
-![2022 Week 09 results](./results.png)
-
-### Vote
-
-Voting is ongoing. Please `/vote` in Slack.
-
-
-### Full output log
-```
 
 EVALUATION STARTED:                 09/03/2022, 12:06:54
 EVALUATING CHALLENGE:               2022/w09
@@ -169,5 +117,3 @@ RAW RESULTS:
 │   42    │     'luc2.js'      │ 135.82218700056546 │ 135.80288000000292 │ 0.019307000562548637 │  84  │ 'successfully' │ 229.41417699999874 │    false     │ false  │    null    │ 7800 │
 │   43    │     'luc1.js'      │ 143.63993600010872 │ 143.61707600019872 │ 0.022859999909996986 │  99  │ 'successfully' │ 245.63888800000132 │    false     │ false  │    null    │ 7800 │
 └─────────┴────────────────────┴────────────────────┴────────────────────┴──────────────────────┴──────┴────────────────┴────────────────────┴──────────────┴────────┴────────────┴──────┘
-```
-  

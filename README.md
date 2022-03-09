@@ -110,6 +110,44 @@ If you'd like to contribute and create a challenge, here are instructions for [a
 
 ## 2022
 
+| Place | Name     | Week 05 | Week 06 | Week 07 | Week 08 | Week 09 | Total points |
+|-------|----------|---------|---------|---------|---------|---------|--------------|
+| 1.    | Aman     | 10      | 25      | 25      | 25      | 25      | 110          |
+| 2.    | Lee      | 15      | 25      | 30      | 8       | 25      | 103          |
+| 3.    | Lars     | 15      | 20      | 35      |         | 30      | 100          |
+| 4.    | Hossein  |         | 2       | 30      | 25      | 15      | 72           |
+| 5.    | Varun    | 35      | 25      | 6       |         |         | 66           |
+| 6.    | Luc      |         |         | 30      | 25      |         | 55           |
+| 7.    | Medhat   | 18      | 1       |         | 6       | 25      | 50           |
+| 8.    | Joseph   | 8       | 10      | 11      | 10      | 4       | 43           |
+| 9.    | Irene    |         | 25      |         |         | 8       | 33           |
+| 10.   | Anuradha | 11      | 10      | 11      |         |         | 32           |
+| 11.   | Daan     | 2       | 10      | 7       | 12      |         | 31           |
+| 12.   | Koodal   | 1       |         | 25      |         | 4       | 30           |
+| 13.   | Adjoa    |         |         |         | 6       | 6       | 12           |
+| 14.   | Tim      |         |         | 5       |         | 4       | 9            |
+| 15.   | Ji       | 6       |         |         | 2       |         | 8            |
+| 16.   | Patrick  |         |         | 5       |         |         | 5            |
+| 17.   | Amine    |         |         |         |         | 4       | 4            |
+| 18.   | Matthias |         | 1       |         |         |         | 1            |
+
+
+### March
+
+| Place | Name    | Week 09 | Week 10 | Week 12 | Week 12 | Week 13 | Total points |
+|-------|---------|---------|---------|---------|---------|---------|--------------|
+| 1.    | Lars    | 30      |         |         |         |         | 30           |
+| 2.    | Medhat  | 25      |         |         |         |         | 25           |
+|       | Aman    | 25      |         |         |         |         | 25           |
+|       | Lee     | 25      |         |         |         |         | 25           |
+| 5.    | Hossein | 15      |         |         |         |         | 15           |
+| 6.    | Irene   | 8       |         |         |         |         | 8            |
+| 7.    | Adjoa   | 6       |         |         |         |         | 6            |
+| 8.    | Koodal  | 4       |         |         |         |         | 4            |
+|       | Joseph  | 4       |         |         |         |         | 4            |
+|       | Tim     | 4       |         |         |         |         | 4            |
+|       | Amine   | 4       |         |         |         |         | 4            |
+
 ### February
 
 | Place | Name     | Week 05 | Week 06 | Week 07 | Week 08 | Total points |
