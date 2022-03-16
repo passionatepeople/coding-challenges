@@ -1,0 +1,1 @@
+module.exports=(e,t,n=Date.parse(t),m=v=>(v.sort((a,b)=>a-b)[(x=v.length)>>1]+v[--x>>1])/2)=>m(e.map((e=>~~((n-Date.parse(e))/315576e5))))

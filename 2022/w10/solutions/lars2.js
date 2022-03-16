@@ -1,0 +1,1 @@
+module.exports=(b,o,t=Date.parse,s=[...b].sort().map(t),l=s.length,f=i=>0|(t(o)-s[i])/315576e5)=>(f(l>>1)+f(--l>>1))/2

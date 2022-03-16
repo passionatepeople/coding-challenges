@@ -1,0 +1,1 @@
+module.exports=(a,t,l=a.length,i=~~(l/2),p=Date.parse,c=d=>~~((p(t)-p(d))/31557e6),b=[...a].sort())=>(c(b[i])+c(b[i+l%2-1]))/2
