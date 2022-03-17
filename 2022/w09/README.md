@@ -24,7 +24,7 @@ goAround('teNis') // returns ['eNist', 'Niste', 'isteN', 'steNi', 'teNis']
 
 | Place | Name    | Performance | Codegolf | Vote  | Total points |
 |-------|---------|-------------|----------|-------|--------------|
-| 1.    | Lars    | 25          | 5        |       | 30           |
+| 1.    | Lars    | 25          | 5        | 5     | 35           |
 | 2.    | Medhat  | 25          |          |       | 25           |
 |       | Aman    | 25          |          |       | 25           |
 |       | Lee     | 25          |          |       | 25           |
@@ -45,7 +45,18 @@ goAround('teNis') // returns ['eNist', 'Niste', 'isteN', 'steNi', 'teNis']
 
 ### Vote
 
-Voting is ongoing. Please `/vote` in Slack.
+```
+╔═════════╤═══════╤════════════════════════════════════════════════════╗
+║ Name    │ Vote  │ Comment                                            ║
+╟─────────┼───────┼────────────────────────────────────────────────────╢
+║ lee     │ lars3 │ Couldn't have written it better myself.            ║
+╟─────────┼───────┼────────────────────────────────────────────────────╢
+║ adjoa   │ lee4  │ It's creative how the string is combined twice!    ║
+╟─────────┼───────┼────────────────────────────────────────────────────╢
+║ hossein │ lars1 │ Having literally the exact same code golf as me ;) ║
+║         │       │ I'm kinda voting myself :p                         ║
+╚═════════╧═══════╧════════════════════════════════════════════════════╝
+```
 
 
 ### Full output log
