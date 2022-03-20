@@ -17,7 +17,7 @@ ageMedian(["1990-01-01"],"2022-01-01") // returns 32
 
 ## Author
 
-Daan de Groot
+Daan de Groot (+10 pts)
 
 ## Upload link
 
@@ -25,16 +25,17 @@ Daan de Groot
 
 ## Results
 
-| Place | Name         | Performance | Codegolf | Vote  | Total points |
+| Place | Name         | Performance | Codegolf | Vote / Authoring  | Total points |
 |-------|--------------|-------------|----------|-------|--------------|
 | 1.    | Lars         | 25          | 5        |       | 30           |
 | 2.    | Tim          | 18          |          |       | 18           |
 | 3.    | Hossein      | 15          |          |       | 15           |
 |       | Aman         | 15          |          |       | 15           |
 | 5.    | Medhat       | 10          |          |       | 10           |
-| 6.    | Lee          | 8           |          |       | 8            |
-| 7.    | Andre Muijen | 6           |          |       | 6            |
-| 8.    | Adjoa        | 4           |          |       | 4            |
+|       | Daan         |             |          | 10    | 10           |
+| 7.    | Lee          | 8           |          |       | 8            |
+| 8.    | Andre Muijen | 6           |          |       | 6            |
+| 9.    | Adjoa        | 4           |          |       | 4            |
 
 
 ### Screenshot

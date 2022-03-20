@@ -120,9 +120,9 @@ If you'd like to contribute and create a challenge, here are instructions for [a
 | 6.    | Medhat       | 18      | 1       |         | 6       | 25      | 10      | 60           |
 | 7.    | Luc          |         |         | 30      | 25      |         |         | 55           |
 | 8.    | Joseph       | 8       | 10      | 11      | 10      | 4       |         | 43           |
-| 9.    | Irene        |         | 25      |         |         | 8       |         | 33           |
-| 10.   | Anuradha     | 11      | 10      | 11      |         |         |         | 32           |
-| 11.   | Daan         | 2       | 10      | 7       | 12      |         |         | 31           |
+| 9.    | Daan         | 2       | 10      | 7       | 12      |         | 10      | 41           |
+| 10.   | Irene        |         | 25      |         |         | 8       |         | 33           |
+| 11.   | Anuradha     | 11      | 10      | 11      |         |         |         | 32           |
 | 12.   | Koodal       | 1       |         | 25      |         | 4       |         | 30           |
 | 13.   | Tim          |         |         | 5       |         | 4       | 18      | 27           |
 | 14.   | Adjoa        |         |         |         | 6       | 6       | 4       | 16           |
@@ -143,9 +143,10 @@ If you'd like to contribute and create a challenge, here are instructions for [a
 | 5.    | Hossein      | 15      | 15      |         |         |         | 30           |
 | 6.    | Tim          | 4       | 18      |         |         |         | 22           |
 | 7.    | Adjoa        | 6       | 4       |         |         |         | 10           |
-| 8.    | Irene        | 8       |         |         |         |         | 8            |
-| 9.    | Andre Muijen |         | 6       |         |         |         | 6            |
-| 10.   | Koodal       | 4       |         |         |         |         | 4            |
+|       | Daan         |         | 10      |         |         |         | 10           |
+| 9.    | Irene        | 8       |         |         |         |         | 8            |
+| 10.   | Andre Muijen |         | 6       |         |         |         | 6            |
+| 11.   | Koodal       | 4       |         |         |         |         | 4            |
 |       | Joseph       | 4       |         |         |         |         | 4            |
 |       | Amine        | 4       |         |         |         |         | 4            |
 
