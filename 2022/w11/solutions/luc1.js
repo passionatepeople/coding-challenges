@@ -1,0 +1,1 @@
+module.exports=a=>a.length<3?0:eval(a.join('+'))-Math.max(...a)-Math.min(...a)

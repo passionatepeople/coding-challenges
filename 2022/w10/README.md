@@ -27,7 +27,7 @@ Daan de Groot (+10 pts)
 
 | Place | Name         | Performance | Codegolf | Vote / Authoring  | Total points |
 |-------|--------------|-------------|----------|-------|--------------|
-| 1.    | Lars         | 25          | 5        |       | 30           |
+| 1.    | Lars         | 25          | 5        | 5     | 35           |
 | 2.    | Tim          | 18          |          |       | 18           |
 | 3.    | Hossein      | 15          |          |       | 15           |
 |       | Aman         | 15          |          |       | 15           |
@@ -46,7 +46,22 @@ Daan de Groot (+10 pts)
 
 ### Vote
 
-Voting is ongoing. Please `/vote` in Slack.
+```
+╔═══════════════╤═══════╤═════════════════════════════════════════════════════════════════════════════════╗
+║ Name          │ Vote  │ Comment                                                                         ║
+╟───────────────┼───────┼─────────────────────────────────────────────────────────────────────────────────╢
+║ medhat        │ lars4 │ Date.parse was a good perf trick, great solution in general                     ║
+╟───────────────┼───────┼─────────────────────────────────────────────────────────────────────────────────╢
+║ aman.tuladhar │ tim3  │ Well written and performant!                                                    ║
+║               │       │ Perfectly balanced as all things should be :)                                   ║
+╟───────────────┼───────┼─────────────────────────────────────────────────────────────────────────────────╢
+║ hossein       │ lars4 │ vote twice?                                                                     ║
+╟───────────────┼───────┼─────────────────────────────────────────────────────────────────────────────────╢
+║ adjoa         │ tim3  │ Really easy to read and understand. Using simple functions to break things down ║
+╟───────────────┼───────┼─────────────────────────────────────────────────────────────────────────────────╢
+║ daan          │ lars4 │ Nice, sorting first and only calculating age for the medians                    ║
+╚═══════════════╧═══════╧═════════════════════════════════════════════════════════════════════════════════╝
+```
 
 
 ### Full output log

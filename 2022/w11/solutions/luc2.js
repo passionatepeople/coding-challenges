@@ -1,0 +1,1 @@
+module.exports=a=>-a<1?0:eval(a.join('+'))-Math.max(...a)-Math.min(...a)

@@ -1,0 +1,1 @@
+module.exports=a=>a.length<3?0:a.reduce((p,c)=>p+c)-Math.max(...a)-Math.min(...a)

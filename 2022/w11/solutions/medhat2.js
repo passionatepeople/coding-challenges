@@ -1,0 +1,1 @@
+module.exports=e=>[...e].sort((e,o)=>e-o).slice(1,-1).reduce((e,o)=>e+o,0)
