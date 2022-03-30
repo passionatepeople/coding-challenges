@@ -1,0 +1,1 @@
+module.exports=n=>eval("for(m=1,r='';n>0;d=n%10,r=!d?r:r?`${d*m} + `+r:`${d*m}`,m*=10,n=n/10|0);r")

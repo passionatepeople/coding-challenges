@@ -28,7 +28,7 @@ truncIt([1, 4, 6, 8, 12, -4]) // returns 19
 
 | Place | Name         | Performance | Codegolf | Vote  | Total points |
 |-------|--------------|-------------|----------|-------|--------------|
-| 1.    | Lars         | 25          | 5        |       | 30           |
+| 1.    | Lars         | 25          | 5        | 5     | 35           |
 | 2.    | Lee          | 25          |          |       | 25           |
 | 3.    | Hossein      | 15          | 5        |       | 20           |
 | 4.    | Daan         | 15          |          |       | 15           |
@@ -47,7 +47,17 @@ truncIt([1, 4, 6, 8, 12, -4]) // returns 19
 
 ### Vote
 
-Voting is ongoing. Please `/vote` in Slack.
+```
+╔════════════════╤═══════╤════════════════════════════════════════╗
+║ Name           │ Vote  │ Comment                                ║
+╟────────────────┼───────┼────────────────────────────────────────╢
+║ hossein        │ lars4 │ Again! Voting myself not Lars :p       ║
+╟────────────────┼───────┼────────────────────────────────────────╢
+║ harijs.deksnis │ lee1  │ One submission and right away fastest! ║
+╟────────────────┼───────┼────────────────────────────────────────╢
+║ varun          │ lars5 │ Keeping it simple                      ║
+╚════════════════╧═══════╧════════════════════════════════════════╝
+```
 
 
 ### Full output log

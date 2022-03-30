@@ -1,0 +1,1 @@
+o=(n,d="",e="",l=n%10)=>n?o(~~(n/10),l?l+e+(d&&" + "+d):d,e+0):d,module.exports=o

@@ -1,0 +1,1 @@
+module.exports=n=>[...s=n+''].map(f=d=>10**--p*d,p=s.length).filter(f).join` + `

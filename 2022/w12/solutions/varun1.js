@@ -1,0 +1,1 @@
+let o=(e,l="",n="")=>e>0?(i=e%10,o(~~(e/10),i?l?i+n+" + "+l:i+n:l,n+0)):l;module.exports=o

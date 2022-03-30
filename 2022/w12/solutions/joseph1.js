@@ -1,0 +1,1 @@
+module.exports=n=>[...n+''].map((e,i,a)=>'0'!=e&&e+'0'.repeat(a.length-i-1)).filter(e=>e).join` + `

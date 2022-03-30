@@ -1,0 +1,1 @@
+module.exports=(n,d=.1)=>[...(""+n)].reduceRight((a,c)=>(d*=10,+c?[c*d,...a]:a),[]).join` + `

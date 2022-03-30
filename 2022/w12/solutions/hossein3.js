@@ -1,0 +1,1 @@
+module.exports=f=(n,d=1)=>n?(j=f(~~(n/10),d*10),i=n%10*d,i?(j?j+" + ":"")+i:j):""

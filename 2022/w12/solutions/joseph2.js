@@ -1,0 +1,1 @@
+module.exports=n=>[...''+n].map((d,i,a)=>+d*10**(a.length-i-1)).filter(v=>v).join` + `
