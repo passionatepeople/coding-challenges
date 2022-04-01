@@ -20,7 +20,7 @@
     "eval": "node evaluate.js -c 2021/w20 -d 15"
   },
   "engines": {
-    "node": "14.16.0"
+    "node": "16.14.2"
   },
   "author": "",
   "license": "ISC"
