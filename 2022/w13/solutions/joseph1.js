@@ -1,0 +1,1 @@
+module.exports=i=>![...i].reduce((c,s)=>(c+s).replace(/(\(\)|\[]|{})/,""),"")

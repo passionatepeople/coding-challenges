@@ -1,0 +1,1 @@
+module.exports=f=s=>s==(s=s.replace(/\(\)|\[]|{}/,''))?!s:f(s)

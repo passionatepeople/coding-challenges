@@ -1,0 +1,1 @@
+module.exports=f=i=>(t=i.replace(/(\(\)|\[]|{})/,""))==i?!i:f(t)

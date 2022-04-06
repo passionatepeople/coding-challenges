@@ -1,0 +1,1 @@
+r=/(\{\})|(\[\])|(\(\))/g,module.exports=s=>eval('while(r.test(s))s=s.replace(r,"");!s')

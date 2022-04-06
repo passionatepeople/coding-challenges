@@ -22,7 +22,7 @@ expandIt(1024) // returns '1000 + 20 + 4'
 | 1.    | Lars    | 25          |          |       | 25           |
 |       | Aman    | 25          |          |       | 25           |
 |       | Josef   | 25          |          |       | 25           |
-| 4.    | Varun   | 10          | 5        |       | 15           |
+| 4.    | Varun   | 10          | 5        | 5     | 20           |
 | 5.    | Hossein | 12          |          |       | 12           |
 | 6.    | Medhat  | 10          |          |       | 10           |
 | 7.    | Lee     | 6           |          |       | 6            |
@@ -38,7 +38,23 @@ expandIt(1024) // returns '1000 + 20 + 4'
 
 ### Vote
 
-Voting is ongoing. Please `/vote` in Slack.
+```
+╔════════════════╤══════════╤════════════════════════════════════╗
+║ Name           │ Vote     │ Comment                            ║
+╟────────────────┼──────────┼────────────────────────────────────╢
+║ harijs.deksnis │ varun2   │ nicely formatted code              ║
+╟────────────────┼──────────┼────────────────────────────────────╢
+║ joseph         │ varun4   │ Last minute winner on codegolf     ║
+╟────────────────┼──────────┼────────────────────────────────────╢
+║ varun          │ hossein2 │ Unique reduceRight solution        ║
+╟────────────────┼──────────┼────────────────────────────────────╢
+║ hossein        │ varun4   │ Golfer                             ║
+╟────────────────┼──────────┼────────────────────────────────────╢
+║ aman.tuladhar  │ josef2   │ Concise and performant             ║
+╟────────────────┼──────────┼────────────────────────────────────╢
+║ peter-paul     │ aman1    │ clean and fast one-shot submission ║
+╚════════════════╧══════════╧════════════════════════════════════╝
+```
 
 
 ### Full output log

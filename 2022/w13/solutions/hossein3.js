@@ -1,0 +1,1 @@
+module.exports=a=>{while(a!=(a=a.replace(/\(\)|{}|\[]/,"")));return!a}
