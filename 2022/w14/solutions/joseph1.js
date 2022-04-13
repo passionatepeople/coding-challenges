@@ -1,0 +1,1 @@
+module.exports=d=>d.reduce((a,d)=>(a[a.length-1]?.[0]=={N:`S`,S:`N`,E:`W`,W:`E`}[d[0]]?a.pop():a.push(d),a),[])

@@ -1,0 +1,1 @@
+module.exports=(d,f=s=>s==(s=s.replace(/NORTH,+SOUTH|SOUTH,+NORTH|EAST,+WEST|WEST,+EAST/,""))?s.split`,`.filter(s=>s):f(s))=>f(d.join())

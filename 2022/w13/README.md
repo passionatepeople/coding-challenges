@@ -22,7 +22,7 @@ braceful('{}[()]') // returns true
 
 | Place | Name         | Performance | Codegolf | Vote  | Total points |
 |-------|--------------|-------------|----------|-------|--------------|
-| 1.    | Varun        | 25          |          |       | 25           |
+| 1.    | Varun        | 25          |          | 5     | 30           |
 | 2.    | Hossein      | 18          | 5        |       | 23           |
 | 3.    | Lars         | 18          |          |       | 18           |
 | 4.    | Peter-Paul   | 8           | 5        |       | 13           |
@@ -42,7 +42,20 @@ braceful('{}[()]') // returns true
 
 ### Vote
 
-Voting is ongoing. Please `/vote` in Slack.
+```
+╔════════════════╤═════════════╤═════════════════════════════════════════════════╗
+║ Name           │ Vote        │ Comment                                         ║
+╟────────────────┼─────────────┼─────────────────────────────────────────────────╢
+║ harijs.deksnis │ peter-paul7 │ finding the "cheat", but not capitalising on it ║
+╟────────────────┼─────────────┼─────────────────────────────────────────────────╢
+║ aman.tuladhar  │ varun1      │ WOW, the switch is faster than if :O            ║
+╟────────────────┼─────────────┼─────────────────────────────────────────────────╢
+║ joseph         │ varun1      │ One submit is all it takes!                     ║
+╟────────────────┼─────────────┼─────────────────────────────────────────────────╢
+║ daan           │ hossein4    │ :O nice find // reverse engineering             ║
+║                │             │   if (length > 7) return false;                 ║
+╚════════════════╧═════════════╧═════════════════════════════════════════════════╝
+```
 
 
 ### Full output log

@@ -1,0 +1,1 @@
+module.exports=(d,r=[])=>(d.map(d=>r.at(-1)?.[0]=={N:`S`,S:`N`,E:`W`,W:`E`}[d[0]]?r.pop():r.push(d)),r)
