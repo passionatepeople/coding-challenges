@@ -1,47 +1,3 @@
-# Week 15 challenge
-
-Write a function `simplify` which accepts an array of ascending numbers and returns a string. The returned list is a comma seperated list. If it includes more than 2 consecutive numbers, those are reduced to a range.
-
-Examples:
-```
-simplify([1,2,3,4,5]) // returns '1-5'
-simplify([-2,-1,0,1,2,3,4,5]) // returns '-2-5'
-simplify([1,2,4,5,6]) // returns '1,2,4-6'
-simplify([-7,-4,-3,-2,0,7,9,15,16,17,18,19,22]) // returns '-7,-4--2,0,7,9,15-19,22'
-```
-
-## Upload link
-
-You can `/submit` your solution in Slack.
-
-## Results
-
-| Place | Name         | Performance | Codegolf | Vote  | Total points |
-|-------|--------------|-------------|----------|-------|--------------|
-| 1.    | Tom Atterton | 25          | 5        |       | 30           |
-| 2.    | Varun        | 25          |          |       | 25           |
-| 3.    | Arpad        | 15          |          |       | 15           |
-| 4.    | Daan         | 12          |          |       | 12           |
-|       | Aman         | 12          |          |       | 12           |
-| 6.    | Medhat       | 8           |          |       | 8            |
-| 7.    | Joseph       | 6           |          |       | 6            |
-| 8.    | Lee          | 4           |          |       | 4            |
-|       | Hossein      | 4           |          |       | 4            |
-
-
-### Screenshot
-
-![2022 Week 15 podium](./podium.png)
-
-![2022 Week 15 results](./results.png)
-
-### Vote
-
-Voting is ongoing. Please `/vote` in Slack.
-
-
-### Full output log
-```
 
 EVALUATION STARTED:                 20/04/2022, 12:06:51
 EVALUATING CHALLENGE:               2022/w15
@@ -124,5 +80,3 @@ RAW RESULTS:
 │   22    │   'joseph3.js'    │ 21.471988999750465 │ 21.42666699970141  │ 0.04532200004905462  │  89  │ 'successfully' │ 82.42295100000047  │    false     │ false  │    null    │ 18300 │
 │   23    │   'hossein2.js'   │ 22.75309699960053  │ 22.709232999943197 │  0.0438639996573329  │ 106  │ 'successfully' │  84.3277309999994  │    false     │ false  │    null    │ 18300 │
 └─────────┴───────────────────┴────────────────────┴────────────────────┴──────────────────────┴──────┴────────────────┴────────────────────┴──────────────┴────────┴────────────┴───────┘
-```
-  

@@ -1,0 +1,1 @@
+module.exports=a=>a.map((e,i)=>a[i-1]==e-1&&a[i+1]==e+1?'':e).join`,`.replace(/,,+/g,'-')

@@ -1,0 +1,1 @@
+module.exports=(l, r=[])=>(l.map((a,i)=>l[i-1]+2===l[i + 1]?r.splice(-1,1,'-'):r.push(l[i],',')),r.slice(0, -1).join(''));;;;;;;;

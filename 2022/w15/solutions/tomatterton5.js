@@ -1,0 +1,1 @@
+module.exports=l=>l.map((r,i)=>l[i-1]+2==l[i+1]?'':r).join`,`.replace(/,,+/g,'-')
