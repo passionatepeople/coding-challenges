@@ -1,61 +1,3 @@
-# Week 16 challenge
-
-Write a function `greed` which is a scoring function for a dice game Greed. The game is played with a regular six-sided dices (yielding random values 1-6) by throwing 5 at the same time. Then the throw is scored according to these rules:
-```
-  Three 1's => 1000 points
-  Three 6's =>  600 points
-  Three 5's =>  500 points
-  Three 4's =>  400 points
-  Three 3's =>  300 points
-  Three 2's =>  200 points
-  One   1   =>  100 points
-  One   5   =>   50 point
-```
-
-Each digit can be used up only once. E.g. if you have four 3' and one 2 you get 300 points, because 333 gives you 300, but lone 2 and 3 don't award any points.
-
-
-Examples:
-```
-greed([1,2,3,4,5]) // returns 150
-greed([2,3,4,6,6]) // returns 0
-greed([1,1,1,1,1]) // returns 1200
-greed([5,5,5,5,5]) // returns 600
-```
-
-## Upload link
-
-You can `/submit` your solution in Slack.
-
-## Results
-
-| Place | Name         | Performance | Codegolf | Vote  | Total points |
-|-------|--------------|-------------|----------|-------|--------------|
-| 1.    | Daan         | 25          |          |       | 25           |
-| 2.    | Medhat       | 18          | 5        |       | 23           |
-| 3.    | Tom Atterton | 15          |          |       | 15           |
-|       | Arpad        | 15          |          |       | 15           |
-| 5.    | Aman         | 10          |          |       | 10           |
-|       | Varun        | 10          |          |       | 10           |
-|       | Lee          | 10          |          |       | 10           |
-|       | Hossein      | 10          |          |       | 10           |
-| 9.    | Devin        | 2           |          |       | 2            |
-| 10.   | Andre Muijen | 1           |          |       | 1            |
-
-
-### Screenshot
-
-![2022 Week 16 podium](./podium.png)
-
-![2022 Week 16 results](./results.png)
-
-### Vote
-
-Voting is ongoing. Please `/vote` in Slack.
-
-
-### Full output log
-```
 
 EVALUATION STARTED:                 27/04/2022, 12:06:53
 EVALUATING CHALLENGE:               2022/w16
@@ -151,5 +93,3 @@ RAW RESULTS:
 │   31    │ 'tomatterton8.js'  │ 14.598727999808034 │ 14.552366999996593 │ 0.046360999811440706 │ 114  │ 'successfully' │ 48.37017500000002  │    false     │ false  │    null    │ 24850 │
 │   32    │ 'andremuijen1.js'  │ 17.032150000333786 │ 16.976928000338376 │ 0.05522199999541044  │ 630  │ 'successfully' │ 80.60054399999899  │    false     │ false  │    null    │ 24850 │
 └─────────┴────────────────────┴────────────────────┴────────────────────┴──────────────────────┴──────┴────────────────┴────────────────────┴──────────────┴────────┴────────────┴───────┘
-```
-  

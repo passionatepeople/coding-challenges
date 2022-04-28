@@ -1,0 +1,1 @@
+module.exports=d=>([...d].sort().join``.match(/(\d)\1{2}|[15]/g)||[]).reduce((a,b)=>a+100*({111:10,1:1,5:.5}[b]||b[0]),0)

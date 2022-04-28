@@ -18,7 +18,7 @@ You can `/submit` your solution in Slack.
 
 | Place | Name         | Performance | Codegolf | Vote  | Total points |
 |-------|--------------|-------------|----------|-------|--------------|
-| 1.    | Tom Atterton | 25          | 5        |       | 30           |
+| 1.    | Tom Atterton | 25          | 5        | 5     | 35           |
 | 2.    | Varun        | 25          |          |       | 25           |
 | 3.    | Arpad        | 15          |          |       | 15           |
 | 4.    | Daan         | 12          |          |       | 12           |
@@ -37,7 +37,15 @@ You can `/submit` your solution in Slack.
 
 ### Vote
 
-Voting is ongoing. Please `/vote` in Slack.
+```
+╔═══════════════╤══════════════╤═════════════════════╗
+║ Name          │ Vote         │ Comment             ║
+╟───────────────┼──────────────┼─────────────────────╢
+║ daan          │ tomatterton5 │ :O                  ║
+╟───────────────┼──────────────┼─────────────────────╢
+║ aman.tuladhar │ tomatterton5 │ wow, like this one! ║
+╚═══════════════╧══════════════╧═════════════════════╝
+```
 
 
 ### Full output log
