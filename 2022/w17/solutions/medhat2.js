@@ -1,0 +1,1 @@
+a=(e,l,t=/^0+/,i=e.replace(t,""),r=l.replace(t,""),f="",u=0,n=i.length,d=r.length)=>{if(!+l)return e;let h=n<d||n==d&&i<r;if(h)[i,r]=[r,i];let m=h?d-n:n-d;let o=i.slice(m,h?d:n);w=o.length-1;while(w>=0){let e=+o[w]-u,l=+r[w];u=0;if(e<l)u=1,e+=10;f=""+(e-l)+f;--w}f=a(i.slice(0,m),""+u)+f;return(h?"-":"")+f.replace(t,"")||"0"};module.exports=a

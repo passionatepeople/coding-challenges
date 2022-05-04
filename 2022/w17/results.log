@@ -1,49 +1,3 @@
-# Week 17 challenge
-
-Write a function `subtract` which takes in two numbers (as strings) and returns the result, also as a string.
-You might want to recall [how](https://www.wikihow.com/Subtract) we did it in school on the blackboard :)
-
-*Note:* Using `BigInt` for this challenge is forbidden.
-
-Examples:
-```
-subtract('1', '1') // returns '0'
-subtract('7', '123') // returns '-116'
-subtract('9999', '1542') // returns '8457'
-subtract('81489141787297148918947891489148971', '8417894917984718949817471897441') // returns '81480723892379164199998074017251530'
-```
-
-
-## Upload link
-
-You can `/submit` your solution in Slack.
-
-## Results
-
-| Place | Name         | Performance | Codegolf | Vote  | Total points |
-|-------|--------------|-------------|----------|-------|--------------|
-| 1.    | Aman         | 25          |          |       | 25           |
-|       | Medhat       | 25          |          |       | 25           |
-| 3.    | Tom Atterton | 12          | 5        |       | 17           |
-| 4.    | Daan         | 15          |          |       | 15           |
-| 5.    | Bram Kamies  | 10          |          |       | 10           |
-| 6.    | Varun        | 8           |          |       | 8            |
-| 7.    | Lee          | 6           |          |       | 6            |
-
-
-### Screenshot
-
-![2022 Week 17 podium](./podium.png)
-
-![2022 Week 17 results](./results.png)
-
-### Vote
-
-Voting is ongoing. Please `/vote` in Slack.
-
-
-### Full output log
-```
 
 EVALUATION STARTED:                 04/05/2022, 12:06:57
 EVALUATING CHALLENGE:               2022/w17
@@ -112,5 +66,3 @@ RAW RESULTS:
 │   10    │ 'bramkamies1.js'  │        null        │        null        │        null         │ 2590 │ 'successfully' │ 0.0022100000005593756 │    false     │  true  │ 'Exceeded 2048 bytes' │  0   │
 │   11    │   'medhat2.js'    │        null        │        null        │        null         │ 343  │ 'successfully' │  1989.4613669999999   │     true     │ false  │         null          │  0   │
 └─────────┴───────────────────┴────────────────────┴────────────────────┴─────────────────────┴──────┴────────────────┴───────────────────────┴──────────────┴────────┴───────────────────────┴──────┘
-```
-  

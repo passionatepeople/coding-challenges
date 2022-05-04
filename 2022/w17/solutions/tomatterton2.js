@@ -1,0 +1,1 @@
+module.exports=(a,b,r = '',n = '',d,c=0)=>{a = a.padStart(b.length, 0), b = b.padStart(a.length, 0);a<b&&([a,b,n]=[b,a,'-']);for(i= a.length;i--;)d=a[i]-b[i]-c,r=(d<0?d+10:d)+r,c=d<0;return n+r?.match(/[^0].*/)}
