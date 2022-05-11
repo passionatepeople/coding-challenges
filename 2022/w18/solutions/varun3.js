@@ -1,0 +1,1 @@
+module.exports=f=n=>n&&f(n/10|0)+n%10

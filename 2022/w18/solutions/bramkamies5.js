@@ -1,0 +1,1 @@
+d=module.exports=x=>x&&x%10+d(x/10|0)

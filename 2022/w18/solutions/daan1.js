@@ -1,0 +1,1 @@
+module.exports=n=>(n+'').split``.reduce((a,b)=>a+ +b,0)

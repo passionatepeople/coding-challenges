@@ -1,0 +1,1 @@
+module.exports=n=>{s=0;for(i of n+'')s+=+i;return s}

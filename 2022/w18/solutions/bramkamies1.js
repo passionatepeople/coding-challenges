@@ -1,0 +1,1 @@
+let x=n=>n?+n[0]+x(n.slice(1)):0;module.exports=n=>x(n+'');

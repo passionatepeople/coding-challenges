@@ -1,0 +1,1 @@
+let d=n=>n&&n%10+d(n/10>>0);module.exports=d
