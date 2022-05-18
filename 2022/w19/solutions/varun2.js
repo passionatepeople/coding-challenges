@@ -1,0 +1,1 @@
+module.exports=f=n=>n&&Math.max(n.slice(0,5),f(n.slice(1)))

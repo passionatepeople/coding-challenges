@@ -1,0 +1,1 @@
+d=module.exports=s=>s&&Math.max(+s.slice(0,5),d(s.slice(1)))

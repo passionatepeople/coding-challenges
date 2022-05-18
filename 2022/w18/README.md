@@ -23,10 +23,10 @@ You can `/submit` your solution in Slack.
 | 2.    | Aman         | 25          |          |       | 25           |
 | 3.    | Hossein      | 15          | 5        |       | 20           |
 | 4.    | Medhat       | 15          |          |       | 15           |
-| 5.    | Lee          | 10          |          |       | 10           |
+| 5.    | Bram Kamies  | 4           | 5        | 5     | 14           |
+| 6.    | Lee          | 10          |          |       | 10           |
 |       | Daan         | 10          |          |       | 10           |
-| 7.    | Bram Kamies  | 4           | 5        |       | 9            |
-|       | Tom Atterton | 4           | 5        |       | 9            |
+| 8.    | Tom Atterton | 4           | 5        |       | 9            |
 | 9.    | Tim          | 6           |          |       | 6            |
 | 10.   | Devin        | 4           |          |       | 4            |
 
@@ -39,7 +39,17 @@ You can `/submit` your solution in Slack.
 
 ### Vote
 
-Voting is ongoing. Please `/vote` in Slack.
+```
+╔════════════════╤═════════════╤════════════════════════════════════════════════════════╗
+║ Name           │ Vote        │ Comment                                                ║
+╟────────────────┼─────────────┼────────────────────────────────────────────────────────╢
+║ harijs.deksnis │ bramkamies5 │ Putting the global variable before module exports :)   ║
+╟────────────────┼─────────────┼────────────────────────────────────────────────────────╢
+║ bramkamies     │ daan4       │ Lovely eval                                            ║
+╟────────────────┼─────────────┼────────────────────────────────────────────────────────╢
+║ joseph         │ bramkamies5 │ Already taking part and producing some good solutions! ║
+╚════════════════╧═════════════╧════════════════════════════════════════════════════════╝
+```
 
 
 ### Full output log

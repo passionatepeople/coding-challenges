@@ -1,0 +1,1 @@
+module.exports=(n)=>Math.max(...[...n].map((v,i)=>1*n.slice(i,i+5)));

@@ -1,0 +1,1 @@
+module.exports=e=>eval('for(i=99999;!e.includes(i);i--);i')

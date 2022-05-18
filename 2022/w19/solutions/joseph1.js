@@ -1,0 +1,1 @@
+module.exports=e=>{for(i=99999;!e.includes(i);i--);return i}
