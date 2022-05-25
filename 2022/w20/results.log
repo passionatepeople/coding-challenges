@@ -1,50 +1,3 @@
-# Week 20 challenge
-
-Write a function `withoutFives` which accepts beginning and end of a range (inclusive) and returns how many numbers in it don't contain digit 5.
-
-
-Examples:
-```
-withoutFives(1,4) // returns 4
-withoutFives(1,10) // returns 9
-withoutFives(7,12) // returns 6
-withoutFives(1,20) // returns 18
-withoutFives(50,60) // returns 1
-```
-
-
-## Upload link
-
-You can `/submit` your solution in Slack.
-
-## Results
-
-| Place | Name         | Performance | Codegolf | Vote  | Total points |
-|-------|--------------|-------------|----------|-------|--------------|
-| 1.    | Tom Atterton | 25          | 5        |       | 30           |
-| 2.    | Hossein      | 18          | 5        |       | 23           |
-| 3.    | Irene        | 18          |          |       | 18           |
-| 4.    | Varun        | 12          |          |       | 12           |
-| 5.    | Daan         | 10          |          |       | 10           |
-| 6.    | Aman         | 8           |          |       | 8            |
-| 7.    | Lee          | 6           |          |       | 6            |
-| 8.    | Bram Kamies  | 4           |          |       | 4            |
-|       | Joseph       | 4           |          |       | 4            |
-
-
-### Screenshot
-
-![2022 Week 20 podium](./podium.png)
-
-![2022 Week 20 results](./results.png)
-
-### Vote
-
-Voting is ongoing. Please `/vote` in Slack.
-
-
-### Full output log
-```
 
 EVALUATION STARTED:                 25/05/2022, 12:07:43
 EVALUATING CHALLENGE:               2022/w20
@@ -125,5 +78,3 @@ RAW RESULTS:
 │   19    │ 'tomatterton3.js' │        null        │        null        │         null         │  51  │ 'successfully' │ 3785.5053649999973 │     true     │ false  │    null    │  0   │
 │   20    │    'varun1.js'    │        null        │        null        │         null         │  57  │ 'successfully' │ 3844.3593210000035 │     true     │ false  │    null    │  0   │
 └─────────┴───────────────────┴────────────────────┴────────────────────┴──────────────────────┴──────┴────────────────┴────────────────────┴──────────────┴────────┴────────────┴──────┘
-```
-  

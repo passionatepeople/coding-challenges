@@ -1,0 +1,1 @@
+f=module.exports=(s,e,i=s,b=0)=>i<=e?f(s,e,i+1,(i+'').includes`5`?b:b+1):b

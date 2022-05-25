@@ -1,0 +1,1 @@
+module.exports=f=(s,e)=>e<s?0:!/5/.test(e)+f(s,e-1)

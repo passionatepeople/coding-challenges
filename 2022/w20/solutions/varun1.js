@@ -1,0 +1,1 @@
+module.exports=f=(m,n)=>/^[^5]*$/.test(m)+(m<n&&f(m+1,n))
