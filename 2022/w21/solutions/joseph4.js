@@ -1,0 +1,1 @@
+module.exports=e=>e.find(a=>(e.filter(e=>e&1).length>1)+a&1)

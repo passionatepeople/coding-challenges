@@ -1,0 +1,1 @@
+module.exports=a=>a.find(v=>v%2==(a.filter(b=>b%2).length==1))

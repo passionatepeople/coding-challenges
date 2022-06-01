@@ -1,0 +1,1 @@
+module.exports=(n,m=[...n].sort((a,b)=>a%2-b%2))=>m.at(m[1]%2-1)

@@ -1,0 +1,1 @@
+module.exports=(n,t=n.filter(x=>x%2))=>t[1]?n.find(x=>x%2==0):t[0]

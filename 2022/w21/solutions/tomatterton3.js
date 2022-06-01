@@ -1,0 +1,1 @@
+module.exports=i=>(f=!!i.filter(e=>e&1)[1],i.find(e=>f+e&1))

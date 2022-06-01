@@ -23,7 +23,7 @@ You can `/submit` your solution in Slack.
 |-------|--------------|-------------|----------|-------|--------------|
 | 1.    | Tom Atterton | 25          | 5        |       | 30           |
 | 2.    | Hossein      | 18          | 5        |       | 23           |
-| 3.    | Irene        | 18          |          |       | 18           |
+|       | Irene        | 18          |          | 5     | 23           |
 | 4.    | Varun        | 12          |          |       | 12           |
 | 5.    | Daan         | 10          |          |       | 10           |
 | 6.    | Aman         | 8           |          |       | 8            |
@@ -40,7 +40,17 @@ You can `/submit` your solution in Slack.
 
 ### Vote
 
-Voting is ongoing. Please `/vote` in Slack.
+```
+╔════════════════╤══════════════╤═══════════════════════════════════════════════════════════╗
+║ Name           │ Vote         │ Comment                                                   ║
+╟────────────────┼──────────────┼───────────────────────────────────────────────────────────╢
+║ lee            │ irene1       │ It's just incredibly readable                             ║
+╟────────────────┼──────────────┼───────────────────────────────────────────────────────────╢
+║ aman.tuladhar  │ tomatterton5 │ Last-minute winner, and clean code!!!                     ║
+╟────────────────┼──────────────┼───────────────────────────────────────────────────────────╢
+║ harijs.deksnis │ irene1       │ Performant and so beautifully formatted - neatly readable ║
+╚════════════════╧══════════════╧═══════════════════════════════════════════════════════════╝
+```
 
 
 ### Full output log

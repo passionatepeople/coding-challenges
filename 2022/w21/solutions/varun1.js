@@ -1,0 +1,1 @@
+module.exports=e=>{let t,l,n=0,r=0;const f=e.length;let o=0;for(;o<f;){if(e[o]%2==0){if(r){if(t)return t}else l=e[o];r++}else{if(n){if(l)return l}else t=e[o];n++}o++}return 1===n?t:l}

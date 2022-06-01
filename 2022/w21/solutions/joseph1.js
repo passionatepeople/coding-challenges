@@ -1,0 +1,1 @@
+module.exports=(e,l=e.filter(e=>e%2==0))=>l.length==1?l[0]:e.find(e=>e%2!=0)
