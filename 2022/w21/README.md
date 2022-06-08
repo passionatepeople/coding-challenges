@@ -20,11 +20,11 @@ You can `/submit` your solution in Slack.
 |-------|--------------|-------------|----------|-------|--------------|
 | 1.    | Tom Atterton | 25          | 5        |       | 30           |
 | 2.    | Hossein      | 25          |          |       | 25           |
-| 3.    | Aman         | 15          |          |       | 15           |
-|       | Irene        | 15          |          |       | 15           |
+| 3.    | Aman         | 15          |          | 5     | 20           |
+| 4.    | Irene        | 15          |          |       | 15           |
 |       | Daan         | 15          |          |       | 15           |
 |       | Lee          | 15          |          |       | 15           |
-| 7.    | Joseph       | 2           | 5        |       | 7            |
+| 7.    | Joseph       | 2           | 5        | 5     | 12           |
 | 8.    | Varun        | 6           |          |       | 6            |
 | 9.    | Medhat       | 4           |          |       | 4            |
 
@@ -37,7 +37,15 @@ You can `/submit` your solution in Slack.
 
 ### Vote
 
-Voting is ongoing. Please `/vote` in Slack.
+```
+╔═══════╤═════════╤═════════════════════════════════════════════════╗
+║ Name  │ Vote    │ Comment                                         ║
+╟───────┼─────────┼─────────────────────────────────────────────────╢
+║ varun │ joseph4 │ Wise!                                           ║
+╟───────┼─────────┼─────────────────────────────────────────────────╢
+║ irene │ aman4   │ because Aman doing 4 submissions is a rarity :P ║
+╚═══════╧═════════╧═════════════════════════════════════════════════╝
+```
 
 
 ### Full output log

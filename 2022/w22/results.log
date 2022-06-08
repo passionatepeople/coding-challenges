@@ -1,50 +1,3 @@
-# Week 22 challenge
-
-Write a function `expand` which accepts a number. Your task is to square each digit and concatenate the result.
-
-
-Examples:
-```
-expand(2) // returns 4
-expand(13) // returns 19
-expand(123) // returns 149
-expand(567) // returns 253649
-```
-
-
-## Upload link
-
-You can `/submit` your solution in Slack.
-
-## Results
-
-| Place | Name         | Performance | Codegolf | Vote  | Total points |
-|-------|--------------|-------------|----------|-------|--------------|
-| 1.    | Irene        | 25          |          |       | 25           |
-|       | Hossein      | 25          |          |       | 25           |
-|       | Aman         | 25          |          |       | 25           |
-|       | Bram Kamies  | 25          |          |       | 25           |
-| 5.    | Varun        | 10          | 5        |       | 15           |
-| 6.    | Tom Atterton | 6           | 5        |       | 11           |
-| 7.    | Dexter       | 10          |          |       | 10           |
-| 8.    | Medhat       | 4           |          |       | 4            |
-| 9.    | Lee          | 2           |          |       | 2            |
-| 10.   | Daan         | 1           |          |       | 1            |
-
-
-### Screenshot
-
-![2022 Week 22 podium](./podium.png)
-
-![2022 Week 22 results](./results.png)
-
-### Vote
-
-Voting is ongoing. Please `/vote` in Slack.
-
-
-### Full output log
-```
 
 EVALUATION STARTED:                 08/06/2022, 12:07:07
 EVALUATING CHALLENGE:               2022/w22
@@ -157,5 +110,3 @@ RAW RESULTS:
 │   39    │   'joseph2.js'    │ 9.628919999999198  │ 9.590750999999727  │ 0.03816899999947054  │  47  │ 'successfully' │ 18.774962999999843 │    false     │ false  │    null    │ 25350 │
 │   40    │    'varun6.js'    │ 9.917979000005289  │ 9.878355000000738  │ 0.03962400000455091  │  46  │ 'successfully' │ 18.456951000000117 │    false     │ false  │    null    │ 25350 │
 └─────────┴───────────────────┴────────────────────┴────────────────────┴──────────────────────┴──────┴────────────────┴────────────────────┴──────────────┴────────┴────────────┴───────┘
-```
-  

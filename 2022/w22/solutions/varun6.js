@@ -1,0 +1,1 @@
+module.exports=o=>+(''+o).replace(/./g,v=>v*v)

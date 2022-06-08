@@ -1,0 +1,1 @@
+module.exports=a=>+`${a}`.replace(/\d/g,m=>m*m)

@@ -1,0 +1,1 @@
+module.exports=n=>+(n+'').replace(/./g,i=>i*i)

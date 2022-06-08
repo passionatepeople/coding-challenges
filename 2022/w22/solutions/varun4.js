@@ -1,0 +1,1 @@
+module.exports=o=>{let e=0,n=0,r=1;for(;o>0;o=o/10|0)n=o%10,n*=n,e=n*r+e,r*=n>9?100:10;return e}

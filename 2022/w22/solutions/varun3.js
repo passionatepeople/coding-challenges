@@ -1,0 +1,1 @@
+module.exports=o=>+[...''+o].map(v=>v*v).join``
