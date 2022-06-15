@@ -24,8 +24,8 @@ You can `/submit` your solution in Slack.
 |       | Hossein      | 25          |          |       | 25           |
 |       | Aman         | 25          |          |       | 25           |
 |       | Bram Kamies  | 25          |          |       | 25           |
-| 5.    | Varun        | 10          | 5        |       | 15           |
-| 6.    | Tom Atterton | 6           | 5        |       | 11           |
+| 5.    | Tom Atterton | 6           | 5        | 5     | 16           |
+| 6.    | Varun        | 10          | 5        |       | 15           |
 | 7.    | Dexter       | 10          |          |       | 10           |
 | 8.    | Medhat       | 4           |          |       | 4            |
 | 9.    | Lee          | 2           |          |       | 2            |
@@ -40,7 +40,19 @@ You can `/submit` your solution in Slack.
 
 ### Vote
 
-Voting is ongoing. Please `/vote` in Slack.
+```
+╔═══════════════╤══════════════╤═════════════════════════════════════════════════════════════════════════════════╗
+║ Name          │ Vote         │ Comment                                                                         ║
+╟───────────────┼──────────────┼─────────────────────────────────────────────────────────────────────────────────╢
+║ luuk          │ joseph2      │ Small size but still readable                                                   ║
+╟───────────────┼──────────────┼─────────────────────────────────────────────────────────────────────────────────╢
+║ daanhouweling │ aman1        │ Smart to use maps, would never think of a solution like this really impressive! ║
+╟───────────────┼──────────────┼─────────────────────────────────────────────────────────────────────────────────╢
+║ medhat        │ tomatterton5 │ Nice golf                                                                       ║
+╟───────────────┼──────────────┼─────────────────────────────────────────────────────────────────────────────────╢
+║ aman.tuladhar │ tomatterton3 │ Awesome codegolf! sadly can't vote for both Tom and Varun                       ║
+╚═══════════════╧══════════════╧═════════════════════════════════════════════════════════════════════════════════╝
+```
 
 
 ### Full output log

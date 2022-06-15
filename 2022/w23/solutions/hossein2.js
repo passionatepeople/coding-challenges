@@ -1,0 +1,1 @@
+module.exports=f=(a,b,c)=>(r=(""+b)[0]+(""+a).slice(1)-(c?0:f(b,a,1)))>0?r:-r

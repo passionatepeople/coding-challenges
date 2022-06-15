@@ -1,50 +1,3 @@
-# Week 23 challenge
-
-Write a function `swappedDiff` which accepts two numbers, swaps their first digits and returns the absolute difference between resulting numbers.
-
-
-Examples:
-```
-swappedDiff(123,456) // returns 267, because 423 - 156 = 267
-swappedDiff(1,7) // returns 6
-swappedDiff(13,91) // returns 82
-swappedDiff(35,14) // returns 19
-```
-
-
-## Upload link
-
-You can `/submit` your solution in Slack.
-
-## Results
-
-| Place | Name           | Performance | Codegolf | Vote  | Total points |
-|-------|----------------|-------------|----------|-------|--------------|
-| 1.    | Bram Kamies    | 25          | 5        |       | 30           |
-|       | Hossein        | 25          | 5        |       | 30           |
-| 3.    | Aman           | 25          |          |       | 25           |
-| 4.    | Medhat         | 12          |          |       | 12           |
-| 5.    | Irene          | 10          |          |       | 10           |
-| 6.    | Daan           | 8           |          |       | 8            |
-| 7.    | Daan Houweling | 6           |          |       | 6            |
-| 8.    | Lee            | 4           |          |       | 4            |
-| 9.    | Luuk           | 2           |          |       | 2            |
-|       | Devin          | 2           |          |       | 2            |
-
-
-### Screenshot
-
-![2022 Week 23 podium](./podium.png)
-
-![2022 Week 23 results](./results.png)
-
-### Vote
-
-Voting is ongoing. Please `/vote` in Slack.
-
-
-### Full output log
-```
 
 EVALUATION STARTED:                 15/06/2022, 12:07:10
 EVALUATING CHALLENGE:               2022/w23
@@ -133,5 +86,3 @@ RAW RESULTS:
 │   22    │  'tomatterton1.js'  │  2.881020000029821  │ 2.8318440000293776  │ 0.04917600000044331  │ 271  │ 'successfully' │ 13.69226400000116  │    false     │ false  │    null    │ 89850 │
 │   23    │    'hossein2.js'    │        null         │        null         │         null         │  77  │ 'successfully' │ 30.781400999998368 │     true     │ false  │    null    │   0   │
 └─────────┴─────────────────────┴─────────────────────┴─────────────────────┴──────────────────────┴──────┴────────────────┴────────────────────┴──────────────┴────────┴────────────┴───────┘
-```
-  
