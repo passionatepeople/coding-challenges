@@ -1,0 +1,1 @@
+N=[0,1,2,3,4,5,6,7,8];module.exports=eval(`b=>`+N.flatMap(g=>[N.map(i=>[g,i]),N.map(i=>[i,g]),N.map(i=>[(g%3)*3+i%3,g-g%3+~~(i/3)])]).map(r=>`${r.map(([x,y])=>`b[${x}][${y}]`).join`+`}==45`).join`&&`)
