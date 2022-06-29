@@ -1,0 +1,1 @@
+module.exports=x=>x.flat(9).sort((a,b)=>a-b)

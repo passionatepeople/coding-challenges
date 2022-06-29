@@ -1,0 +1,1 @@
+module.exports=d=>d.flat(8).sort((d,e)=>d-e)

@@ -40,7 +40,7 @@ You can `/submit` your solution in Slack.
 
 | Place | Name        | Performance | Codegolf | Vote  | Total points |
 |-------|-------------|-------------|----------|-------|--------------|
-| 1.    | Varun       | 25          | 5        |       | 30           |
+| 1.    | Varun       | 25          | 5        | 5     | 35           |
 | 2.    | Daan        | 18          |          |       | 18           |
 | 3.    | Bram Kamies | 15          |          |       | 15           |
 | 4.    | Irene       | 12          |          |       | 12           |
@@ -57,7 +57,21 @@ You can `/submit` your solution in Slack.
 
 ### Vote
 
-Voting is ongoing. Please `/vote` in Slack.
+```
+╔═══════════════╤═════════════╤════════════════════════════════════╗
+║ Name          │ Vote        │ Comment                            ║
+╟───────────────┼─────────────┼────────────────────────────────────╢
+║ daan          │ varun4      │ Made me laugh :D                   ║
+╟───────────────┼─────────────┼────────────────────────────────────╢
+║ bramkamies    │ irene1      │ Nice looking through the 3x3 boxes ║
+╟───────────────┼─────────────┼────────────────────────────────────╢
+║ daanhouweling │ varun4      │ haha smart                         ║
+╟───────────────┼─────────────┼────────────────────────────────────╢
+║ varun         │ bramkamies2 │ Very creative!                     ║
+╟───────────────┼─────────────┼────────────────────────────────────╢
+║ aman.tuladhar │ varun4      │ what the hack 「(°ヘ°)             ║
+╚═══════════════╧═════════════╧════════════════════════════════════╝
+```
 
 
 ### Full output log

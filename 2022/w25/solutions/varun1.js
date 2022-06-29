@@ -1,0 +1,1 @@
+module.exports=v=>v.flat(4).sort((a,b)=>a-b)
