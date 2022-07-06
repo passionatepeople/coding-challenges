@@ -1,0 +1,1 @@
+module.exports=n=>[...n+''].reverse().join``==n

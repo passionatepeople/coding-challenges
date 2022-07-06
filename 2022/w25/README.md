@@ -18,13 +18,13 @@ You can `/submit` your solution in Slack.
 
 | Place | Name           | Performance | Codegolf | Vote  | Total points |
 |-------|----------------|-------------|----------|-------|--------------|
-| 1.    | Bram Kamies    | 25          | 5        |       | 30           |
+| 1.    | Bram Kamies    | 25          | 5        | 5     | 35           |
 | 2.    | Daan           | 18          | 5        |       | 23           |
 | 3.    | Tim            | 12          | 5        |       | 17           |
 | 4.    | Aman           | 15          |          |       | 15           |
 |       | Varun          | 10          | 5        |       | 15           |
-| 6.    | Irene          | 6           | 5        |       | 11           |
-| 7.    | Daan Houweling | 10          |          |       | 10           |
+|       | Daan Houweling | 10          |          | 5     | 15           |
+| 7.    | Irene          | 6           | 5        |       | 11           |
 | 8.    | Lee            | 2           | 5        |       | 7            |
 | 9.    | Medhat         | 1           | 5        |       | 6            |
 |       | Hossein        | 1           | 5        |       | 6            |
@@ -39,7 +39,15 @@ You can `/submit` your solution in Slack.
 
 ### Vote
 
-Voting is ongoing. Please `/vote` in Slack.
+```
+╔═══════════════╤════════════════╤══════════════════╗
+║ Name          │ Vote           │ Comment          ║
+╟───────────────┼────────────────┼──────────────────╢
+║ aman.tuladhar │ bramkamies2    │ Smart, like it!  ║
+╟───────────────┼────────────────┼──────────────────╢
+║ varun         │ daanhouweling2 │ For using stacks ║
+╚═══════════════╧════════════════╧══════════════════╝
+```
 
 
 ### Full output log

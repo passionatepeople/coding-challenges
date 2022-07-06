@@ -1,48 +1,3 @@
-# Week 26 challenge
-
-Write a function `doIReadBothWays` which accepts a number and returns whether this number is a palindrome - reads the same backward as forward.
-
-
-Examples:
-```
-doIReadBothWays(1) // return true
-doIReadBothWays(156) // return false
-doIReadBothWays(565) // return true
-doIReadBothWays(235151) // false
-```
-
-
-## Upload link
-
-You can `/submit` your solution in Slack.
-
-## Results
-
-| Place | Name        | Performance | Codegolf | Vote  | Total points |
-|-------|-------------|-------------|----------|-------|--------------|
-| 1.    | Hossein     | 25          | 5        |       | 30           |
-| 2.    | Bram Kamies | 25          |          |       | 25           |
-|       | Aman        | 25          |          |       | 25           |
-| 4.    | Varun       | 12          | 5        |       | 17           |
-|       | Medhat      | 12          | 5        |       | 17           |
-| 6.    | Irene       | 8           | 5        |       | 13           |
-| 7.    | Daan        | 4           | 5        |       | 9            |
-| 8.    | Lee         | 6           |          |       | 6            |
-
-
-### Screenshot
-
-![2022 Week 26 podium](./podium.png)
-
-![2022 Week 26 results](./results.png)
-
-### Vote
-
-Voting is ongoing. Please `/vote` in Slack.
-
-
-### Full output log
-```
 
 EVALUATION STARTED:                 06/07/2022, 12:07:06
 EVALUATING CHALLENGE:               2022/w26
@@ -117,5 +72,3 @@ RAW RESULTS:
 │   17    │   'varun2.js'    │ 5.817907000426203  │ 5.778737000189722  │ 0.03917000023648143  │  47  │ 'successfully' │ 11.956710999998904 │    false     │ false  │    null    │ 82400 │
 │   18    │ 'bramkamies1.js' │ 6.156482999678701  │  6.11652799975127  │ 0.039954999927431345 │  55  │ 'successfully' │ 24.903935999998794 │    false     │ false  │    null    │ 82400 │
 └─────────┴──────────────────┴────────────────────┴────────────────────┴──────────────────────┴──────┴────────────────┴────────────────────┴──────────────┴────────┴────────────┴───────┘
-```
-  
