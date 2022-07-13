@@ -1,0 +1,1 @@
+module.exports=e=>(t=new Set,e.map(([a,b])=>{while(a++<b)t.add(a)}),t.size)

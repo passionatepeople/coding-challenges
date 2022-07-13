@@ -20,7 +20,7 @@ You can `/submit` your solution in Slack.
 
 | Place | Name        | Performance | Codegolf | Vote  | Total points |
 |-------|-------------|-------------|----------|-------|--------------|
-| 1.    | Hossein     | 25          | 5        |       | 30           |
+| 1.    | Hossein     | 25          | 5        | 5     | 35           |
 | 2.    | Bram Kamies | 25          |          |       | 25           |
 |       | Aman        | 25          |          |       | 25           |
 | 4.    | Varun       | 12          | 5        |       | 17           |
@@ -38,7 +38,13 @@ You can `/submit` your solution in Slack.
 
 ### Vote
 
-Voting is ongoing. Please `/vote` in Slack.
+```
+╔═══════╤══════════╤══════════════════════════════════════════════════════════════╗
+║ Name  │ Vote     │ Comment                                                      ║
+╟───────┼──────────┼──────────────────────────────────────────────────────────────╢
+║ varun │ hossein3 │ Good balance of optimization and checking all possible cases ║
+╚═══════╧══════════╧══════════════════════════════════════════════════════════════╝
+```
 
 
 ### Full output log

@@ -1,44 +1,3 @@
-# Week 27 challenge
-
-Write a function `summedIntervals` which accepts an array of intervals (start and end number). Your task is to return the sum if all interval lengths. If some intervals are overlapping, those numbers should be counted only once.
-
-
-Examples:
-```
-summedIntervals([[1,4], [5,7]]) // return 5
-summedIntervals([[1,4], [3,8]]) // return 7
-summedIntervals([[1,4], [3,8], [12,17]]) // return 12
-```
-
-
-## Upload link
-
-You can `/submit` your solution in Slack.
-
-## Results
-
-| Place | Name        | Performance | Codegolf | Vote  | Total points |
-|-------|-------------|-------------|----------|-------|--------------|
-| 1.    | Hossein     | 25          |          |       | 25           |
-| 2.    | Bram Kamies | 18          |          |       | 18           |
-| 3.    | Varun       | 15          |          |       | 15           |
-|       | Medhat      | 10          | 5        |       | 15           |
-| 5.    | Lee         | 12          |          |       | 12           |
-
-
-### Screenshot
-
-![2022 Week 27 podium](./podium.png)
-
-![2022 Week 27 results](./results.png)
-
-### Vote
-
-Voting is ongoing. Please `/vote` in Slack.
-
-
-### Full output log
-```
 
 EVALUATION STARTED:                 13/07/2022, 12:06:52
 EVALUATING CHALLENGE:               2022/w27
@@ -97,5 +56,3 @@ RAW RESULTS:
 │    8    │  'hossein2.js'   │ 85.44692099932581  │ 85.35504699964076  │ 0.09187399968504906 │  77  │ 'successfully' │ 344.65862299999935 │    false     │ false  │    null    │ 16500 │
 │    9    │ 'bramkamies1.js' │ 88.00989000016125  │ 87.90810599998804  │ 0.1017840001732111  │ 411  │ 'successfully' │ 205.57448300000033 │    false     │ false  │    null    │ 16500 │
 └─────────┴──────────────────┴────────────────────┴────────────────────┴─────────────────────┴──────┴────────────────┴────────────────────┴──────────────┴────────┴────────────┴───────┘
-```
-  

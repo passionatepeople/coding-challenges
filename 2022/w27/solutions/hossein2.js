@@ -1,0 +1,1 @@
+module.exports=v=>(x=[],v.map(([s,e])=>{while(s<e)x[s++]=1}),x.join``.length)
