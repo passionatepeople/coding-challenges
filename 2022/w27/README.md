@@ -34,7 +34,7 @@ You can `/submit` your solution in Slack.
 
 ### Vote
 
-Voting is ongoing. Please `/vote` in Slack.
+No votes this week.
 
 
 ### Full output log

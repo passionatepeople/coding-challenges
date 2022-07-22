@@ -1,0 +1,1 @@
+module.exports=(a,b,f=s=>s.split`.`.reduce((c,x)=>+x+c*256,0))=>f(b)-f(a)-1
