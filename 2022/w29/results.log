@@ -1,57 +1,3 @@
-# Week 29 challenge
-
-Write a function `isThisABook` which accepts a string representing a [ISBN](https://en.wikipedia.org/wiki/ISBN) code. Your task is to return if this is a valid ISBN code.
-
-For the purpose of this challenge a valid ISBN code consists of 10 digits, with 'X' denoting 10.
-A valid ISBN code is divisable by 11 when each digit is multiplied with it's positional number and then summed.
-Also, X can only appear as the last digit which typically is used as a checksum of error detection digit.
-
-
-For example, 7873312984 is a valid ISBN number because:
-```
-Digit:      7 8 7 3 3 1 2 9 8 4
-Position:   1 2 3 4 5 6 7 8 9 10
-
-(7 * 1) + (8 * 2) + (7 * 3) + (3 * 4) + (3 * 5) + (1 * 6) + (2 * 7) + (9 * 8) + (8 * 9) + (4 * 10) == 275
-
-275 % 11 = 0
-```
-
-Examples:
-```
-isThisABook('7873312984') // return true
-isThisABook('724496814X') // return false
-```
-
-
-## Upload link
-
-You can `/submit` your solution in Slack.
-
-## Results
-
-| Place | Name        | Performance | Codegolf | Vote  | Total points |
-|-------|-------------|-------------|----------|-------|--------------|
-| 1.    | Hossein     | 25          | 5        |       | 30           |
-| 2.    | Varun       | 25          |          |       | 25           |
-| 3.    | Devin       | 15          |          |       | 15           |
-| 4.    | Bram Kamies | 12          |          |       | 12           |
-| 5.    | Lee         | 10          |          |       | 10           |
-
-
-### Screenshot
-
-![2022 Week 29 podium](./podium.png)
-
-![2022 Week 29 results](./results.png)
-
-### Vote
-
-Voting is ongoing. Please `/vote` in Slack.
-
-
-### Full output log
-```
 
 EVALUATION STARTED:                 27/07/2022, 12:06:50
 EVALUATING CHALLENGE:               2022/w29
@@ -111,5 +57,3 @@ RAW RESULTS:
 │    9    │  'hossein3.js'   │ 2.6200739999767393  │ 2.5803529999684542  │ 0.039721000008285046 │  54  │ 'successfully' │ 15.574635000000853 │    false     │ false  │    null    │ 192700 │
 │   10    │ 'bramkamies2.js' │  3.96142499987036   │  3.909680999815464  │ 0.05174400005489588  │ 891  │ 'successfully' │ 43.69505500000014  │    false     │ false  │    null    │ 192700 │
 └─────────┴──────────────────┴─────────────────────┴─────────────────────┴──────────────────────┴──────┴────────────────┴────────────────────┴──────────────┴────────┴────────────┴────────┘
-```
-  

@@ -1,0 +1,2 @@
+const charCodeAt = String.prototype.charCodeAt;
+module.exports = i => !(((charCodeAt.call(i, 0) - 48 )+ 2 * (charCodeAt.call(i, 1) - 48) + 3 * (charCodeAt.call(i, 2) - 48) + 4 * (charCodeAt.call(i, 3) - 48) + 5 * (charCodeAt.call(i, 4) - 48) + 6 * (charCodeAt.call(i, 5) - 48) + 7 * (charCodeAt.call(i, 6) - 48) + 8 * (charCodeAt.call(i, 7) - 48) + 9 * (charCodeAt.call(i, 8) - 48) + 10 * (charCodeAt.call(i, 9) - 48)) % 11)

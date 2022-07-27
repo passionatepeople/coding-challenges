@@ -1,0 +1,1 @@
+module.exports=s=>[...s].reduce((s,c,i)=>+s+c*++i)%11<1

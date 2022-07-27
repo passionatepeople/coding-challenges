@@ -1,0 +1,1 @@
+module.exports=o=>!([...o].reduce((o,e,d)=>e*(d+1)+o,0)%11)

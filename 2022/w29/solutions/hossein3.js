@@ -1,0 +1,1 @@
+module.exports=(s,f=i=>i?i*s[--i]+f(i):0)=>!(f(10)%11)
