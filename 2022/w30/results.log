@@ -1,43 +1,3 @@
-# Week 30 challenge
-
-Write a function `whatsMyName` which takes in a full URL and returns just the domain name. 
-
-Examples:
-```
-whatsMyName('http://amazon.com/foo/bar') // return "amazon"
-whatsMyName('http://www.tasty-foods.com') // return "tasty-foods"
-whatsMyName('https://www.zombo.com/') // return "zombo"
-```
-
-
-## Upload link
-
-You can `/submit` your solution in Slack.
-
-## Results
-
-| Place | Name     | Performance | Codegolf | Vote  | Total points |
-|-------|----------|-------------|----------|-------|--------------|
-| 1.    | Hossein  | 25          | 5        |       | 30           |
-| 2.    | Lee      | 18          |          |       | 18           |
-| 3.    | Varun    | 15          |          |       | 15           |
-| 4.    | Medhat   | 12          |          |       | 12           |
-| 5.    | Anuradha | 10          |          |       | 10           |
-
-
-### Screenshot
-
-![2022 Week 30 podium](./podium.png)
-
-![2022 Week 30 results](./results.png)
-
-### Vote
-
-Voting is ongoing. Please `/vote` in Slack.
-
-
-### Full output log
-```
 
 EVALUATION STARTED:                 03/08/2022, 12:06:51
 EVALUATING CHALLENGE:               2022/w30
@@ -96,5 +56,3 @@ RAW RESULTS:
 │    8    │  'medhat1.js'  │  8.87402300001122  │ 8.830482000019401  │ 0.04354099999181926  │ 162  │ 'successfully' │ 22.99432799999704  │    false     │ false  │    null    │ 70100 │
 │    9    │ 'hossein2.js'  │ 10.231047000037506 │ 10.19274999992922  │ 0.03829700010828674  │  56  │ 'successfully' │ 17.18254700000034  │    false     │ false  │    null    │ 70100 │
 └─────────┴────────────────┴────────────────────┴────────────────────┴──────────────────────┴──────┴────────────────┴────────────────────┴──────────────┴────────┴────────────┴───────┘
-```
-  

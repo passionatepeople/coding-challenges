@@ -1,0 +1,1 @@
+module.exports=(u,h=u.split('//')[1])=>h.split('.')[h.indexOf('www.')==0?1:0]

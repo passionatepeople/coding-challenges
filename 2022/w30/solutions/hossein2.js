@@ -1,0 +1,1 @@
+module.exports=u=>u.split`.`.at(-2).replace(/.+[/]/g,"")
