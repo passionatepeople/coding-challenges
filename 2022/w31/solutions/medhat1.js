@@ -1,0 +1,1 @@
+module.exports=(d,e=d.match(/\d+$/)?.[0])=>!e?d+1:(l=e.length,d.slice(0,d.length-l)+(""+(+e+1)).padStart(l,"0"))

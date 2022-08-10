@@ -1,0 +1,1 @@
+module.exports=s=>s.replace(/(\d?9+|[0-8])?$/,m=>+m+1)
