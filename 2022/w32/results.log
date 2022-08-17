@@ -1,42 +1,3 @@
-# Week 32 challenge
-
-Write a function `popularityContest` which takes in an array of numbers and returns a sorted result with more frequent numbers sorted first. If different numbers have the same frequency lower ones come first.
-
-
-Examples:
-```
-popularityContest([1, 2, 1, 7]) // return [1, 1, 2, 7]
-popularityContest([5, 8, 4, 2]) // return [2, 4, 5, 8]
-```
-
-
-## Upload link
-
-You can `/submit` your solution in Slack.
-
-## Results
-
-| Place | Name        | Performance | Codegolf | Vote  | Total points |
-|-------|-------------|-------------|----------|-------|--------------|
-| 1.    | Hossein     | 25          |          |       | 25           |
-| 2.    | Medhat      | 15          | 5        |       | 20           |
-| 3.    | Bram Kamies | 18          |          |       | 18           |
-| 4.    | Lee         | 12          |          |       | 12           |
-
-
-### Screenshot
-
-![2022 Week 32 podium](./podium.png)
-
-![2022 Week 32 results](./results.png)
-
-### Vote
-
-Voting is ongoing. Please `/vote` in Slack.
-
-
-### Full output log
-```
 
 EVALUATION STARTED:                 17/08/2022, 12:06:49
 EVALUATING CHALLENGE:               2022/w32
@@ -90,5 +51,3 @@ RAW RESULTS:
 │    6    │    'lee1.js'     │ 19.73638900014339  │ 19.679527000000235 │ 0.056862000143155456 │ 611  │ 'successfully' │ 81.66429900000003  │    false     │ false  │    null    │ 30850 │
 │    7    │   'medhat1.js'   │ 44.007083000011335 │ 43.96112400000129  │ 0.04595900001004338  │  97  │ 'successfully' │ 107.54840499999773 │    false     │ false  │    null    │ 30850 │
 └─────────┴──────────────────┴────────────────────┴────────────────────┴──────────────────────┴──────┴────────────────┴────────────────────┴──────────────┴────────┴────────────┴───────┘
-```
-  
