@@ -1,46 +1,3 @@
-# Week 33 challenge
-
-Write a function `sevenAteNine` which takes in a string consisting of numbers and removes every instance of 9 which finds itself between two sevens.
-
-
-Examples:
-```
-sevenAteNine('192798') // return '192798'
-sevenAteNine('192797') // return '19277'
-sevenAteNine('19279797') // return '192777'
-```
-
-
-## Upload link
-
-You can `/submit` your solution in Slack.
-
-## Results
-
-| Place | Name     | Performance | Codegolf | Vote  | Total points |
-|-------|----------|-------------|----------|-------|--------------|
-| 1.    | Medhat   | 25          |          |       | 25           |
-| 2.    | Lee      | 18          | 5        |       | 23           |
-| 3.    | Varun    | 18          |          |       | 18           |
-| 4.    | Irene    | 12          |          |       | 12           |
-| 5.    | Hossein  | 10          |          |       | 10           |
-| 6.    | Daan     | 8           |          |       | 8            |
-| 7.    | Anuradha | 6           |          |       | 6            |
-
-
-### Screenshot
-
-![2022 Week 33 podium](./podium.png)
-
-![2022 Week 33 results](./results.png)
-
-### Vote
-
-Voting is ongoing. Please `/vote` in Slack.
-
-
-### Full output log
-```
 
 EVALUATION STARTED:                 24/08/2022, 12:06:49
 EVALUATING CHALLENGE:               2022/w33
@@ -105,5 +62,3 @@ RAW RESULTS:
 │   10    │   'lee1.js'    │ 22.657338000135496 │ 22.609708999982104 │ 0.04762900015339255  │ 241  │ 'successfully' │ 29.38489800000025  │    false     │ false  │    null    │ 28400 │
 │   11    │ 'anuradha1.js' │ 35.685556999989785 │ 35.63015700003598  │  0.0553999999538064  │ 322  │ 'successfully' │ 81.73501000000033  │    false     │ false  │    null    │ 28400 │
 └─────────┴────────────────┴────────────────────┴────────────────────┴──────────────────────┴──────┴────────────────┴────────────────────┴──────────────┴────────┴────────────┴───────┘
-```
-  

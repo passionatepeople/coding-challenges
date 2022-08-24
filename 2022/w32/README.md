@@ -18,7 +18,7 @@ You can `/submit` your solution in Slack.
 
 | Place | Name        | Performance | Codegolf | Vote  | Total points |
 |-------|-------------|-------------|----------|-------|--------------|
-| 1.    | Hossein     | 25          |          |       | 25           |
+| 1.    | Hossein     | 25          |          | 5     | 30           |
 | 2.    | Medhat      | 15          | 5        |       | 20           |
 | 3.    | Bram Kamies | 18          |          |       | 18           |
 | 4.    | Lee         | 12          |          |       | 12           |
@@ -32,7 +32,13 @@ You can `/submit` your solution in Slack.
 
 ### Vote
 
-Voting is ongoing. Please `/vote` in Slack.
+```
+╔════════════╤══════════╤════════════════════════════════════╗
+║ Name       │ Vote     │ Comment                            ║
+╟────────────┼──────────┼────────────────────────────────────╢
+║ bramkamies │ hossein1 │ Very nice way to build the output! ║
+╚════════════╧══════════╧════════════════════════════════════╝
+```
 
 
 ### Full output log

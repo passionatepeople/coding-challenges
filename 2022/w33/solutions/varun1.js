@@ -1,0 +1,1 @@
+module.exports=n=>n.replace(/(?<=7)9(?=7)/g,'')

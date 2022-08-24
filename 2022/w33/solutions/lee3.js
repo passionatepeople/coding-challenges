@@ -1,0 +1,1 @@
+module.exports=l=>l.replaceAll(/79(?=7)/g,"7")
