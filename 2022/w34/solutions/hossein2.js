@@ -1,0 +1,1 @@
+module.exports=n=>/^(1*)000+\1$/.test(n.map(d=>d?1:0).join``)

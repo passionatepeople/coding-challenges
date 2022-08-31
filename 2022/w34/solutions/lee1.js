@@ -1,0 +1,1 @@
+module.exports=n=>(a=n.indexOf(0),b=n.lastIndexOf(0),n.length-b===a+1&&b-a>=2&&0===n[a+1]&&0===n[b-1])
