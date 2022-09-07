@@ -1,0 +1,1 @@
+d=module.exports=(t,a=t.replace(/\w#/,''))=>t==a?t:d(a)

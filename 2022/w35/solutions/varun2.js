@@ -1,0 +1,1 @@
+module.exports=s=>{for(;s.includes("#");)s=s.replace(/([^#]#|^#+)/g,"");return s}

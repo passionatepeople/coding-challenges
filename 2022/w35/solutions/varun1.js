@@ -1,0 +1,1 @@
+module.exports=f=s=>s.indexOf`#`>0?f(s.replace(/.#/,'')):s

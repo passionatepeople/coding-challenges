@@ -1,46 +1,3 @@
-# Week 35 challenge
-
-Write a function `txtEditor` which takes in a string representing text. In this particular format backspace is encoded as `"#"`, so `"abcd##ef"` actually means `"abef"`
-
-
-Examples:
-```
-txtEditor('abcd##ef') // return 'abef'
-txtEditor('abcd#ef') // return 'abcef'
-txtEditor('abcdef') // return 'abcdef'
-```
-
-
-## Upload link
-
-You can `/submit` your solution in Slack.
-
-## Results
-
-| Place | Name         | Performance | Codegolf | Vote  | Total points |
-|-------|--------------|-------------|----------|-------|--------------|
-| 1.    | Tom Atterton | 25          | 5        |       | 30           |
-|       | Varun        | 25          | 5        |       | 30           |
-|       | Bram Kamies  | 25          | 5        |       | 30           |
-|       | Hossein      | 25          | 5        |       | 30           |
-|       | Medhat       | 25          | 5        |       | 30           |
-|       | Lee          | 25          | 5        |       | 30           |
-| 7.    | Daniel       | 6           |          |       | 6            |
-
-
-### Screenshot
-
-![2022 Week 35 podium](./podium.png)
-
-![2022 Week 35 results](./results.png)
-
-### Vote
-
-Voting is ongoing. Please `/vote` in Slack.
-
-
-### Full output log
-```
 
 EVALUATION STARTED:                 07/09/2022, 12:06:51
 EVALUATING CHALLENGE:               2022/w35
@@ -112,5 +69,3 @@ RAW RESULTS:
 │   15    │ 'tomatterton3.js' │        null        │        null        │         null         │  53  │ 'successfully' │ 84.08315500000026  │     true     │ false  │    null    │   0   │
 │   16    │    'varun1.js'    │        null        │        null        │         null         │  58  │ 'successfully' │ 54.91076299999986  │     true     │ false  │    null    │   0   │
 └─────────┴───────────────────┴────────────────────┴────────────────────┴──────────────────────┴──────┴────────────────┴────────────────────┴──────────────┴────────┴────────────┴───────┘
-```
-  

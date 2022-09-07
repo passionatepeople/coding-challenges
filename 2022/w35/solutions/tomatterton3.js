@@ -1,0 +1,1 @@
+module.exports=f=t=>(v=t.replace(/.?#/,''))!=t?f(v):v
