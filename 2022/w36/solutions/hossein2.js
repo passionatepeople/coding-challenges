@@ -1,0 +1,1 @@
+module.exports=([a,b],f=d=>a%d||b%d?f(--d):[a/d,b/d])=>f(a)

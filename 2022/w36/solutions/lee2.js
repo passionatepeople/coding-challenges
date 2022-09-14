@@ -1,0 +1,1 @@
+function n(n,o){for(;;){if(0===(n%=o))return o;if(0===(o%=n))return n}}module.exports=o=>{const[r,t]=o,u=t>r?n(t,r):n(r,t);return[r/u,t/u]}

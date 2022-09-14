@@ -1,47 +1,3 @@
-# Week 36 challenge
-
-Write a function `simplify` which takes in a fraction in the form [a, b] representing a/b. Your task is to return a simplified version, so that `[50, 70]` becomes `[5, 7]`
-
-
-Examples:
-```
-simplify([50, 70]) // return [5,7]
-simplify([150, 450]) // return [1,3]
-simplify([150, 30]) // return [5,1]
-```
-
-
-## Upload link
-
-You can `/submit` your solution in Slack.
-
-## Results
-
-| Place | Name         | Performance | Codegolf | Vote  | Total points |
-|-------|--------------|-------------|----------|-------|--------------|
-| 1.    | Hossein      | 25          | 5        |       | 30           |
-| 2.    | Lee          | 25          |          |       | 25           |
-| 3.    | Tom Atterton | 15          |          |       | 15           |
-|       | Bram Kamies  | 15          |          |       | 15           |
-|       | Varun        | 15          |          |       | 15           |
-| 6.    | Daniel       | 8           |          |       | 8            |
-|       | Patrick      | 8           |          |       | 8            |
-| 8.    | Medhat       | 4           |          |       | 4            |
-
-
-### Screenshot
-
-![2022 Week 36 podium](./podium.png)
-
-![2022 Week 36 results](./results.png)
-
-### Vote
-
-Voting is ongoing. Please `/vote` in Slack.
-
-
-### Full output log
-```
 
 EVALUATION STARTED:                 14/09/2022, 12:07:01
 EVALUATING CHALLENGE:               2022/w36
@@ -113,5 +69,3 @@ RAW RESULTS:
 │   13    │   'hossein2.js'   │ 27.612097000237554 │ 27.573131000157446 │ 0.03896600008010864  │  59  │ 'successfully' │ 55.08035199999722  │    false     │ false  │    null    │ 88650 │
 │   14    │     'lee3.js'     │        null        │        null        │         null         │  68  │ 'successfully' │ 36.554410000000644 │     true     │ false  │    null    │   0   │
 └─────────┴───────────────────┴────────────────────┴────────────────────┴──────────────────────┴──────┴────────────────┴────────────────────┴──────────────┴────────┴────────────┴───────┘
-```
-  

@@ -1,0 +1,1 @@
+d=(o,c)=>c>0?d(c,o%c):o;module.exports=([o,n])=>(c=d(o,n),[o/c,n/c])
