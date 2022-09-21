@@ -1,0 +1,1 @@
+module.exports=n=>n.map(d=>1+n.filter(b=>b>d).length)
