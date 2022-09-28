@@ -21,7 +21,7 @@ You can `/submit` your solution in Slack.
 
 | Place | Name         | Performance | Codegolf | Vote  | Total points |
 |-------|--------------|-------------|----------|-------|--------------|
-| 1.    | Bram Kamies  | 25          | 5        |       | 30           |
+| 1.    | Bram Kamies  | 25          | 5        | 5     | 35           |
 | 2.    | Hossein      | 18          | 5        |       | 23           |
 | 3.    | Tom Atterton | 15          |          |       | 15           |
 |       | Patrick      | 15          |          |       | 15           |
@@ -36,7 +36,13 @@ You can `/submit` your solution in Slack.
 
 ### Vote
 
-Voting is ongoing. Please `/vote` in Slack.
+```
+╔═════════╤═════════════╤════════════════════════════════════════╗
+║ Name    │ Vote        │ Comment                                ║
+╟─────────┼─────────────┼────────────────────────────────────────╢
+║ hossein │ bramkamies3 │ almost 1K ;) well done with quick sort ║
+╚═════════╧═════════════╧════════════════════════════════════════╝
+```
 
 
 ### Full output log

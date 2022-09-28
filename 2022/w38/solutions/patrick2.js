@@ -1,0 +1,1 @@
+module.exports=e=>{const t=e.filter((e=>0!==e));for(let e=1;e<t.length;e++)t[e]===t[e-1]&&(t[e-1]*=2,t.splice(e,1));for(;t.length<e.length;)t.push(0);return t};

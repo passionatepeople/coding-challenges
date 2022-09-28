@@ -1,0 +1,1 @@
+module.exports=r=>{o=Array(l=r.length).fill(h=p=i=0);while(i<l)p=(c=r[i++])?c-p?o[h++]=c:(o[h-1]*=2,0):p;return o}
