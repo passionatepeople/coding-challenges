@@ -1,0 +1,1 @@
+module.exports=s=>(r=0,[...[...s].map(c=>c.charCodeAt().toString(16)).join``].map(d=>r+=+d|0),r)

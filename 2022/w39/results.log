@@ -1,54 +1,3 @@
-# Week 39 challenge
-
-Write a function `hashedAllTheWay` which implements a hashing algorithm taking a string and returning a final number.
-The hashing works as follows: it converts every character in the string to its ASCII code in hexadecimal.
-Then it summs all the digits in decimal system from hexadecimal codes, ignoring letters.
-
-
-Examples:
-```
-hashedAllTheWay('passion') // return 61
-// p = '70'
-// a = '61'
-// s = '73'
-// s = '73'
-// i = '69'
-// o = '6f'
-// n = '6e'
-// => 7 + 0 + 6 + 1 + 7 + 3 + 7 + 3 + 6 + 9 + 6 + 6 = 61
-```
-
-## Upload link
-
-You can `/submit` your solution in Slack.
-
-## Results
-
-| Place | Name         | Performance | Codegolf | Vote  | Total points |
-|-------|--------------|-------------|----------|-------|--------------|
-| 1.    | Bram Kamies  | 25          | 5        |       | 30           |
-| 2.    | Hossein      | 18          |          |       | 18           |
-| 3.    | Lars         | 15          |          |       | 15           |
-| 4.    | Tom Atterton | 12          |          |       | 12           |
-| 5.    | Tim          | 10          |          |       | 10           |
-| 6.    | Lee          | 8           |          |       | 8            |
-| 7.    | Ali          | 6           |          |       | 6            |
-| 8.    | Patrick      | 4           |          |       | 4            |
-
-
-### Screenshot
-
-![2022 Week 39 podium](./podium.png)
-
-![2022 Week 39 results](./results.png)
-
-### Vote
-
-Voting is ongoing. Please `/vote` in Slack.
-
-
-### Full output log
-```
 
 EVALUATION STARTED:                 05/10/2022, 12:06:51
 EVALUATING CHALLENGE:               2022/w39
@@ -121,5 +70,3 @@ RAW RESULTS:
 │   16    │   'hossein2.js'   │ 71.49113100022078  │  71.4295540000312  │ 0.06157700018957257  │  96  │ 'successfully' │ 659.8444969999982  │    false     │ false  │    null    │ 7350 │
 │   17    │     'ali1.js'     │ 71.73755100020207  │ 71.66145399981178  │ 0.07609700039029121  │ 392  │ 'successfully' │ 337.1308680000002  │    false     │ false  │    null    │ 7350 │
 └─────────┴───────────────────┴────────────────────┴────────────────────┴──────────────────────┴──────┴────────────────┴────────────────────┴──────────────┴────────┴────────────┴──────┘
-```
-  

@@ -1,0 +1,1 @@
+module.exports=h=>Buffer(h).reduce((s,l)=>([h,l]=l.toString(16),s+(h|0)+(l|0)),0)
