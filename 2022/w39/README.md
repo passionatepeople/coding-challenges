@@ -26,14 +26,14 @@ You can `/submit` your solution in Slack.
 
 | Place | Name         | Performance | Codegolf | Vote  | Total points |
 |-------|--------------|-------------|----------|-------|--------------|
-| 1.    | Bram Kamies  | 25          | 5        |       | 30           |
-| 2.    | Hossein      | 18          |          |       | 18           |
+| 1.    | Bram Kamies  | 25          | 5        | 5     | 35           |
+| 2.    | Hossein      | 18          |          | 5     | 23           |
 | 3.    | Lars         | 15          |          |       | 15           |
 | 4.    | Tom Atterton | 12          |          |       | 12           |
 | 5.    | Tim          | 10          |          |       | 10           |
-| 6.    | Lee          | 8           |          |       | 8            |
-| 7.    | Ali          | 6           |          |       | 6            |
-| 8.    | Patrick      | 4           |          |       | 4            |
+| 6.    | Patrick      | 4           |          | 5     | 9            |
+| 7.    | Lee          | 8           |          |       | 8            |
+| 8.    | Ali          | 6           |          |       | 6            |
 
 
 ### Screenshot
@@ -44,7 +44,17 @@ You can `/submit` your solution in Slack.
 
 ### Vote
 
-Voting is ongoing. Please `/vote` in Slack.
+```
+╔════════════╤═════════════╤════════════════════════════════════════════════════╗
+║ Name       │ Vote        │ Comment                                            ║
+╟────────────┼─────────────┼────────────────────────────────────────────────────╢
+║ bramkamies │ hossein2    │ Nice strat to flatten hex chars into single string ║
+╟────────────┼─────────────┼────────────────────────────────────────────────────╢
+║ hossein    │ bramkamies1 │ Buffer! Genius! Well done m8                       ║
+╟────────────┼─────────────┼────────────────────────────────────────────────────╢
+║ lee        │ patrick1    │ Simply marvellous                                  ║
+╚════════════╧═════════════╧════════════════════════════════════════════════════╝
+```
 
 
 ### Full output log
